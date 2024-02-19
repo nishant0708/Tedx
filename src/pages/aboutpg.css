@@ -1,0 +1,36 @@
+.aboutpg{
+    /* background-color: #161616; */
+    /* padding-bottom: 20vh; */
+    /* padding-top: 10vh; */
+    overscroll-behavior-y: contain;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+.aboutpg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.stacked-cards {
+    position: relative;
+}
+
+.stacked-cards > div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.stacked-cards > div.active {
+    opacity: 1;
+    pointer-events: auto;
+}

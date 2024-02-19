@@ -1,0 +1,42 @@
+.team{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.team-name{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 12px;
+    position: relative;
+    top: 9vh;
+    width: 400px;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-200px);
+    text-shadow: 5px 8px 4px rgba(0,0,0,0.58);
+    display: flex;
+    flex-direction: row;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.team-cards-container{
+    width: fit-content;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    overflow: hidden;
+    justify-self: flex-start;
+    padding: 30px;
+    transform: translateY(4vh);
+}
+
+
+@media screen and (max-width: 480px){
+    .team-cards-container{
+        transform: translateY(10vh);
+    } 
+}
+

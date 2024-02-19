@@ -1,0 +1,64 @@
+.about{
+    /* background-color: #161616; */
+    padding-bottom: 20vh;
+    padding-top: 10vh;
+    /* position: relative; */
+}
+
+
+.heading-a{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2rem;
+    color: #e62b1e;
+    margin-left: 10vw;
+    padding-left: 0;
+}
+
+.headcontainer{
+  /* background: linear-gradient(180deg, #080808 10.6%, #e62b1e 97.7%); */
+  /* padding-bottom: 1rem; */
+  /* border-radius: 20px; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+}
+
+  .text-container {
+    max-width: 100vw;
+    position: relative;
+    /* margin: 50px auto; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* margin-bottom: 10vh; */
+    /* padding: 5rem 0 5rem 0; */
+    /* padding: 0 20px; */
+  }
+  
+  .reveal-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 80vw;
+    text-align: justify;
+    /* opacity: 0.5; */
+  }
+  
+  .word {
+    opacity: 0.5;
+    color: rgba(240, 255, 255, 0.454); /* Default color for non-active words */
+  }
+  
+  .word.active {
+    color: red; /* Color for active words */
+  }
+  
+  @media screen and (max-width: 900px)  {
+    .reveal-text {
+      font-size: 18px;
+    }
+  }

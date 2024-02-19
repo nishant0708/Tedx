@@ -1,0 +1,109 @@
+
+  .section-cards {
+    overflow: hidden;
+    background-color: black;
+    /* background-image: url(https://e1.pxfuel.com/desktop-wallpaper/630/575/desktop-wallpaper-1600x900-red-black-abstract-widescreen-16-9-red-shards.jpg); */
+    background-position: fixed;
+    position: relative;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+  /* background-position: center; */
+    /* position: sticky; */
+}
+  .section-cards__container {
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 300px 0;
+  }
+  .section-cards__list {
+    min-height: 400px;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    /* top:20vh; */
+  }
+  .section-cards__list .card {
+    /* width: 100%; */
+    width: 50vw;
+    /* height: 100%; */
+    /* min-height: 70vh; */
+    /* height: 60vh; */
+    /* background: black linear-gradient(180deg, #FFE2C7 -22.35%, rgba(254, 213, 180, 0.328125) 47.17%, rgba(254, 208, 171, 0) 100%); */
+    position: absolute;
+    top: -10vh;
+    /* left: 0; */
+    right: 5vw;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgb(251, 249, 249);
+    box-shadow: rgba(11, 11, 16, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .section-cards__list .card--1 {
+    z-index: 1;
+    color: black;
+  }
+  .section-cards__list .card--2 {
+    background-color: #e62b1e;
+    /* background: rgb(22,22,22); */
+/* background: radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(180,28,28,1) 98%); */
+    z-index: 2;
+  }
+  .section-cards__list .card--3 {
+    background-color: rgb(251, 249, 249);
+    z-index: 3;
+    color: black;
+  }
+  .section-cards__list .card--4 {
+    background-color: #e62b1e;
+    z-index: 4;
+  }
+  .section-cards__list .card--3 {
+    min-height: 50vh;
+  }
+.card--1 .content, .card--3 .content {
+    color: black;
+}
+.card--2 .content, .card--4 .content {
+    color: white;
+}
+.card--1 .about-heading, .card--3 .about-heading {
+    color: #e62b1e;
+}
+
+.page-heading-1{
+  color: #e62b1e;
+  text-align: left;
+  position: absolute;
+  left: 10vw;
+  font-size: 2.5rem;
+  font-weight: 900;
+
+}
+
+@media screen and (max-width: 800px) {
+  .section-cards__container {
+    max-width: 1200px;
+  }
+  .section-cards__list .card--3 {
+    min-height: 60vh;
+  }
+  .section-cards__list .card {
+    width: 100%;
+    left: 0;
+  }
+  .section-cards__list .card {
+    min-height: 70vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-cards__list .card--3 {
+    min-height: 60vh;
+  }
+  .section-cards__list .card {
+    min-height: 50vh;
+  }
+}

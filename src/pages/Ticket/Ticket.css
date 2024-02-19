@@ -1,0 +1,478 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+.flip-card-container{
+    background-color: #252323;
+    position: relative;
+   
+    transition: all 0.3s ease-in-out;
+   
+}
+.flip-card-container:hover .back {
+    /* Add any additional styling to enhance the hover effect */
+    transform: scale(1.02); /* Slightly scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  }
+.front{
+    height: 60vh;
+   overflow-y: hidden;
+    
+}
+.front h1{
+    color: white;
+}
+
+.card{
+    width: 97%;
+    margin: 20px 20px;
+    box-shadow: 7px 7px 7px #131313;
+   background-color: rgb(0, 0, 0);
+}
+.ticket{
+    overflow-y: hidden;
+}
+.back{
+    overflow-y: hidden;
+}
+.backimg{
+    
+    width: 100%;
+    height: 60vh;
+   margin-left: auto;
+   margin-right: auto;
+   
+ 
+}
+.front p{
+    text-align: center;
+font-size: 54px;
+transform: translateY(120%)
+
+}
+.front p span{
+    color: red;
+}
+.ticketno{
+    position: absolute;
+   color: white;
+   left: -4%;
+   top: 200px;
+   rotate: -90deg;
+    font-size: 18px;
+    align-items: center;
+    opacity: 1;
+    animation: appear 2s ;
+   
+}
+@keyframes appear{
+    0%{
+      opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+    
+}
+span1 {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span1:nth-child(1) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span1:nth-child(2) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span1:nth-child(3) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+.tedx-img{
+    position: absolute;
+    top:140px;
+    left: 300px;
+    width: 200px;
+    transform: scale(600%);
+   
+}
+.details{
+    display: flex;
+    position: absolute;
+    bottom: 60px;
+    color: rgb(255, 255, 255);
+    gap: 20vw;
+    left: 220px;
+}
+.detailsa{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    color: rgb(255, 255, 255);
+    gap: 17vw;
+    left: 195px;
+}
+.details p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.location{
+    
+    animation: appear 2s ;
+}
+.date{
+    
+    animation: appear 2s ;
+}
+.time{
+   
+    animation: appear 2s ;
+}
+.admit{
+    position: absolute;
+    bottom: 23%;
+    right: 12%;
+    color: white;
+    rotate: -90deg;
+    font-size: 30px;
+    animation: appear 5s ;
+}
+.barcode{
+    position: absolute;
+    transform: scale(80%);
+    rotate: -90deg;
+    bottom: 6%;
+   left: 39%;
+}
+.details1{
+    display: flex;
+    color: white;
+    position: absolute;
+    bottom: 44%;
+    left: 82%;
+    rotate: -90deg;
+    gap: 90px;
+    
+}
+.details1 p{
+    font-size: 22px;
+
+}
+.f-details1{
+   position: absolute;
+   display: flex;
+   rotate: -90deg;
+   bottom: 45%;
+   left: 85%;
+   gap: 110px;
+   color: rgb(255, 255, 255);
+}
+.f-details1 p{
+    font-size: 20px;
+}
+.buynow{
+    position: absolute;
+    top: 75px;
+    left: 55%;
+    padding: 10px 10px;
+    background-color: white;
+    box-sizing: border-box;
+    width: max-content;
+    display: inline-flex;
+    border-radius: 999em;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    
+    animation: appear 3s;
+    transition: 2s ;
+}
+.buynow:hover{
+    background-color: red;
+    color: white;
+}
+.buynow-text{
+    color: #000000;
+    font-size: 20px;
+    transform: translateY(-10%);
+}
+.arrow{
+    width: 25px;
+    rotate: -90deg;
+}
+@media(max-width:1280px){
+    .barcode{
+       
+        transform: scale(90%);
+       left: 39%;
+       bottom: 12%;
+      
+       
+    }
+    .ticketno{
+        left: -6%;
+    }
+    .admit{
+        right: 11%;
+    }
+    .detailsa{
+        gap: 16.5vw;
+    }
+    
+    
+}
+@media(max-width:1080px){
+    .ticketno{
+        left: -7%;
+    }
+    .details{
+        left: 200px;
+        gap: 15vw;
+    }
+    .detailsa{
+        left: 190px;
+        gap: 9.8vw;
+    }
+    .details1{
+        left: 80%;
+    }
+    .f-details1{
+        left: 83%;
+    }
+    .barcode{
+        transform: scale(100%);
+        left: 40%;
+        bottom: 18%;
+    }
+}
+
+.front h1{
+    text-align: center;
+    transform: translateY(200%);
+    
+    color: hsl(0, 54%, 48%);
+  font-size: 50px!important;
+  font-weight: bold!important;
+  font-family: monospace;
+  letter-spacing: 7px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.front h1 {
+    
+    background: linear-gradient(to right, hsl(0, 92%, 47%) 0, hsl(0, 14%, 86%) 10%, hsl(0, 97%, 46%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s infinite linear;
+  }
+
+
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 900px;
+    }
+  }
+
+/* mobile */
+.mobile-ticket-card{
+    position: relative;
+    background-color: #252323;
+    margin:  5%;
+    box-shadow: 10px 10px 5px #000000;
+  
+    height: 55vh;
+    
+}
+
+.mobile-ticket{
+    position: relative;
+    height: 55vh;
+    overflow-y: hidden;
+    background-color: #252323;
+    padding: 20px;
+    padding-bottom: 20px;
+   
+}
+.mobile{
+    box-shadow: 10px 10px 5px #0d0d0d;
+    background-color: rgb(0, 0, 0);
+}
+.mobile-back{
+    position: static;
+    width: 410px;
+    z-index: 1;
+    
+    
+}
+.tedx-m{
+
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+   width: 50vh;
+  left: -6.5%;
+    
+}
+.mdate{
+    z-index: 2;
+    position: absolute;
+    left: 10%;
+   bottom:35%;
+   font-size: 20px;
+   color: white;
+
+}
+.mtime{
+    z-index: 2;
+    position: absolute;
+    left: 10%;
+   bottom:29%;
+   font-size: 20px;
+   color: white;
+}
+.mvenue{
+    z-index: 2;
+    position: absolute;
+    left: 10%;
+   bottom:23%;
+   font-size: 20px;
+   color: white;
+}
+.d{
+    font-weight: bold;
+    display: inline;
+}
+
+.mbutton{
+    z-index: 2;
+    position: absolute;
+    left: 55%;
+   bottom:8%;
+   font-size: 25px;
+   font-weight: bold;
+   background-color: transparent;
+   border: 2px solid white;
+   color: white;
+   padding: 10px;
+   transition: all 2s;
+}
+.mbutton:hover{
+    color: black;
+    background-color: white;
+}
+
+.mfront{
+    position: relative;
+    height: 55vh;
+    overflow-y: hidden;
+    
+   
+    background-color: #252323;
+    box-shadow: 10px 10px 5px #0d0d0d;
+    
+    
+     
+}
+
+.mobilef{
+    position: static;
+    height: 600px;
+    z-index: 1;
+   
+    background-color: #000000;
+    box-shadow: 10px 10px 5px #0d0d0d;
+   align-items: center;
+    
+}
+.mobilef p{
+    padding: 30px;
+    font-size: 54px;
+    color: white;
+}
+.mobilef button{
+   
+    z-index: 2;
+   display: block;
+    transform: translateX(calc(25%));
+   font-size: 30px;
+   background-color: transparent;
+   border: 2px solid white;
+   color: white;
+   padding: 15px;
+   transition: all 2s;
+    
+}
+.mobilef button:hover{
+    color: black;
+    background-color: white;
+}
+.swift-up-text{
+    margin-top: 10px;
+    font-size: 54px;
+    color: rgb(255, 255, 255);
+    
+    font-family: 'world conflict', sans-serif;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: var(--headingSize);
+  }
+  
+  
+  
+  span {
+    display: block;
+    overflow: hidden;
+    animation: .3s swift-up ease-in-out forwards;
+  }
+  @font-face {
+    font-family: 'world conflict';
+    src: url('../../fonts/Urbanjungledemo-ymAm.otf') format('opentype');
+    font-display: swap; /* This ensures that text is displayed using system fonts until the custom font is fully loaded */
+  }
+  
+  
+  i {
+   
+    color: rgb(222, 41, 41);
+    position: relative;
+    top: 72px;
+  
+    animation: swift-up .5s ease-in-out forwards; /* Corrected animation property */
+  }
+  
+  @keyframes swift-up {
+    to {
+      top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .container {
+      width: auto;
+      margin: 0 10%;
+    }
+  
+    :root {
+      --headingSize: 35px;
+    }
+  }
+  

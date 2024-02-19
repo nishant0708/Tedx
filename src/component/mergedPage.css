@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+.jay{
+	margin-left: 20%;
+	padding: 5%;
+	position: relative;
+}
+
+
+
+
+
+.container {
+	/* top:20%;
+	position: absolute; */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 1em;
+	width: 800px;
+	height: 500px;
+	transition: all 400ms;
+}
+
+.container:hover .box {
+	filter: grayscale(100%) opacity(24%);
+}
+
+.box {
+	position: relative;
+	background: var(--img) center center;
+	background-size: cover;
+	transition: all 400ms;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .box:hover {
+	filter: grayscale(0%) opacity(100%);
+}
+
+.container:has(.box-1:hover) {
+	grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.container:has(.box-2:hover) {
+	grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.container:has(.box-3:hover) {
+	grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.container:has(.box-4:hover) {
+	grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+.container:has(.box-5:hover) {
+	grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+
+.box:nth-child(odd) {
+	transform: translateY(-16px);
+}
+
+.box:nth-child(even) {
+	transform: translateY(16px);
+}
+
+.box::after {
+	content: attr(data-text);
+	position: absolute;
+	bottom: 20px;
+	background: #000;
+	color: #fff;
+	padding: 10px 10px 10px 14px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	transform: translateY(60px);
+	opacity: 0;
+	transition: all 400ms;
+}
+
+.box:hover::after {
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 400ms;
+}
+
+.speaker-text {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: white;
+	font-family: Helvetica;
+	font-size: 50px;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.year-button {
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    background-color: #EB0028;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.year-button:hover {
+    background-color: #B30021;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    width: 100%;
+    transition: all 400ms;
+}
+
+.box {
+    margin-bottom: 1em;
+    /* Add any additional styling needed */
+}
+
+.container:has(.box-1:hover) {
+    grid-template-columns: 1fr;
+}
+
+.container:has(.box-2:hover) {
+    grid-template-columns: 1fr;
+}
+
+.container:has(.box-3:hover) {
+    grid-template-columns: 1fr;
+}
+
+.container:has(.box-4:hover) {
+    grid-template-columns: 1fr;
+}
+
+.container:has(.box-5:hover) {
+    grid-template-columns: 1fr;
+}
+
+.box:nth-child(odd) {
+    transform: translateY(0);
+}
+
+.box:nth-child(even) {
+    transform: translateY(0);
+}
+
+.hovered-speaker-description {
+    position: fixed;
+    top: 30%; /* Adjust this value to position the description vertically */
+    left: 5%; /* Adjust this value to position the description horizontally */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999; /* Ensure the description is above other content */
+	max-width: 200px; /* Adjust this value as needed */
+    word-wrap: break-word; /* Ensure long words are broken */
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.box {
+		margin-bottom: 1em;
+		width: calc(100% / 5 - 1em); 
+		
+	}
+
+	.buttons-container {
+		height: 60vh;
+		width: 30vw;
+		position: fixed;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+    .container {
+		position: relative;
+		left: 3%;
+		margin-top:30%;
+        display: flex;
+        justify-content: center;
+		flex-direction: column;
+    }
+
+    .container .box {
+        width: 100%; /* Adjust as needed */
+        margin: 10px;
+    }
+
+	.hovered-speaker-description {
+		top:50%;
+	}
+
+	.box-1 {
+		position: absolute;
+		left:150%;
+		top:-30%;
+	}
+
+	.box-2 {
+		position: absolute;
+		left:150%;
+		top: 0%;
+	}
+
+	.box-3 {
+		position: absolute;
+		top: 70%;
+		left:-70%;
+	}
+
+	.box-4 {
+		position: absolute;
+		top: 100%;
+		left: -71%;
+	}
+
+	.box-5 {
+		position: absolute;
+		top: 170%;
+		left:-290%;
+	}
+
+	.box:hover {
+		filter: grayscale(0%) opacity(100%);
+		width: calc(100% + 20px); /* Adjust the width increment as needed */
+		max-width: 100%; /* Limit the maximum width */
+		z-index: 1; /* Ensure the image stays on top */
+	}
+
+	.box-1:hover {
+		position: relative;
+		top: 0;
+		left: 50%;
+	}
+
+	.box-2:hover {
+		position: relative;
+		top: 0;
+		left: 50%;
+	}
+
+	.box-3:hover {
+		position: relative;
+		top: 70%;
+		left: 10%;
+	}
+
+	.box-4:hover {
+		position: relative;
+	}
+
+	.box-5:hover {
+		position: relative;
+		left: -80%;
+	}
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Your tablet-specific CSS styles here */
+    .buttons-container {
+        height: 70vh;
+        width: 50vw;
+    }
+
+}

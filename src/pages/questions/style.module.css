@@ -1,0 +1,124 @@
+.hero {
+    height: 1000px;
+    display: block;
+    width: 100vw;
+    background-color: rgb(232, 228, 232);
+    display: flex;
+    font-family: "Poppins";
+}
+
+.cards {
+    margin-right: 100px;
+}
+.left {
+    height: 80vh;
+    width: 70vw;
+    overflow: hidden;
+}
+
+.right {
+    padding-top: 3vw;
+    height: 100vh;
+    width: 30vw;
+}
+
+.Question {
+    opacity: 0;
+    transform: translateY(-100px);
+    width: 100%;
+    font-size: 50px;
+    text-align: right;
+    font-family: "Poppins";
+}
+
+
+
+button {
+    text-align: right;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 3vh;
+    font-size: 30px;
+    color: black;
+}
+
+
+
+.flower_spacebox {
+    margin-left: 30%;
+    height: 40%;
+    width: 40%;
+}
+
+.yellow1 hr {
+    position: absolute;
+    transform: translate(33vw, 10vh);
+    width: 0vw;
+    height: 30vh;
+    rotate: 180;
+    background-color: rgb(240, 240, 25);
+    border-radius: 0 5vh 5vh 0;
+    border-color: yellow;
+    z-index: 99;
+}
+
+.yellow2 hr {
+    position: absolute;
+    transform: translate(33vw, 10vh);
+    width: 0vw;
+    height: 30vh;
+    rotate: 180;
+    background-color: rgb(240, 240, 25);
+    border-radius: 5vh 0  0 5vh;
+    border-color: yellow;
+    z-index: 99;
+}
+
+
+
+.whiteflower {
+    
+    opacity: 0;
+    position: absolute;
+    width: 2px;
+    z-index: 100;
+    transform: translate(30vw, 30vh);
+}
+
+.redflower {
+    opacity: 0;
+    
+    width: 2px;
+    position: absolute;
+    z-index: 100;
+        transform: translate(45vw, 3vh);
+   
+}
+
+
+.Answers {
+    opacity: 0;
+    transform: translate(90%, 35vh);
+    position: relative;
+    z-index: 100;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: right;
+    margin-left: 10vw;
+    width: 30vw;
+    color: black;
+    height: 35vh;
+    line-height: 30px;
+}
+
+.faq {
+    opacity: 0;
+    position: absolute;
+    z-index: 10000;
+    width: 30vw;
+    height: 20vh;
+    transform: translate(20vw, 50vh);
+}

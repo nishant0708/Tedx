@@ -1,0 +1,52 @@
+.team-heading{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+
+.team-heading_words{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    color: #e62b1e;
+    font-size: 280px;
+    font-weight: 900;
+}
+.our{
+    transform: translateY(-53vh);
+}
+.meet{
+    color: #e62b1e;
+    transform: translateY(-30vh);
+}
+.teame{
+    transform: translateY(-75vh);
+}
+.word{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(40px);
+}
+
+@media screen and (max-width:480px) {
+    .team-heading_words{
+        font-size: 150px;
+        margin-top: 0vh;
+    }
+    .meet{
+        transform: translateY(0vh);
+    }
+    .our{
+        transform: translateY(0vh);
+    }
+    .teame{
+        transform: translateY(0vh);
+    }
+}
