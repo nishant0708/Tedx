@@ -1,0 +1,93 @@
+.logopath {
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+}
+
+.logopathtext1 {
+    stroke-width: 1;
+    animation: letter-animation 5s linear forwards;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}  
+.logopathtext2 {
+    stroke-width: 1;
+    animation: letter-animation 3s linear forwards;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in;
+
+}
+
+.logopathtext3 {
+    stroke-width: 3;
+    animation: letter-animation 3s linear forwards;
+    animation-delay: 3.5s;
+    animation-timing-function: ease-in;
+}
+
+.stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    animation: showfill 1s linear forwards;
+    animation-delay: 3.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes letter-animation {
+    0% {
+        stroke-dashoffset: 2600;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+svg path {
+    /* stroke: #EB0028 !important; */
+    /* stroke-width: 20px !important; */
+    fill:black;
+}
+
+@keyframes showfill {
+    from {
+        fill: #fff;
+    }
+
+    to {
+        fill: #000;
+    }
+
+}
+
+/* .loader { */
+    /* text-align: center; */
+    /* background-color: #000; */
+    /* width: 100%; */
+    /* height: 100vh; */
+/* } */
+
+svg {
+    margin: auto;
+    /* height: 100vh; */
+    height: 128vh;
+    width: 112vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+    svg {
+        top: 48%;
+        left: 54%;
+        margin: auto;
+        height: 20vh;
+        position: fixed;
+        z-index: 10000;
+        transform: translate(-50%, -50%);
+    }
+}
