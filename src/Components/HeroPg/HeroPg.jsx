@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import { ReactComponent as MySVG } from '../images/Black.svg';
-// import MySVG from './mysvg';
+import MySVG from '../mysvg';
 import './heropg.css';
 import { useMediaQuery } from 'react-responsive';
 // import './svgani.css';
@@ -14,32 +14,40 @@ export default function HeroPg() {
     const line3Ref = useRef(null);
     const line4Ref = useRef(null);
     const videoRef = useRef(null);
-    const svgRef = useRef(null);
+    // const svgRef = useRef(null);
     const heroTextRef = useRef(null);
+     const imgRef = useRef(null);
     // const whitepathRef = useRef(null);
+    // const [dashOffset, setDashOffset] = useState(1000);
 
     const isMobile = useMediaQuery({ maxWidth: 767 });
+    const [opacity, setOpacity] = useState(0);
     useEffect(() => {
-        // const drawPath = () => {
-        //     const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-        //     const whitepathLength = whitepathRef.current.getTotalLength();
-        //     whitepathRef.current.style.strokeDasharray = whitepathLength;
-        //     whitepathRef.current.style.strokeDashoffset = whitepathLength - (whitepathLength * scrollPercentage);
-        // };
-
-        // drawPath(); // Initial call to draw the SVG path
-
-        // GSAP ScrollTrigger to update the drawing on scroll
-        // const ts = gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: whitepathRef.current,
-        //         start: "top center",
-        //         end: "bottom center",
-        //         scrub: true
-        //     }
-        // });
-
-        // ts.to(whitepathRef.current.style, { strokeDashoffset: 0 });
+        const handleScroll = () => {
+            const firstPageHeight = document.querySelector('.heropg').clientHeight;
+            const scrollPosition = window.scrollY;
+            const triggerPoint = firstPageHeight * 1; // Adjust trigger point as needed
+      
+            // Calculate opacity based on scroll position
+            let newOpacity = scrollPosition / triggerPoint;
+            newOpacity = Math.min(newOpacity, 1); // Ensure opacity doesn't exceed 1
+            newOpacity = Math.max(newOpacity, 0); // Ensure opacity doesn't go below 0
+            setOpacity(newOpacity);
+          };
+      
+          handleScroll(); // Initial call to set initial opacity
+      
+          window.addEventListener("scroll", handleScroll);
+          if (opacity < 1) {
+            ScrollTrigger.create({
+              trigger: ".heropg",
+              start: "top top",
+              end: "bottom top",
+              pin: true,
+            });
+          } else {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+          }
 
         const tl = gsap.timeline({ defaults: { ease: 'power1.out', opacity: 0 } });
 
@@ -53,19 +61,25 @@ export default function HeroPg() {
             .fromTo('.tedxlogo', { opacity: 0 }, { opacity: 1, duration: 1 });
         return () => {
             tl.kill(); // Clean up animation when component unmounts
-
+            // ts.kill(); // Clean up animation when component unmounts
+            window.removeEventListener("scroll", handleScroll);
 
         };
     }, []);
 
     return (
         <div className="heropg">
-            {/* <div className="svg-container"> */}
-                {/* <MySVG /> */}
-            {/* </div> */}
+            <div className="lineimg">
+            <img ref={imgRef} src="./Black.png" alt="lines" 
+            // style={{ opacity: 0 }}
+            style={{ opacity: opacity }}
+        
+             />
+
+            </div>
             <div className="hero-video" ref={videoRef}>
-                <video autoPlay loop muted ref={videoRef}>
-                    {/* <video muted > */}
+                {/* <video autoPlay loop muted ref={videoRef}> */}
+                    <video muted >
                     <source src='/ff.mp4' type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

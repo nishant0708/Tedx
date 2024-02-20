@@ -16,13 +16,13 @@
     /* padding: 0 4rem 0 4rem; */
 }
 .hero-video{
-    background-color: #fad648;
+    /* background-color: #fad648; */
     border-radius: 25px;
     /* padding-bottom: 0; */
     padding: 0;
     /* width: 40vw; */
     z-index:0;
-    
+    /* flex:1; */
 }
 
 
@@ -36,13 +36,14 @@
 .hero-text{
     z-index: 2;
     /* flex-grow: 1; */
+    /* flex:1; */
     text-align: right;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: right;
     gap: 1rem;
-    padding: 1rem;
+    /* padding: 5rem; */
     /* float: left; */
 }
 .mainliner{
@@ -71,10 +72,21 @@
     position: absolute;
 
 }
+.lineimg{
+    position: absolute;
+    left: 10vw;
+    top: -15vh;
+    z-index: 1;
+}
+.lineimg img{
+    width: 90vw;
+    height: 150vh;
+    transform: rotate(351deg);
+}
 .svglines svg{
     /* position: absolute; */
     /* height: 70vh; */
-    width: 60vw;
+    width: 50vw;
     z-index: 1;
     width: 70vw;
     z-index: 1;
@@ -113,6 +125,17 @@
         font-size: 1rem;
         line-height: 1.3rem;
         text-align: left;
+    }
+    lineimg{
+        position: absolute;
+        left: -35vw;
+        top: -20vh;
+        z-index: 1;
+    }
+    .lineimg img{
+        width: 146vw;
+        height: 104vh;
+        transform: rotate(90deg) rotate(313deg);
     }
     .tedxlogo img{
         width: 40vw;
