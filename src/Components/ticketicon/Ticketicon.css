@@ -1,0 +1,23 @@
+.ticket-icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  .ticket-icon-wrapper {
+    width: 100px; /* Set the width of the wrapper (adjust as needed) */
+    height: 100px; /* Set the height of the wrapper (adjust as needed) */
+    border-radius: 50%; /* Create a circular shape */
+    background-color: #fff; /* Set the background color of the circle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ticket-icon {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+  }
