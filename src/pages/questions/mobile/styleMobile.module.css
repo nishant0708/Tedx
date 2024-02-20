@@ -1,122 +1,90 @@
 .hero {
-    height: 100vh;
+    position: relative;
+    height: 110vh;
     width: 100vw;
-    background-color: rgb(232, 228, 232);
+    background-color: white;
+    z-index: 2;
     display: flex;
+    flex-direction: column;
     font-family: "Poppins";
-}
-
-.cards {
-    margin-right: 100px;
-}
-
-
-.left {
-    height: 80vh;
-    width: 20px;
     overflow: hidden;
-    background-color: blue;
 }
 
-.right {
-    padding-top: 2vw;
+
+.faq {
+    display: flex;
+    margin: 20px;
+    z-index: 4;
+    width: 80vw;
+    height: 10vh;
+}
+
+.background {
+    margin-top: 70%;
+    margin-left: 20%;
+    position: absolute;
+    z-index: 3;
+    scale: 1.6;
     height: 100vh;
-    width: 30vw;
 }
 
 .Question {
-    opacity: 1;
-    transform: translatex(-100px);
-    background-color:  rgb(232, 228, 232);
-    width: 100%;
-    height: 10%;
+    width: 80%;
+    margin: 10%;
+    height: 100px;
+    margin-top: 5%;
+    position: relative;
+    padding: 0 20px;
+    z-index: 4;
+    background-color: rgba(61, 60, 60, 0.47);
+    text-align: center;
+    border-radius: 10px;
+    text-wrap: pretty;
+    text-shadow: 100px;
     font-family: "Poppins";
 }
 
-
-
-button {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-bottom: 3vh;
-    font-size: 28px;
-    color: black;
-    opacity: 1;
-}
-.flower_spacebox {
-    margin-left: 30%;
-    height: 40%;
-    width: 40%;
-}
-
-.yellow1 hr {
-    position: absolute;
-    transform: translate(33vw, 10vh);
-    width: 0vw;
-    height: 30vh;
-    rotate: 180;
-    background-color: rgb(240, 240, 25);
-    border-radius: 0 5vh 5vh 0;
-    border-color: yellow;
-    z-index: 99;
-}
-
-.yellow2 hr {
-    position: absolute;
-    transform: translate(33vw, 10vh);
-    width: 0vw;
-    height: 30vh;
-    rotate: 180;
-    background-color: rgb(240, 240, 25);
-    border-radius: 5vh 0  0 5vh;
-    border-color: yellow;
-    z-index: 99;
-}
-
-
-
-.whiteflower {
+.Question select {
     
-    opacity: 1;
-    position: absolute;
-    width: 20px;
-    z-index: 100;
-    transform: translate(30vw, 30vh);
+    height: 80px;
+    width: 80vw;
 }
-
-.redflower {
-    opacity: 1;
-    
-    width: 2px;
-    position: absolute;
-    z-index: 100;
-    
-}
-
 
 .Answers {
     opacity: 1;
-    transform: translate(90%, 35vh);
-    position: relative;
-    z-index: 100;
+    z-index: 4;
     display: grid;
     align-items: center;
     text-align: center;
-    font-size: 30px;
-    font-weight: 200;
-    text-align: right;
-    margin-left: 10vw;
-    width: 30vw;
+    font-size: 15px;
+    text-align: center;
+    margin: 10%;
+    margin-top: 0;
+    border: 18px solid rgb(250, 214, 72);
+    
+    background-color: rgba(250, 214, 72, 0.3);
+    border-radius: 20px;
+    width: 80%;
+    padding: 20px 0px;
     color: black;
-    height: 35vh;
-    line-height: 30px;
+    height: 30vh;
+    font-weight: 600;
 }
 
-.faq {
-    opacity: 1;
-    position: absolute;
-    z-index: 10000;
-    width: 30vw;
-    height: 20vh;
-    transform: translate(20vw, 50vh);
+.hero_video{
+    
+    border-radius: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index:2;
+    margin-bottom: 40px;
+}
+
+
+.hero_video video{
+    height: 38vh;
+    aspect-ratio: 1;
+    border-radius: 40px;
+    object-fit: cover;
 }

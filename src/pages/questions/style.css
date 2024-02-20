@@ -1,33 +1,38 @@
 .hero {
-    height: 1000px;
-    display: block;
+    height: 110vh;
     width: 100vw;
     background-color: rgb(232, 228, 232);
+    z-index: 2;
     display: flex;
     font-family: "Poppins";
 }
 
 .cards {
     margin-right: 100px;
+    z-index: 2;
 }
 .left {
-    height: 80vh;
+    height: 100vh;
     width: 70vw;
     overflow: hidden;
+    z-index: 2;
 }
 
 .right {
-    padding-top: 3vw;
+    margin-right: 5vw;
+    padding-top: 1vw;
     height: 100vh;
     width: 30vw;
+    z-index: 2;
 }
 
 .Question {
     opacity: 0;
     transform: translateY(-100px);
     width: 100%;
-    font-size: 50px;
+    font-size: 36px;
     text-align: right;
+    z-index: 2;
     font-family: "Poppins";
 }
 
@@ -40,6 +45,7 @@ button {
     margin-bottom: 3vh;
     font-size: 30px;
     color: black;
+    z-index: 2;
 }
 
 
@@ -48,30 +54,29 @@ button {
     margin-left: 30%;
     height: 40%;
     width: 40%;
+    z-index: 2;
 }
 
 .yellow1 hr {
     position: absolute;
-    transform: translate(33vw, 10vh);
+    transform: translate(3vw, 10vh);
     width: 0vw;
     height: 30vh;
-    rotate: 180;
     background-color: rgb(240, 240, 25);
     border-radius: 0 5vh 5vh 0;
     border-color: yellow;
-    z-index: 99;
+    z-index: 1;
 }
 
 .yellow2 hr {
     position: absolute;
-    transform: translate(33vw, 10vh);
-    width: 0vw;
+    transform: translate(39vw, 10vh);
+    width: 00vw;
     height: 30vh;
-    rotate: 180;
     background-color: rgb(240, 240, 25);
-    border-radius: 5vh 0  0 5vh;
+    border-radius: 5vh 5vh 5vh 5vh;
     border-color: yellow;
-    z-index: 99;
+    z-index: 1;
 }
 
 
@@ -80,45 +85,46 @@ button {
     
     opacity: 0;
     position: absolute;
-    width: 2px;
+    width: 5vh;
     z-index: 100;
-    transform: translate(30vw, 30vh);
+    transform: translate(15vw, 35vh);
 }
 
 .redflower {
     opacity: 0;
     
-    width: 2px;
+    width: 5vh;
     position: absolute;
     z-index: 100;
-        transform: translate(45vw, 3vh);
+        transform: translate(42vw, 1vh);
    
 }
 
 
 .Answers {
     opacity: 0;
-    transform: translate(90%, 35vh);
+    transform: translate(20vw, 32vh);
     position: relative;
-    z-index: 100;
+    z-index: 2;
     display: grid;
     align-items: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 200;
     text-align: right;
     margin-left: 10vw;
     width: 30vw;
     color: black;
-    height: 35vh;
+    height: 40vh;
     line-height: 30px;
 }
 
 .faq {
-    opacity: 0;
-    position: absolute;
-    z-index: 10000;
+    margin-top: 20vh;
+    opacity: 1;
+    z-index: 2;
     width: 30vw;
     height: 20vh;
-    transform: translate(20vw, 50vh);
+    transform: translate(20vw, 20vh);
 }
+
