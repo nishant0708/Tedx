@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
-import topRight from '../../Images/reel2.jpg';
+import topRight from '../../images/reel2.jpg';
 import HeroParallax2 from "./hero-parallax-mobile";
 import {
   motion,
