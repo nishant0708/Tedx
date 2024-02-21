@@ -49,16 +49,16 @@ export default function HeroPg() {
           }
 
         const tl = gsap.timeline({ defaults: { ease: 'power1.out', opacity: 0 } });
-
+        // tl.set('.hero-text', { opacity: 0 }) // Set initial opacity to 0
         tl.fromTo(videoRef.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 0.8 })
         tl.fromTo(videoRef1.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 1 })
-        // tl.fromTo('.hero-text', { opacity: 0 }, { opacity: 1, duration: 1 })
-        tl.fromTo('.line1', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7, delay: 0.8 })
-            .fromTo('.line2', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7 })
-            .fromTo('.line3', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7 })
-            .fromTo('.line4', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7 })
-            .fromTo('.subliner', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.5, delay: 0.5 })
-            .fromTo('.tedxlogo', { opacity: 0 }, { opacity: 1, duration: 1 });
+        tl.fromTo('.hero-text', { opacity: 0 }, { opacity: 1, duration: 0.01 })
+        tl.fromTo('.line1', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.5, delay: 0.5 })
+            .fromTo('.line2', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6 })
+            .fromTo('.line3', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6 })
+            .fromTo('.line4', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6 })
+            .fromTo('.subliner', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.5, delay: 0.3 })
+            .fromTo('.tedxlogo', { opacity: 0 }, { opacity: 1, duration: 0.7 });
         return () => {
             tl.kill(); // Clean up animation when component unmounts
             // ts.kill(); // Clean up animation when component unmounts

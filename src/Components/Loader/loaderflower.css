@@ -1,0 +1,25 @@
+.apploader{
+    height: 100vh;
+    width: 100vw;
+    /* display:flex; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* position:relative; */
+    /* height: 100vh; */
+    background-color: #eae6e6;
+}
+
+.apploader img{
+    width:20vw;
+    position:relative;
+    top:30vh;
+    /* left:50%; */
+    /* transform: translateY(-50%); */
+}
+
+@media screen and (max-width: 800px){
+    .apploader img{
+        width:50vw;
+        top:35vh;
+    }
+}
