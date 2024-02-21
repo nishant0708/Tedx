@@ -32,6 +32,9 @@ code {
   font-weight: 900;
   font-style: normal;
 }
+img{
+  max-width: fit-content;
+}
 
 
 

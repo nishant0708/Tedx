@@ -5,7 +5,7 @@ import gsap from 'gsap';
 export default function Sponsors(props){
 
     useEffect(() => {
-        gsap.fromTo('.sponsor-card',{
+        gsap.fromTo('.shubh-sponsor-card',{
             opacity: 0,
             scale: 0.8,
             x: 200,
@@ -13,8 +13,8 @@ export default function Sponsors(props){
             opacity: 1,
             scale: 1,
             x: 0,
-            duration: 0.7,
-            delay: 1.4,
+            duration: 1,
+            delay: 2.2,
             ease: "power3.out",
             stagger: {
                 each: 0.2

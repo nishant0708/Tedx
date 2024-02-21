@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 827px;
     left: 50%;
     margin-left: -350px;
     z-index: 0;
@@ -18,13 +18,13 @@
     font-weight: 900;
 }
 .meet_our_team-meet{
-    transform: translateY(-2vh);
+    transform: translateY(-4vh);
 }
 .meet_our_team-our{
-    transform: translateY(-32vh);
+    transform: translateY(-30vh);
 }
 .meet_our_team-team{
-    transform: translateY(-62vh);
+    transform: translateY(-56vh);
 }
 .word{
     position: relative;

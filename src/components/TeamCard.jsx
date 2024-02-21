@@ -28,9 +28,12 @@ export default function TeamCard(props){
                 scale:1,
                 opacity: 1,
                 xPercent: 0,
-                delay: 1,
+                delay: 1.7,
                 duration: 1.5,
                 ease: "power3.inOut",
+                stagger:{
+                    each: 0.5
+                }
             })
         }else{
             tl.fromTo('.teams-card',{
@@ -42,9 +45,12 @@ export default function TeamCard(props){
                 opacity: 1,
                 ease: "back.out(1.7)",
                 xPercent: 0,
-                delay: 1,
+                delay: 1.7,
                 duration: 1.5,
-                ease: "circ.out",
+                ease: "power3.inOut",
+                stagger:{
+                    each: 0.5
+                }
             })
             if(window.innerHeight<750){
                 gsap.to('.fixed-headings',{

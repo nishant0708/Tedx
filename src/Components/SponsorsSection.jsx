@@ -15,16 +15,16 @@ gsap.registerPlugin(ScrollTrigger);
         let tl2 = gsap.timeline();
         tl2.fromTo('.word', {
             y:340,
-            opacity: 1
+            opacity: 0
             
         },
         {
-            y:0,
+            y:100,
             opacity:1,
             stagger:{
                 each:0.1
             },
-            delay:0.1,
+            delay:0.7,
             duration:1.5,
              ease: "elastic.out(1,0.5)",
         })
@@ -41,7 +41,7 @@ gsap.registerPlugin(ScrollTrigger);
                 start:'top top',
                 end:`${sponsorLen*370} top`,
                 scrub: 3.3,
-                markers: true,
+                markers: false,
                 pin: true
             }
         })
@@ -84,6 +84,8 @@ gsap.registerPlugin(ScrollTrigger);
                     })
                 }
             </div>
+
+            
         </div>
     )
 }
