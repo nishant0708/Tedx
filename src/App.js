@@ -1,18 +1,16 @@
-// import Whyus from './Components/Whyus';
-import Footer from './Components/Footer/Footer';
-// import Whyus2 from './Components/Whyus2';
-// import Flip from './Components/Flip';
-// import VisitCard from './Components/VisitCard';
+
 import './App.css';
+import Forscrolldummy from './Components/Forscrolldummy';
 import HeroPg from './Components/HeroPg/HeroPg';
+import Thoughtloom from './Components/thoughtloom/Thoughtloom';
+
 function App() {
   return (
     <div className='App'>
       <HeroPg />
-      {/* <Flip /> */}
-      {/* <Whyus2/> */}
-  {/* <Hero /> */}
-      <Footer />
+      {/* <Forscrolldummy/> */}
+      <Thoughtloom/>
+      {/* <Forscrolldummy/> */}
 
     </div>
   );

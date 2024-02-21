@@ -1,7 +1,7 @@
 
 .heropg{
-    /* background-color: #eae6e6; */
-    background-color: #d9d9d9;
+    background-color: #eae6e6;
+    /* background-color: #d9d9d9; */
     position: relative;
     /* top: 5vh; */
     color: black;
@@ -12,6 +12,7 @@
     width: 100vw;
     z-index:15;
     height:100vh;
+    overflow: hidden;
     /* padding: 3rem; */
     /* padding: 0 4rem 0 4rem; */
 }
@@ -82,6 +83,7 @@
     width: 90vw;
     height: 150vh;
     transform: rotate(351deg);
+    overflow: hidden;
 }
 .svglines svg{
     /* position: absolute; */

@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import { ReactComponent as MySVG } from '../images/Black.svg';
-import MySVG from '../mysvg';
 import './heropg.css';
 import { useMediaQuery } from 'react-responsive';
-// import './svgani.css';
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HeroPg() {
@@ -14,6 +12,7 @@ export default function HeroPg() {
     const line3Ref = useRef(null);
     const line4Ref = useRef(null);
     const videoRef = useRef(null);
+    const videoRef1 = useRef(null);
     // const svgRef = useRef(null);
     const heroTextRef = useRef(null);
      const imgRef = useRef(null);
@@ -51,8 +50,9 @@ export default function HeroPg() {
 
         const tl = gsap.timeline({ defaults: { ease: 'power1.out', opacity: 0 } });
 
-        tl.fromTo(videoRef.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 1.5 })
-        tl.fromTo('.hero-text', { opacity: 0 }, { opacity: 1, duration: 1 })
+        tl.fromTo(videoRef.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 0.8 })
+        tl.fromTo(videoRef1.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 1 })
+        // tl.fromTo('.hero-text', { opacity: 0 }, { opacity: 1, duration: 1 })
         tl.fromTo('.line1', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7, delay: 0.8 })
             .fromTo('.line2', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7 })
             .fromTo('.line3', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.7 })
@@ -78,8 +78,8 @@ export default function HeroPg() {
 
             </div>
             <div className="hero-video" ref={videoRef}>
-                {/* <video autoPlay loop muted ref={videoRef}> */}
-                    <video muted >
+                <video autoPlay loop muted ref={videoRef1}>
+                    {/* <video muted > */}
                     <source src='/ff.mp4' type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
