@@ -1,0 +1,158 @@
+.teams-card-wrapper{
+    padding: 0px;
+}
+
+.teams-card{
+    background: #565555;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    width: 250px;
+    padding: 10px;
+    margin: 30px;
+    opacity: 1;
+    scale: 1;
+    box-shadow: 1px 2px 20px 5px rgba(0, 0, 20, 0.539);
+    border-radius: 18px;
+}
+
+.hoverCard{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(40, 40, 40, 0.8);
+    transform: scaleY(0); 
+    transform-origin: center;
+    transition: all 0.6s; 
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    box-shadow: 9px 14px 14px 0px rgba(0,0,0,0.5);
+    border-radius: 18px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    
+}
+
+
+@media screen and (min-width:992px) {
+    
+    .teams-card:hover .hoverCard{
+        transform: scaleY(1);
+    }
+
+
+    .teams-card:hover .member-image-container{
+        transform: translateY(-100%);
+        scale: 0.4;
+        border-radius: 100%;
+    }
+
+    
+}
+
+.hoverCard > p{
+    display: grid;
+    width: 100%;
+    height: 30%;
+    text-wrap: pretty;
+}
+
+.member-name{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px 0px 14px 0px;
+    color: white;
+}
+.member-image-container{
+    width: 229px;
+    height: 189px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 0.6s;
+    transition-timing-function:ease-in-out;
+    border-radius: 20px;
+    z-index: 30;
+}
+.member-image{
+    position: relative;
+    scale: 2.1;
+    top: -30px;
+}
+.stats-section > h3{
+    padding: 10px 0px;
+    left: 40px;
+    position: relative; 
+}
+.stats-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 8px;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+}
+.metrics{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: right;
+    width: 30%;
+}
+.scores{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 17%;
+    justify-content: center;
+}
+.humourStat, .angerStat, .cutenessStat, .IQStat, .funStat{
+    height: 5px;
+    background-color: #e62b1e;
+}
+.team-card-info{
+    position: relative;
+    top: 10%;
+    padding: 10px;
+    height: 116px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team-card-icons{
+    position: relative;
+    display: flex;
+    gap: 70px;
+    margin: -15px auto 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+.member-insta-container, .member-linkedin-container{
+    z-index: 20;
+    height: 30px;
+    width: 30px;
+    
+}
+.member-insta, .member-linkedin{
+    z-index: 40;
+    color: white;
+    transition: all 0.5s;
+    transform: scale(2.5);
+    margin-top: 10px;
+}
+.member-insta:hover, .member-linkedin:hover{
+    color: #e62b1e;
+}

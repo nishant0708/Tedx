@@ -1,0 +1,655 @@
+{
+    "2024":{
+		"Organisers": [
+            {
+                "id": 1,
+                "name": "Anushka",
+                "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
+                "image": "https://imgur.com/SmqbVeM.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Swastik",
+                "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
+                "image": "https://imgur.com/Jplbz15.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Ashish",
+                "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
+                "image": "https://imgur.com/X88JVpU.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Anurudh",
+                "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
+                "image": "https://imgur.com/2KS1N0R.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            }
+        ],
+        "Web-Dev Team": [
+            {
+                "id": 1,
+                "name": "Jay ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/Rv01Cpo.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Rachita ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/wPdhnTB.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Tony ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://www.saltedstone.com/hubfs/TeamPortraitsAPAC/tonyEades500.jpg",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ]
+	},
+    "2023":{
+		"Organisers": [
+            {
+                "id": 1,
+                "name": "Anushka",
+                "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
+                "image": "https://imgur.com/SmqbVeM.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Swastik",
+                "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
+                "image": "https://imgur.com/Jplbz15.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Ashish",
+                "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
+                "image": "https://imgur.com/X88JVpU.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Anurudh",
+                "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
+                "image": "https://imgur.com/2KS1N0R.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            }
+        ],
+        "Art Team": [
+            {
+                "id": 1,
+                "name": "Meenakshi ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/wRbW7ps.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Surbhi ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/74rp28g.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Anushka ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/Gy7rgaK.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Saharsh ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/MOgNFip.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ],
+        "Marketing Team": [
+            {
+                "id": 1,
+                "name": "Ritu ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/0OpKA6l.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Anshul ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/0C3X2Ha.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Manasvi ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/AWHfdjz.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Sanjeevni ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/7w1EdCz.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ],
+        "Sponsors Team": [
+            {
+                "id": 1,
+                "name": "Sahil ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/jHgMyFI.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Shreya ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/Y2YY9YB.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Akshat ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/tGwFMQo.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Atharva ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/UYBcwvw.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Attar ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/hz5w6eD.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ],
+        "Production Team": [
+            {
+                "id": 1,
+                "name": "Pratham ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/WpiL60T.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Miraj ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/F6mkISp.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Uday ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/xMZCirX.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Shubh ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/hDMmRzS.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Aryan ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/dUa6hZ6.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ],
+        "Curation Team": [
+            {
+                "id": 1,
+                "name": "Aditi ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/HkqDG2k.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Komal ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/q8zY42A.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Samriddhi ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/YB0idOT.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Niharika ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/VjUxaLF.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Aastha ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/Dsk1L5y.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ],
+        "Design Team": [
+            {
+                "id": 1,
+                "name": "Anuj ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/IichnZZ.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Sajal ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/IRR99gs.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Harshada ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/RlmA0kW.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Ishika ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/rSLjXey.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ],
+        "Content Team": [
+            {
+                "id": 1,
+                "name": "Renuka ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/24fJ2Sz.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Tejaswini ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/aa7wk5e.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Vartika ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/1fOpnaK.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ],
+        "Event Management": [
+            {
+                "id": 1,
+                "name": "Utkarsh ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/9pu3jaq.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Yati ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/H5SivgK.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Somya ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/FowUOY4.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Rachita ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/wPdhnTB.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Ojas ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/UBxBqku.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+            
+        ],
+        "Event Management ":[
+            {
+                "id": 1,
+                "name": "Rashi ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/UwvgCPH.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Ashutosh ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/tJ8pjtb.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Pritanshi ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/HBv8iek.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },
+            {
+                "id": 1,
+                "name": "Jay ",
+                "info": "Agra is a city in northern India, ",
+                "image": "https://imgur.com/Rv01Cpo.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
+        ]
+	}
+}

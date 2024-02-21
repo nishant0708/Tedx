@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect, } from 'react';
 import Tilt from 'react-parallax-tilt';
 import ReactDOM from 'react-dom';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 gsap.registerPlugin(ScrollTrigger);
