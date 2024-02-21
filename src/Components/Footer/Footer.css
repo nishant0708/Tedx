@@ -1,0 +1,160 @@
+.footer {
+     height: 65vh; 
+  width: 100%;
+   z-index: 200;
+  bottom: 0;
+  left: 0;
+  position: relative;
+   padding: absolute;
+   z-index: 1;
+    color: white;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    
+    /* margin-top: 200vh; */
+   
+    background-color: black;
+}
+.fcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  
+    padding: 1rem;
+}
+.fcontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    /* padding: 1rem; */
+}
+.fcontent a:hover{
+    color: #E62B1E;
+}
+.fcontent h4{
+    letter-spacing: 2px;
+    font-size: 15pt;
+    line-height: 4rem;
+    font-weight: 900;
+}
+
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+.socialmedia img{
+    transition: transform 0.3s ease-in-out;
+
+}
+.socialmedia img:hover{
+    transform: scale(1.2,1.2);
+}
+.button{
+    background-color: #E62B1E;
+    padding: 0rem 2.5rem 0rem  2.5rem;
+    color: white;
+    transition: background-color 0.2s ease-in;
+}
+
+.button:hover{
+    background-color: white;
+    color:#E62B1E;
+    text-decoration: underline;
+    /* border: 3px solid black; */
+}
+
+.contact-g{
+    text-decoration: none;
+    color: white;
+}
+
+.mailus{
+    padding: 2rem 0rem 2rem 0;
+    font-size: 12pt;
+    line-height: 1.5rem;
+}
+.mailus .button{
+    height: 2.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.mailus input{
+    height: 1.5rem;
+    width: 300px;
+    padding: 0.5rem;
+}
+.copyright p{
+    text-align: center;
+    font-size: 10pt;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.privacy:hover{
+    text-decoration: underline;
+}
+.footerlinks{
+    margin-right: 30px;
+        padding: 2rem;
+    }
+@media screen and (max-width: 800px) {
+    .footer{
+        height: auto;
+        padding: 0;
+        padding-left: 1rem;
+        
+    }
+    .copyright p{
+        padding-right: 15px;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 6pt;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    .fcontainer{
+        padding: 0;
+        
+    }
+    .fcontent{
+        flex-direction: column;
+        padding: 0.5rem;
+        justify-content: left;
+        font-size: 0.8rem;
+    }
+    .fcontent h4{
+        line-height: 2rem;
+        padding: 0.8rem 0;
+    }
+    .footerlinks{
+        
+        padding: 1rem;
+    }
+    
+    .footerlinks .button {
+        line-height: 2rem;
+        font-size: 0.8rem;
+        padding: .3rem 2rem 0.3rem  2rem;
+    }
+    .mailus .button{
+        margin-top: 1rem;
+        line-height: 1.5rem;
+    }
+    .mailus input{
+        width: 200px;
+        height: 23px;
+    }
+    .socialmedia{
+        width: 60vw;
+    }
+    .copyright{
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+        font-size: 0.6rem;
+    }
+}
