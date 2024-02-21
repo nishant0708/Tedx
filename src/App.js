@@ -1,6 +1,10 @@
-import "./App.css"
 
+import './App.css';
+import Forscrolldummy from './Components/Forscrolldummy';
+import HeroPg from './Components/HeroPg/HeroPg';
 
+import LoaderFlower from './Components/Loader/LoaderFlower';
+import Thoughtloom from './Components/thoughtloom/Thoughtloom';
 import Footer from './Components/Footer/Footer';
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
@@ -13,10 +17,10 @@ import Main from "./Components/Main/Main";
 import TeamSection from "./Components/TeamSection"
 import Subh from "./Components/Subhanshpage/Subh";
 
-
-
-
+import React, { useState, useEffect } from 'react';
 function App() {
+  const [showLoader, setShowLoader] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
   const productsData = [
     { title: 'Product 1', link: '', thumbnail: "https://imgur.com/xhL7iFw.png" },
     { title: 'Product 2', link: '', thumbnail: "https://imgur.com/ylbeY3I.png" },
@@ -77,9 +81,30 @@ function App() {
   ];
  
 
+  useEffect(() => {
+    // Simulate loading time for 5 seconds
+    const loadingTimeout = setTimeout(() => {
+      // setIsLoaded(true);
+      setShowLoader(false);
+    }, 3000);
+
+    // Check if content is loaded before the timeout
+    window.onload = () => {
+      setIsLoaded(true);
+      // clearTimeout(loadingTimeout); // Cancel the timeout if content is loaded
+    };
+
+    // Clean up
+    return () => clearTimeout(loadingTimeout);
+  }, []);
   return (
-    <div  className='hey'>
-      <BrowserRouter>
+    <div className="App">
+      {showLoader && <LoaderFlower />} {/* Show Loader component if showLoader is true */}
+      {!isLoaded && !showLoader && <LoaderFlower />} {/* Show Loader component until resources are loaded */}
+      {isLoaded && !showLoader && 
+      (
+        <div className='hey'>
+           <BrowserRouter>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Main/>}/>
@@ -90,6 +115,11 @@ function App() {
       </Routes>
        <Footer/>
       </BrowserRouter>
+          
+        </div>
+      )} {/* Show MainWebsite component if resources are loaded */}
+     
+
     </div>
 
   );
