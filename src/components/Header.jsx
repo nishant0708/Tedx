@@ -25,9 +25,7 @@ export default function Header(props){
             stagger:{
                 each:0.1
             },
-        }).to('.word',{
-            opacity: 1,
-            duration:0.4
+            delay: 0.7
         })
 
 
