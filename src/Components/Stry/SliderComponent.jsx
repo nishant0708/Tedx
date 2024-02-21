@@ -378,7 +378,7 @@ const SpeakerList = ({ selectedYear }) => {
   );
 };
 
-const [selectedYear, setSelectedYear] = useState('2024');
+const [selectedYear, setSelectedYear] = useState('2023');
 
   const handleChange = (event) => {
     setSelectedYear(event.target.value);
@@ -399,8 +399,8 @@ const [selectedYear, setSelectedYear] = useState('2024');
                   
             </h1>
             <select  className='year-drop'   onChange={handleChange}>
-                <option className="option" value="2024" selected>2024</option>
-        <option value="2023">2023</option>
+                <option className="option" value="2024" >2024</option>
+        <option value="2023" selected>2023</option>
        
       </select>   
             

@@ -1,7 +1,17 @@
-*{
-overflow-x: hidden;
-
+.hey {
+  text-align: center;
+  overflow-x: hidden;
+  background: rgb(19, 19, 19);
 }
-.hey{
-    background-color: #eae6e6;
+
+.fixed-headings{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 15vh;
+  width: 400px;
+  left: 50%;
+  transform: translateX(-50%);
 }

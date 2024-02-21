@@ -1,21 +1,15 @@
 import "./App.css"
 
 
-import ContactUs from './Components/ContactUS/ContactUs';
-import Trybox from "./Components/ContactUS/Trybox";
-
 import Footer from './Components/Footer/Footer';
 
-
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
-import Speakersm from "./Components/Speakers-mobile/Speakersm";
-import Speaker from "./Components/Speakers/Speaker";
+
+import Trybox from "./Components/ContactUS/Trybox";
 
 
-import Portfolio from "./Components/Stry/SliderComponent";
-
-import Ticket from './Components/Ticket/Ticket';
-import Speakerf from "./Components/nik-pages/Speakerf";
+import Main from "./Components/Main/Main";
 
 
 
@@ -27,12 +21,17 @@ function App() {
 
   return (
     <div  className='hey'>
+      <BrowserRouter>
       <Navbar/>
-      <Trybox/>
-    <Speakerf/>
-      <Ticket/>
-      <Ticket/>
-     <Footer/> 
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path='/gallery' element={<Trybox/>}/>
+        <Route path='/sponsors' element={<Trybox/>}/>
+        <Route path='/teams' element={<Trybox/>}/>
+        
+      </Routes>
+       <Footer/>
+      </BrowserRouter>
     </div>
   );
 }

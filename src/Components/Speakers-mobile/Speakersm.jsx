@@ -5,7 +5,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import mlinkedin from "../Assests/Images/linkedin (1).png";
 import instagram from "../Assests/Images/instagram (1).png";
 import samp_image from "../Assests/Images/ZakirKhan_3x1_WhatsOn.jpg-transformed.webp"
-import { easeIn } from 'framer-motion';
+
 import badal from "../Assests/Images/Group 29.png"
 
 
