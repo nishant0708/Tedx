@@ -22,6 +22,7 @@
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.22.1",
     "react-scripts": "^5.0.1",
+    "react-socks": "^2.2.0",
     "react-spring": "^9.7.3",
     "react-use-gesture": "^9.1.3",
     "three": "^0.149.0",

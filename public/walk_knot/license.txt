@@ -1,0 +1,11 @@
+Model Information:
+* title:	Walk Knot T53 Arches
+* source:	https://sketchfab.com/3d-models/walk-knot-t53-arches-3ab56564385f41cbbaaeeb3ac84d2d10
+* author:	Fathauer (https://sketchfab.com/Fathauer)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Walk Knot T53 Arches" (https://sketchfab.com/3d-models/walk-knot-t53-arches-3ab56564385f41cbbaaeeb3ac84d2d10) by Fathauer (https://sketchfab.com/Fathauer) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

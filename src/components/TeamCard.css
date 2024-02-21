@@ -1,0 +1,138 @@
+.teams-card-wrapper{
+    padding: 20px;
+}
+
+.teams-card{
+    background: #020202;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    width: 250px;
+    padding: 10px;
+    opacity: 1;
+    scale: 1;
+    box-shadow: 1px 2px 20px 5px rgba(0,0,0,0.75);
+    left: -10%;
+    border-radius: 18px;
+}
+
+.hoverCard{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(40, 40, 40, 0.8);
+    transform: scaleY(0); 
+    transform-origin:center;
+    transition: all 0.6s; 
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    box-shadow: 9px 14px 14px 0px rgba(0,0,0,0.5);
+    border-radius: 18px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    
+}
+
+
+@media screen and (min-width:992px) {
+    
+    .teams-card:hover .hoverCard{
+        transform: scaleY(1);
+    }
+
+
+    .teams-card:hover .member-image{
+        transform: translateY(-100%);
+        scale: 0.4;
+        border-radius: 100%;
+    }
+
+    .teams-card:hover h1{
+        visibility: hidden;
+    }
+}
+
+.hoverCard > p{
+    display: grid;
+    width: 100%;
+    height: 30%;
+    text-wrap: pretty;
+}
+
+.member-name{
+    font-size: 24px;
+    margin: 0px 0px 14px 0px;
+    color: white;
+}
+.member-image{
+    transition: all;
+    transition-duration: 0.6s;
+    transition-timing-function:ease-in-out;
+    border-radius: 20px;
+    z-index: 30;
+}
+
+.stats-section > h3{
+    padding: 10px 0px;
+    left: -40px;
+    position: relative; 
+}
+.stats-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 8px;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+}
+.metrics{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: right;
+}
+.scores{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    justify-content: center;
+}
+.humourStat, .angerStat, .cutenessStat, .IQStat, .funStat{
+    height: 5px;
+    background-color: #e62b1e;
+}
+.team-card-info{
+    position: relative;
+    top: 10%;
+    opacity: 1;
+}
+
+.team-card-icons{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 0% auto;
+}
+.member-insta, .member-linkedin{
+    z-index: 20;
+    background: #ffffff;
+    transform: scale(1);
+    transition: all 0.5s;
+    opacity: 0.7;
+    border-radius: 8px;
+    padding: 4px 4px 1px 4px;
+}
+
+
+.member-insta:hover, .member-linkedin:hover{
+    transform: scale(1.2);   
+}
