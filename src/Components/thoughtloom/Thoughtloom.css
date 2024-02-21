@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .jay {
   background-color: #eae6e6;
@@ -8,7 +9,15 @@
   align-items: flex-end;
   overflow: hidden;
   position: relative;
-  z-index: 3;
+  z-index: 1;
+}
+
+.left-text,
+.place,
+.place2,
+.date,
+.reveal-text {
+  font-family: 'Poppins', sans-serif;
 }
 
 .svg-container {
@@ -28,30 +37,28 @@
 .person {
     height: 500px;
     position: relative; /* Ensure the image is positioned relative to its parent */
-    z-index: 2; /* Set a higher z-index value for the image */
-    transform: translate(-125%,0);
+    transform: translate(-270%,0);
     z-index: 5;
-
 }
 
 .whiteStroke {
     position: relative;
     bottom: 0;
-    transform: translate(-1040px,550px);
+    transform: translate(-122%,105%);
     z-index: 2;
 }
 
 .rainbow{
     position: relative;
-    transform: translate(710px,310px) scale(1.4);
+    transform: translate(105%,60%) scale(1.4);
     z-index: 3;
 }
 
 .mask-box{
   width: 700px;
   height: 600px;
-  background-color:#eae6e6;
-  transform: translate(1280px,300px);
+  background-color:white;
+  transform: translate(170%,50%);
   z-index: 4;
   position: relative;
 }
@@ -64,13 +71,13 @@
   position: absolute;
   top : 0;
   left:0;
-  transform: translate(250px,500px);
+  transform: translate(20%,80%);
   z-index: 2;
 }
 
 .thoughtloom-container{
   position: absolute;
-  transform: scale(0.8) translate(-350px);
+  transform: scale(0.8) translate(-50%);
   bottom: 0;
   left: 50%;
   z-index: 4;
@@ -88,10 +95,12 @@
 .top-text{
   position: absolute;
   top:0;
-  left:30%;
+  left:3%;
   z-index: 10;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 1%;
+  width: 90vw;
+  font-size: 2vw;
 }
 
 .left-text {
@@ -99,9 +108,8 @@
   left:0;
   top:40%;
   z-index: 10;
-  margin-left: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 40px;
+  margin-left: 1%;
+  font-size: 10%;
   line-height: 0.3;
 }
 
@@ -118,13 +126,13 @@
 .text-box{
   z-index: 4;
   position: absolute;
-  top:30vh;
-  left:20px;
+  top:30%;
+  left:1%;
   display: flex;
   flex-direction: column; /* Change from row to column */
   justify-content: flex-start; /* Aligns items to the left */
   align-items: flex-start;
-  margin-left: 20px;
+  margin-left: 2%;
   }
 
 .reveal-text {
@@ -207,11 +215,13 @@
 
 @media only screen and (max-device-width: 768px) {
   .thoughtloom-container{
-    transform: scale(0.4) translate(-850px,100px);
+    transform: scale(0.4) translate(-120%,50%);
   }
   .top-text{
     transform: scale(1.5);
-    margin-left: -10px;
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 40vw;
   }
   
   /*
@@ -238,30 +248,32 @@
   } */
 
   .person{
-    transform: translate(-680px,100px) scale(0.7);
+    transform: translate(-290%,20%) scale(0.7);
   }
 
   .circle{
-    transform: translate(-660px,380px);
+    transform: translate(-76%,150%);
   }
 
   .whiteStroke{
-    transform: translate(-1120px,720px);
+    transform: translate(-127.5%,136%);
   }
 
   .mask-box-2{
-    transform: translate(900px,500px);
+    transform: translate(80%,100%);
   }
   .rainbow{
-    transform: translate(470px,450px);
+    transform: translate(73%,85%);
   }
 
   .mask-box{
-    transform: translate(1150px,300px);
+    transform: translate(160%,70%);
+
   }
 
   .text-box{
-    transform: scale(1.6) translateY(50px);
-    margin-left: 30px;
+    transform: scale(1.6) translateY(20%);
+    margin-left: 15%;
+    margin-top: 15%;
   }
 }
