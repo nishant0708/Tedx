@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-
-import topRight from '../../images/reel2.jpg';
 import HeroParallax2 from "./hero-parallax-mobile";
 import {
   motion,
@@ -18,34 +16,6 @@ import { ScrollTrigger } from "gsap/all";
 
 export const HeroParallax = ({ products }) => {
   
-  const images = [
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-    topRight,
-  ];
-
   const firstRow = products.slice(0,5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
@@ -143,9 +113,8 @@ export const HeroParallax = ({ products }) => {
       <Breakpoint medium up>
       <div
       ref={ref}
-      className="h-[auto] overscroll-none pt-40 overflow-vi bg-black  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[500vh] py-40 overflow-hidden bg-black pt-96  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
-      <div className="absolute -z-[100000] rotate-180 w-14 -top-[70vh] right-0 "> <img src={topRight}></img></div>
       <Header />
       <motion.div
         style={{
@@ -156,7 +125,7 @@ export const HeroParallax = ({ products }) => {
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse mt-60 space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -183,10 +152,8 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        
       </motion.div>
-      
-            <div className='sponsor-wrapper'
+      <div className='sponsor-wrapper'
              ref={sponsorTriggerRef}>
             
             <div className='sponsors-container'
@@ -237,11 +204,11 @@ export const HeroParallax = ({ products }) => {
                   ))}   
             </div>
         </div>
-            </div></Breakpoint>
+    </div>
+  </Breakpoint>
       <Breakpoint small down>
-      <HeroParallax2 products={products}/>
-    </Breakpoint>
-    
+        <HeroParallax2 products={products}/>
+      </Breakpoint>
     </BreakpointProvider>
     
   );

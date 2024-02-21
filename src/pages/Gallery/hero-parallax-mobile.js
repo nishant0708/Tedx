@@ -11,7 +11,7 @@ export const HeroParallax2 = ({ products }) => {
   const firstRow = products.slice(0,5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
-  const fourthRow = products.slice(16,20);
+  const fourthRow = products.slice(14,21);
   
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
@@ -28,8 +28,17 @@ export const HeroParallax2 = ({ products }) => {
     springConfig
   );
 
+  const translateXThird = useSpring(
+    useTransform(scrollYProgress, [0, 1], [0, 500]),
+    springConfig
+  );
+
   const translateXReverse = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, -1000]),
+    springConfig
+  );
+  const translateXReverseFourth = useSpring(
+    useTransform(scrollYProgress, [0, 1], [0, -500]),
     springConfig
   );
   const rotateX = useSpring(
@@ -52,7 +61,7 @@ export const HeroParallax2 = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[350vh] py-40 overflow-hidden bg-black  antialiased relative  flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[250vh] py-40 overflow-hidden bg-black  antialiased relative  flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <div className="absolute z-10"><motion.div
@@ -86,12 +95,23 @@ export const HeroParallax2 = ({ products }) => {
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
-              translate={translateX}
+              translate={translateXThird}
               key={product.title}
             />
           ))}
         </motion.div>
+        <motion.div className="flex flex-row space-x-5">
+          {secondRow.map((product) => (
+            <ProductCard
+              product={product}
+              translate={translateXReverseFourth}
+              key={product.title}
+            />
+          ))}
+        </motion.div>
+        
       </motion.div>
+      
       </div>
     </div>
   );

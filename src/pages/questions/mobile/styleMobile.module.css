@@ -12,9 +12,10 @@
 
 
 .faq {
-    display: flex;
-    margin: 20px;
     z-index: 4;
+    margin-bottom: 6%;
+    margin-left: 9%;
+    font-size: 20px;
     width: 80vw;
     height: 10vh;
 }
@@ -45,7 +46,6 @@
 }
 
 .Question select {
-    
     height: 80px;
     width: 80vw;
 }
@@ -62,7 +62,6 @@
     margin-top: 0;
     border: 18px solid rgb(250, 214, 72);
     
-    background-color: rgba(250, 214, 72, 0.3);
     border-radius: 20px;
     width: 80%;
     padding: 20px 0px;

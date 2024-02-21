@@ -1,0 +1,24 @@
+button{
+    background-color: rgb(65,65,65,0);
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.years{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin: 0% auto;
+    transform: translateY(-82vh);
+    z-index: 40;
+}
+
+.present-year >div{
+    height: 2px;
+    position: relative;
+    width: 100%;
+    background-color: #e62b1e;
+}

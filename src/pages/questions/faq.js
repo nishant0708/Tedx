@@ -12,7 +12,6 @@ import StickyScroll2 from "./mobile/faq-mobile";
 
 
 
-
 const StickyScroll = ({ content }) => {
 
  

@@ -27,10 +27,11 @@ const StickyScroll2 = ({ content }) => {
 
   return (
     <div>
-      <div className=" h-screen w-screen text-9xl bg-slate-500 grid text-center justify-center"><h1>Next Page</h1></div>
       <div  className={styles.hero}>
         <div className={styles.background}>
           <img  src={bg}></img>
+        </div>
+        <div id="faq" className={styles.faq}>
         </div>
         <div id="faq" className={styles.faq}>
           <img src={faq} alt="FAQs" />
@@ -63,8 +64,7 @@ const StickyScroll2 = ({ content }) => {
         
         
       </div>
-      <div className="h-screen w-screen text-9xl bg-slate-500 grid text-center justify-center"><h1>Next Page</h1></div>
-    </div>
+      </div>
   );
 };
 
