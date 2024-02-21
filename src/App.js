@@ -96,7 +96,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main/>}/>
         <Route path='/about' element={<Flip/>}/>
-        <Route path='/gallery' element={<HeroParallax products={productsData}/>}/>
+        <Route path='/gallery' element={<StickyScroll content={content}/>}/>
         <Route path='/teams' element={<ShubhanshTeams/>}/>
         
       </Routes>

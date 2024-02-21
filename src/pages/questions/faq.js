@@ -14,8 +14,11 @@ import StickyScroll2 from "./mobile/faq-mobile";
 
 
 
-
 const StickyScroll = ({ content }) => {
+
+
+
+
   gsap.registerPlugin(ScrollTrigger);
   const [selectedQuestionIndex, setSelectedQuestionIndex] = useState(0);
   const [boldQuestionIndex, setBoldQuestionIndex] = useState(null);
@@ -46,31 +49,6 @@ const StickyScroll = ({ content }) => {
     
   }, []);
 
-  
-  useEffect(() => {
-
-    window.onload = () => {
-     
-    
-      const tween = gsap.to(".trigger", {
-        width:2500,
-      opacity: 1,
-    duration: 1,
-    ease: Power1.easeOut,
-    paused: true,
-    
-    marker: true, // pause the animation initially
-  });
-    
-      ScrollTrigger.create({
-        trigger: "#Page", // change the trigger to the whole page
-        start: "top top", // when the top of the page hits the top of the viewport
-        pin: true,
-        scrub: true, // pin the whole page
-        
-      });
-    };
-  }, []);
 
   useEffect(() => {
     const tween2 = gsap.to("#whiteflower", {
@@ -80,53 +58,74 @@ const StickyScroll = ({ content }) => {
       opacity: 1,
     rotate: -60,
     duration: 1,
-    ease: Power1.easeOut,
-    paused: true, // pause the animation initially
+    scrollTrigger: "#faq",
+    ease: Power1.easeOut, // pause the animation initially
   });
 
 
-    ScrollTrigger.create({
-      trigger: "#faq",
-      start: "top 450px", // when the top of the trigger hits the bottom of the viewport
-      end: "bottom 0%", // when the bottom of the trigger hits the top of the viewport
-      onUpdate: (self) => {
-        tween2.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    });
+    
 
 }, []);
 
+useEffect(() => {
+  const tween2 = gsap.to("#redflower", {
+    x: 530,
+width: 400,
+      rotate: 60,
+    opacity: 1,
+
+  duration: 1,
+  scrollTrigger: "#faq",
+  ease: Power1.easeOut, // pause the animation initially
+});
+
 
   
-  
+
+}, []);
+
 useEffect(() => {
+  const tween2 = gsap.to("#faq", {
+    
+    opacity: 1,
+    x: 300,
+  duration: 1,
+  delay: 1,
+  scrollTrigger: "#yes5",
+  ease: Power1.easeOut, // pause the animation initially
+});
+
+
+  
+
+}, []);
+
+  
+// useEffect(() => {
 
    
   
-    const tween = gsap.to("#redflower", {
-      x: 530,
-      width: 400,
-      opacity: 1,
-      rotate: 60,
-      duration: 1,
-      ease: Power1.easeOut,
-      paused: true, // pause the animation initially
-    });
+//     const tween = gsap.to("#redflower", {
+//       x: 530,
+//       width: 400,
+//       opacity: 1,
+//       rotate: 60,
+//       duration: 1,
+//       ease: Power1.easeOut,
+//       paused: true, // pause the animation initially
+//     });
   
-    ScrollTrigger.create({
-      trigger: "#yes6", // change the trigger to the whole page
-      start: "top 500px",  // pin the whole page
-      onUpdate: (self) => {
-        tween.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    });
+//     ScrollTrigger.create({
+//       trigger: "#yes6", // change the trigger to the whole page
+//       start: "top 500px",  // pin the whole page
+      
+//     });
   
-}, []);
+// }, []);
 
 
 
 
-  var complete = 0;
   useEffect(() => {
     
   
@@ -134,18 +133,13 @@ useEffect(() => {
       x: 380,
       opacity: 1,
       duration: 1,
+      delay: 1.5,
       ease: Power1.easeOut,
-      paused: true, // pause the animation initially
+      scrollTrigger: "#faq",
+      start: "bottom 20%", // pause the animation initially
     });
       
-      ScrollTrigger.create({
-        trigger: "#faq", // change the trigger to the whole page
-        start: "bottom 10%",  // pin the whole page
-        onUpdate: (self) => {
-          tween.progress(self.progress); // sync the animation progress with the scroll progress
-        },
-      // pause the animation initially
-    });
+      
     
   }, []);
 
@@ -159,21 +153,14 @@ useEffect(() => {
       width:500,
       x:260,
       opacity: 1,
-    duration: 0.3,
+    duration: 1,
+    delay: 0.5,
     ease: Power1.easeOut,
-    paused: true,
-    marker: true,
+    scrollTrigger: "#whiteflower",
+    start:"top 50%"
   });
 
-    ScrollTrigger.create({
-      trigger: "#Page", // change the trigger to the whole page
-      start: "top 40%",  // pin the whole page
-      onUpdate: (self) => {
-        tween.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    // pause the animation initially
-  });
-
+    
     
  
   }, []);
@@ -189,19 +176,12 @@ useEffect(() => {
         y: 0,
         duration: 1,
         opacity:1,
-        paused: true,// Adjust this value for the stagger effect
+        delay: 0.5,
+        scrollTrigger: "#faq",// Adjust this value for the stagger effect
         ease: 'power3.out', // Adjust ease as needed
       }
     );
-
-    ScrollTrigger.create({
-      trigger: "#faq", // change the trigger to the whole page
-      start: "bottom 10%",  // pin the whole page
-      onUpdate: (self) => {
-        tween.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    // pause the animation initially
-  });
+    handleButtonClick(0);
 
   }, [content]);
   useEffect(() => {
@@ -212,18 +192,12 @@ useEffect(() => {
         y: 0,
         duration: 1,
         opacity:1,
-        paused: true,// Adjust this value for the stagger effect
+        delay: 0.8,
+        scrollTrigger: "#faq",// Adjust this value for the stagger effect
         ease: 'power3.out', // Adjust ease as needed
       }
     );
-    ScrollTrigger.create({
-      trigger: "#faq", // change the trigger to the whole page
-      start: "bottom 10%",  // pin the whole page
-      onUpdate: (self) => {
-        tween.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    // pause the animation initially
-  });
+    
   }, [content]);
 
   useEffect(() => {
@@ -234,19 +208,13 @@ useEffect(() => {
         y: 0,
         duration: 1,
         opacity:1,
-        paused: true,// Adjust this value for the stagger effect
+        delay: 1.1,
+        scrollTrigger: "#faq",// Adjust this value for the stagger effect
         ease: 'power3.out', // Adjust ease as needed
       }
     );
 
-    ScrollTrigger.create({
-      trigger: "#faq", // change the trigger to the whole page
-      start: "bottom 10%",  // pin the whole page
-      onUpdate: (self) => {
-        tween.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    // pause the animation initially
-  });
+    
   }, [content]);
 
   useEffect(() => {
@@ -257,19 +225,13 @@ useEffect(() => {
         y: 0,
         duration: 1,
         opacity:1,
-        paused: true,// Adjust this value for the stagger effect
+        delay: 1.4,
+        scrollTrigger: "#faq",// Adjust this value for the stagger effect
         ease: 'power3.out', // Adjust ease as needed
       }
     );
 
-    ScrollTrigger.create({
-      trigger: "#faq", // change the trigger to the whole page
-      start: "bottom 10%",  // pin the whole page
-      onUpdate: (self) => {
-        tween.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    // pause the animation initially
-  });
+    
   }, [content]);
 
   useEffect(() => {
@@ -280,19 +242,13 @@ useEffect(() => {
         y: 0,
         duration: 1,
         opacity:1,
-        paused: true,// Adjust this value for the stagger effect
+        delay: 1.7,
+        scrollTrigger: "#faq",// Adjust this value for the stagger effect
         ease: 'power3.out', // Adjust ease as needed
       }
     );
 
-    ScrollTrigger.create({
-      trigger: "#faq", // change the trigger to the whole page
-      start: "bottom 10%",  // pin the whole page
-      onUpdate: (self) => {
-        tween.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    // pause the animation initially
-  });
+   
   }, [content]);
 
   useEffect(() => {
@@ -303,19 +259,13 @@ useEffect(() => {
         y: 0,
         duration: 1,
         opacity:1,
-        paused: true,// Adjust this value for the stagger effect
+        delay: 2.0,
+        scrollTrigger: "#faq",// Adjust this value for the stagger effect
         ease: 'power3.out', // Adjust ease as needed
       }
     );
 
-    ScrollTrigger.create({
-      trigger: "#faq", // change the trigger to the whole page
-      start: "bottom 10%",  // pin the whole page
-      onUpdate: (self) => {
-        tween.progress(self.progress); // sync the animation progress with the scroll progress
-      },
-    // pause the animation initially
-  });
+    
   }, [content]);
 
 
@@ -329,8 +279,7 @@ useEffect(() => {
     <Breakpoint medium up>
     <div >
       
-      <div className="h-screen w-screen z-[1] pt-60 text-9xl bg-slate-500  text-center"><h1>Next Page</h1></div>
-    <div>
+      <div>
      <div id="Page"  className="hero">
         <div className="left">
           <div className="trigger absolute z-50 w-3 h-1"></div>
@@ -384,7 +333,6 @@ useEffect(() => {
         
       </div>
       </div>
-      <div className="h-screen w-screen z-[1] pt-60 text-9xl bg-slate-500  text-center"><h1>Next Page</h1></div>
       
       
     </div>
