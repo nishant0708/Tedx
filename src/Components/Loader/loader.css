@@ -1,7 +1,7 @@
 .loader-container {
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #fad648;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,9 +19,9 @@
 }
 
 .loading-icon {
-  font-size: 30rem;
+  font-size: 20rem;
   font-weight: bold;
-  color: red;
+  color: #eae6e6;
 }
 
 .loading-icon.zoom {
@@ -35,6 +35,6 @@
   }
   100% {
     transform: scale(200);
-    opacity: 0;
+    /* opacity: 0; */
   }
 }

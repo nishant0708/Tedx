@@ -3,40 +3,30 @@ import './App.css';
 import Forscrolldummy from './Components/Forscrolldummy';
 import HeroPg from './Components/HeroPg/HeroPg';
 import Loader from './Components/Loader/Loader';
+import LoaderFlower from './Components/Loader/LoaderFlower';
 import Thoughtloom from './Components/thoughtloom/Thoughtloom';
 import React, { useState, useEffect } from 'react';
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    // Simulating loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-    return () => clearTimeout(timer);
+  useEffect(() => {
+    // Check if all resources are loaded
+    window.onload = () => {
+      setIsLoaded(true);
+    };
   }, []);
-
-  useEffect(() => {
-    if (!isLoading) {
-      const loadingIcon = document.querySelector('.loading-icon');
-      loadingIcon.classList.add('zoom');
-
-      // Remove the "zoom" class after animation completes
-      setTimeout(() => {
-        loadingIcon.classList.remove('zoom');
-      }, 2000);
-    }
-  }, [isLoading]);
-
   return (
     <div className="App">
-      <Loader isLoading={isLoading} />
-      {!isLoading && <div>
-        {/* <Loader /> */}
+      {!isLoaded ? (
+        <LoaderFlower /> // Show Loader component if resources are not loaded
+      ) : (
+        <div>
         <HeroPg />
         {/* <Forscrolldummy/> */}
         <Thoughtloom />
-        {/* <Forscrolldummy/> */}</div>}
+        {/* <Forscrolldummy/> */}</div>
+      )}
+
     </div>
 
   );

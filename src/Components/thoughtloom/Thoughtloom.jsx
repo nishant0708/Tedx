@@ -89,13 +89,13 @@ const Thoughtloom = () => {
         <div className='second-trigger'></div>
           <div className="container">
           <div className="text-box">
-          <h1 class="reveal-text date">
+          <h1 className="reveal-text date">
             7 March 2024
           </h1>
-          <h1 class="reveal-text place">
+          <h1 className="reveal-text place">
             Davv Auditorium
           </h1>
-          <h1 class="reveal-text place2">
+          <h1 className="reveal-text place2">
             Indore
           </h1>
           </div>
