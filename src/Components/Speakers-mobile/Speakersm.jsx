@@ -11,56 +11,14 @@ import badal from "../Assests/Images/Group 29.png"
 
 const speakers2024 = [
     {
-        name: 'Zakhir',
-        surname: 'Khan',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
+        name: 'Revealing',
+        surname: 'Soon',
+        description: '',
         image: samp_image,
-        instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-        linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+        instagramLink: '',
+        linkedinLink: ''
       },
-      {
-        name: 'Mithila',
-        surname: 'Palker',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-        image: samp_image,
-        instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-        linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-      },
-      {
-        name: 'Mithila',
-        surname: 'Palker',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-        image: samp_image,
-        instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-        linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-      },
-    
-      {
-        name: 'Mithila',
-        surname: 'Palker',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-        image: samp_image,
-        instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-        linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-      },
-    
-      {
-        name: 'Mithila',
-        surname: 'Palker',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-        image: samp_image,
-        instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-        linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-      },
-    
-      {
-        name: 'Mithila',
-        surname: 'Palker',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-        image: samp_image,
-        instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-        linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-      },
+      
     
   ];
   const speakers2023 = [
@@ -85,7 +43,7 @@ const speakers2024 = [
     },
   
     {
-      name: 'Dr. Ragini ',
+      name: 'Dr. Ragini',
       surname: 'Makkhar',
       designation: "Member of UNESCO & Winner of India’s Got Talent Season 5",
       description: "Dr. Ragini Makkhar, India's Got Talent Season 5 winner, captivated the audience with her talk on ''Evolve with Dance,'' highlighting dance's transformative impact on personal growth and self-expression.",
@@ -254,7 +212,7 @@ const Speakersm = () => {
               end: "top 100%",
              
             },
-            easeIn: true
+           
           });
         });
 
@@ -284,7 +242,7 @@ const Speakersm = () => {
                 end: "top 100%",
                
               },
-              easeIn: true
+              
             });
           });
 
@@ -354,8 +312,34 @@ const Speakersm = () => {
                 case 'Bhaskar':
                   speakerClass = 'mbhaskar-style';
                   break;
+                case 'Dr. Vineet':
+                  speakerClass = 'mvineet-style';
+                  break;
+                case 'Abhijit':
+                  speakerClass = 'mabhijit-style';
+                  break;
+                case 'Abhishek':
+                  speakerClass = 'mAbhishek-style';
+                  break;
                 case 'Aryan':
                   speakerClass = 'maryan-style';
+                  break;
+                case "Ella D'":
+                  speakerClass = "Ella";
+                  break;
+                case "Dr. Ragini":
+                  speakerClass = "mragini";
+                  break;
+                default:
+                  speakerClass = '';
+              }
+              break;
+            case '2024':
+              // Add switch cases for 2024 here
+              switch (speaker.name) {
+                
+                case 'Revealing':
+                  speakerClass = 'mreveal';
                   break;
                 default:
                   speakerClass = '';
@@ -364,18 +348,19 @@ const Speakersm = () => {
             default:
               speakerClass = '';
           }
-
           return (
             <li key={index} className={`o-mslider__item ${speakerClass}`}>
               <div className='mspeaker-tile'>
                 <img className="o-mslider__img" src={speaker.image} alt="" />
                 <p className='mspeaker-desg'>{speaker.designation}</p>
                 <p className='mspeaker-desc'>{speaker.description}</p>
-                <p className={`mSpeaker-name `}>{speaker.name}<br /> {speaker.surname} <br />
+                <p className={`mSpeaker-name `}>{speaker.name}<br /> {speaker.surname} 
+                <div className='lin'>
                   <a href={speaker.linkedinLink}><img style={{ width: "25px" }} src={instagram} alt="" /></a>&nbsp;
-                  <a href={speaker.instagramLink}><img style={{ width: "25px" }} src={mlinkedin} alt="" /></a>
+                  <a href={speaker.instagramLink}><img style={{ width: "25px" }} src={mlinkedin} alt="" /></a></div>
+             
                 </p>
-              </div>
+                </div>
             </li>
           );
         })}

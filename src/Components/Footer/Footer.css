@@ -85,7 +85,7 @@
     padding-bottom: 0.5rem;
 }
 .mailus input{
-    height: 1.5rem;
+    height: 2.5rem;
     width: 300px;
     padding: 0.5rem;
 }
@@ -147,7 +147,7 @@
     }
     .mailus input{
         width: 200px;
-        height: 23px;
+        height: 40px;
     }
     .socialmedia{
         width: 60vw;

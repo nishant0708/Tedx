@@ -40,6 +40,23 @@ const Navbar = () => {
     localStorage.setItem('selectedMenu', menu);
   }, [menu]);
 
+  useEffect(() => {
+    // Set initial state based on location
+    if (location.pathname.includes('gallery')) {
+      setNavTextColor('#fff'); // Set text color to white for gallery page
+      setNavLogo(logowhite); // Set logo to the white logo for gallery page
+    } 
+    else if (location.pathname.includes('sponsors')) {
+      setNavTextColor('#fff'); // Set text color to white for sponsors page
+      setNavLogo(logowhite); // Set logo to the white logo for sponsors page
+    }
+    else {
+      setNavTextColor('#000'); // Set default text color
+      setNavLogo(logoblack); // Set default logo
+    }
+  }, [location]);
+
+
   const handleHamburgerClick = () => {
     setOpen(!isOpen);
     
@@ -66,7 +83,7 @@ const Navbar = () => {
       setNavTextColor('#fff'); // Change text color to white
       setNavLogo(logowhite); // Change logo to the gallery logo
     } 
-    else if(menuItem === 'teams'){
+    else if(menuItem === 'sponsors'){
       setNavTextColor('#fff'); // Change text color to white
       setNavLogo(logowhite);
     }
@@ -81,8 +98,10 @@ const Navbar = () => {
       <div className='Nav-logo'>
         <img className="tedx-logo" src={navLogo} alt=''/>
         {isMobile && (
-        <Hamburger className='nav-ham' size={44} color="#000" z-index={15} toggled={isOpen} toggle={handleHamburgerClick} />
-      )}
+      <div className="fixed-hamburger">
+        <Hamburger size={44} color="#000" toggled={isOpen} toggle={handleHamburgerClick} />
+      </div>
+    )}
       </div>
       
      

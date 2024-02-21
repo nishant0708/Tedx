@@ -142,56 +142,14 @@ const SliderComponent = () => {
 */
  const  speakerData2024 = [
   {
-    name: 'Zakhir',
-    surname: 'Khan',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
+    name: 'Revealing',
+    surname: 'Soon',
+    description: '',
     image: samp_image,
-    instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-    linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-  },
-  {
-    name: 'Mithila',
-    surname: 'Palker',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-    image: samp_image,
-    instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-    linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-  },
-  {
-    name: 'Mithila',
-    surname: 'Palker',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-    image: samp_image,
-    instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-    linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-  },
-
-  {
-    name: 'Mithila',
-    surname: 'Palker',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-    image: samp_image,
-    instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-    linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-  },
-
-  {
-    name: 'Mithila',
-    surname: 'Palker',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-    image: samp_image,
-    instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-    linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-  },
-
-  {
-    name: 'Mithila',
-    surname: 'Palker',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident fuga quaerat, laborum eos distinctio quibusdam amet, velit impedit eligendi ut sint laboriosam dicta, tenetur incidunt et assumenda facere? Dolores.',
-    image: samp_image,
-    instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-    linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
-  },
+    instagramLink: '',
+    linkedinLink: ''
+  }
+  
 
 
 ];
@@ -367,7 +325,7 @@ const SpeakerList = ({ selectedYear }) => {
     speakers = speakerData2024;
   }
 
-  console.log("Selected Year inside SpeakerList:", selectedYear);
+
 
   return (
     <ul className="o-slider__list">

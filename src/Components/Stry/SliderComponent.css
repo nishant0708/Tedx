@@ -128,7 +128,7 @@ button:focus {
     width: 300px;
     height: fit-content;
     text-align: left;
-    top: 35%;
+    top: 38%;
     left: -30%;
     color: rgb(251, 251, 251);
     font-size: 20px;
@@ -137,7 +137,7 @@ button:focus {
     position: absolute;
    
     z-index: 15;
-    top: 2%;
+    top: 15%;
     width: 500px;
     text-align: right;
    line-height: 80px;
@@ -203,6 +203,7 @@ button:focus {
     font-size: 24px;
     padding: 10px 20px;
     align-items: center;
+    border: 1px solid black;
     width: fit-content;
     z-index: 19;
    top: 20%;
@@ -233,13 +234,15 @@ button:focus {
 }
 
 .log{
-    transform: translateY(-120%);
+    display: flex;
+    transform: translateY(15%);
+    justify-content: right;
 }
 .speaker_desg{
     position: absolute;
     
     z-index: 15;
-    top: 22%;
+    top: 25%;
     width: 350px;
     height: auto;
     text-align: left;
@@ -255,10 +258,11 @@ button:focus {
 .Aryan-style .speaker-name {
     font-size: 50px;
     line-height: 70px;
-    transform: translateY(20%);
+    
+    transform: translateY(0%);
 }
 .Aryan-style .speaker-name .log{
-    transform: translateY(-110%);
+    transform: translateY(10%);
 }
 .Aryan-style .speaker_desg{
     left: -33%;
