@@ -8,7 +8,7 @@ import SponsorData from '../Sponors.json';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function SponsorsSection(){
+ function SponsorsSection(){
 
     useEffect(() => {
         
@@ -87,3 +87,4 @@ export default function SponsorsSection(){
         </div>
     )
 }
+export default SponsorsSection 

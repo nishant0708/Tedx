@@ -10,7 +10,8 @@ import Trybox from "./Components/ContactUS/Trybox";
 
 import HeroParallax from "./pages/Gallery/hero-parallax"
 import Main from "./Components/Main/Main";
-
+import TeamSection from "./Components/TeamSection"
+import Subh from "./Components/Subhanshpage/Subh";
 
 
 
@@ -83,8 +84,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Main/>}/>
         <Route path='/gallery' element={<HeroParallax products={productsData}/>}/>
-        <Route path='/sponsors' element={<Trybox/>}/>
-        <Route path='/teams' element={<Trybox/>}/>
+        <Route path='/sponsors' element={<Subh/>}/>
+        <Route path='/teams' element={<TeamSection/>}/>
         
       </Routes>
        <Footer/>

@@ -1,9 +1,9 @@
 .teams-card-wrapper{
-    padding: 20px;
+    padding: 0px;
 }
 
 .teams-card{
-    background: #020202;
+    background: #565555;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -11,10 +11,10 @@
     color: white;
     width: 250px;
     padding: 10px;
+    margin: 30px;
     opacity: 1;
     scale: 1;
-    box-shadow: 1px 2px 20px 5px rgba(0,0,0,0.75);
-    left: -10%;
+    box-shadow: 1px 2px 20px 5px rgba(0, 0, 20, 0.539);
     border-radius: 18px;
 }
 
@@ -26,7 +26,7 @@
     right: 0;
     background: rgb(40, 40, 40, 0.8);
     transform: scaleY(0); 
-    transform-origin:center;
+    transform-origin: center;
     transition: all 0.6s; 
     z-index: 15;
     display: flex;
@@ -48,15 +48,13 @@
     }
 
 
-    .teams-card:hover .member-image{
+    .teams-card:hover .member-image-container{
         transform: translateY(-100%);
         scale: 0.4;
         border-radius: 100%;
     }
 
-    .teams-card:hover h1{
-        visibility: hidden;
-    }
+    
 }
 
 .hoverCard > p{
@@ -68,20 +66,31 @@
 
 .member-name{
     font-size: 24px;
+    font-weight: 700;
     margin: 0px 0px 14px 0px;
     color: white;
 }
-.member-image{
+.member-image-container{
+    width: 229px;
+    height: 189px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     transition: all;
     transition-duration: 0.6s;
     transition-timing-function:ease-in-out;
     border-radius: 20px;
     z-index: 30;
 }
-
+.member-image{
+    position: relative;
+    scale: 2.1;
+    top: -30px;
+}
 .stats-section > h3{
     padding: 10px 0px;
-    left: -40px;
+    left: 40px;
     position: relative; 
 }
 .stats-section{
@@ -98,12 +107,13 @@
     flex-direction: column;
     row-gap: 8px;
     justify-content: right;
+    width: 30%;
 }
 .scores{
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
+    row-gap: 17%;
     justify-content: center;
 }
 .humourStat, .angerStat, .cutenessStat, .IQStat, .funStat{
@@ -113,26 +123,36 @@
 .team-card-info{
     position: relative;
     top: 10%;
-    opacity: 1;
+    padding: 10px;
+    height: 116px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .team-card-icons{
     position: relative;
     display: flex;
-    gap: 30px;
-    margin: 0% auto;
+    gap: 70px;
+    margin: -15px auto 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+.member-insta-container, .member-linkedin-container{
+    z-index: 20;
+    height: 30px;
+    width: 30px;
+    
 }
 .member-insta, .member-linkedin{
-    z-index: 20;
-    background: #ffffff;
-    transform: scale(1);
+    z-index: 40;
+    color: white;
     transition: all 0.5s;
-    opacity: 0.7;
-    border-radius: 8px;
-    padding: 4px 4px 1px 4px;
+    transform: scale(2.5);
+    margin-top: 10px;
 }
-
-
 .member-insta:hover, .member-linkedin:hover{
-    transform: scale(1.2);   
+    color: #e62b1e;
 }

@@ -1,24 +1,15 @@
 .team{
     position: relative;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
-}
-
-.team-name{
-    color: white;
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: 12px;
-    position: relative;
-    top: 9vh;
-    width: 400px;
-    padding: 20px;
-    left: 50%;
-    transform: translateX(-200px);
-    text-shadow: 5px 8px 4px rgba(0,0,0,0.58);
     display: flex;
-    flex-direction: row;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20vh;
+    padding-top: 5vh;
+    /* this removes glitch */
+    transform: translateY(1px);
 }
 
 .team-cards-container{
@@ -26,17 +17,49 @@
     position:relative;
     display: flex;
     flex-direction: row;
-    gap: 10vw;
-    overflow: hidden;
-    justify-self: flex-start;
-    padding: 30px;
-    transform: translateY(4vh);
+    gap: 6vw;
+    left: 0vw;
+}
+.single-team-container{
+    height: 100vh;
+    width: 100vw;
+}
+.team-name{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    position: relative;
+    padding: 0px;
+    text-shadow: 5px 8px 4px rgba(0,0,0,0.58);
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    justify-content: center;
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 481px){
     .team-cards-container{
-        transform: translateY(10vh);
+        left: -80vw;
+    } 
+    .team-name{
+        padding-bottom: 40px;
+    }
+    .single-team-container{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        top: -8vh;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .team{
+        margin-top: 0px;
     } 
 }
+
+
 
