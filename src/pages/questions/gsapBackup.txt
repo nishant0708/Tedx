@@ -1,0 +1,251 @@
+
+
+  useEffect(() => {
+    const questions = document.querySelectorAll(`.${styles.Question} button`);
+    const buttons = Array.from(questions);
+
+    buttons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        setScrollTriggeredIndex(index);
+      });
+    });
+
+    
+  }, []);
+
+  useEffect(() => {
+    const tween2 = gsap.to("#whiteflower", {
+      y: 150,
+      x: 140,
+      width: 300,
+      opacity: 1,
+    rotate: -60,
+    duration: 1,
+    pin: true,
+    ease: Power1.easeOut,
+    paused: true, // pause the animation initially
+  });
+
+    ScrollTrigger.create({
+      trigger: "#redflower",
+      start: "top 20%", // when the top of the trigger hits the bottom of the viewport
+      end: "bottom 0%", // when the bottom of the trigger hits the top of the viewport
+      onUpdate: (self) => {
+        tween2.progress(self.progress); // sync the animation progress with the scroll progress
+      },
+    });
+
+}, []);
+
+  
+  
+useEffect(() => {
+
+  window.onload = () => {
+   
+  
+    const tween = gsap.to("#redflower", {
+      x: 530,
+      width: 400,
+      opacity: 1,
+      rotate: 60,
+      duration: 1,
+      ease: Power1.easeOut,
+      paused: true, // pause the animation initially
+    });
+  
+    ScrollTrigger.create({
+      trigger: "#Page", // change the trigger to the whole page
+      start: "top 50%", // when the top of the page hits the top of the viewport
+      pin: true, // pin the whole page
+      onUpdate: (self) => {
+        tween.progress(self.progress); // sync the animation progress with the scroll progress
+      },
+    });
+  };
+}, []);
+
+
+
+
+  var complete = 0;
+  useEffect(() => {
+    gsap.to("#answers", {
+      x:300,
+      opacity:1,
+      scrollTrigger: "#faq",
+      duration: 1,
+      ease: Power1.easeOut,
+      complete: 1,
+      
+    }).then(() => {
+      gsap.to("#answers", {
+        x:350,
+        opacity:1,
+        scrollTrigger: "#faq",
+        duration: 1,
+        ease: Power1.easeOut,
+      
+        
+      });
+    });
+    
+  }, []);
+
+
+
+  useEffect(() => {
+
+    window.onload = () => {
+     
+    
+      const tween = gsap.to("#yellow", {
+        width:250,
+      opacity: 1,
+    duration: 1,
+    ease: Power1.easeOut,
+    paused: true,
+    
+    marker: true, // pause the animation initially
+  });
+    
+      ScrollTrigger.create({
+        trigger: "#Page", // change the trigger to the whole page
+        start: "top top", // when the top of the page hits the top of the viewport
+        pin: true,
+        scrub: true, // pin the whole page
+        
+      });
+    };
+  }, []);
+
+  
+
+  useEffect(() => {
+    const tween3 = gsap.to("#yellow2", {
+      width:250,
+      x:260,
+      opacity: 1,
+    duration: 1,
+    pin: true,
+    ease: Power1.easeOut,
+    paused: true,
+    marker: true, // pause the animation initially
+  });
+
+    
+  ScrollTrigger.create({
+    trigger: "#redflower",
+    start: "top 50%", // when the top of the trigger hits the bottom of the viewport
+    end: "bottom 10%", // when the bottom of the trigger hits the top of the viewport
+    onUpdate: (self) => {
+      tween3.progress(self.progress); // sync the animation progress with the scroll progress
+    },
+  });
+  }, []);
+  
+  useEffect(() => {
+    gsap.to("#faq", {
+      y:300,
+      opacity:1,
+      scrollTrigger: "#faq",
+      duration: 0.5,
+      ease: Power3.easeOut,
+    });
+  }, []);
+  
+  useEffect(() => {
+    // Animate buttons one by one
+    gsap.to(
+      '#yes1',
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: "#faq",
+        opacity:1,// Adjust this value for the stagger effect
+        ease: 'power3.out', // Adjust ease as needed
+      }
+    );
+  }, [content]);
+  useEffect(() => {
+    // Animate buttons one by one
+    gsap.to(
+      '#yes2',
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: "#faq",
+        opacity:1,// Adjust this value for the stagger effect
+        ease: 'power3.out',
+        delay: 0.3,
+         // Adjust ease as needed
+      }
+    );
+  }, [content]);
+
+  useEffect(() => {
+    // Animate buttons one by one
+    gsap.to(
+      '#yes3',
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: "#faq",
+        opacity:1,// Adjust this value for the stagger effect
+        ease: 'power3.out',
+        delay: 0.6,
+         // Adjust ease as needed
+      }
+    );
+  }, [content]);
+
+  useEffect(() => {
+    // Animate buttons one by one
+    gsap.to(
+      '#yes4',
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: "#faq",
+        opacity:1,// Adjust this value for the stagger effect
+        ease: 'power3.out',
+        delay: 0.9,
+         // Adjust ease as needed
+      }
+    );
+  }, [content]);
+
+  useEffect(() => {
+    // Animate buttons one by one
+    gsap.to(
+      '#yes5',
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: "#faq",
+        opacity:1,// Adjust this value for the stagger effect
+        ease: 'power3.out',
+        delay: 1.2,
+         // Adjust ease as needed
+      }
+    );
+  }, [content]);
+
+  useEffect(() => {
+    // Animate buttons one by one
+    gsap.to(
+      '#yes6',
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: "#faq",
+        opacity:1,// Adjust this value for the stagger effect
+        ease: 'power3.out',
+        delay: 1.5,
+         // Adjust ease as needed
+      }
+    );
+  }, [content]);
+
+
+

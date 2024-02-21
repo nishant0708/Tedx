@@ -1,0 +1,89 @@
+.hero {
+    position: relative;
+    height: 110vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    overflow: hidden;
+}
+
+
+.faq {
+    z-index: 4;
+    margin-bottom: 6%;
+    margin-left: 9%;
+    font-size: 20px;
+    width: 80vw;
+    height: 10vh;
+}
+
+.background {
+    margin-top: 70%;
+    margin-left: 20%;
+    position: absolute;
+    z-index: 3;
+    scale: 1.6;
+    height: 100vh;
+}
+
+.Question {
+    width: 80%;
+    margin: 10%;
+    height: 100px;
+    margin-top: 5%;
+    position: relative;
+    padding: 0 20px;
+    z-index: 4;
+    background-color: rgba(61, 60, 60, 0.47);
+    text-align: center;
+    border-radius: 10px;
+    text-wrap: pretty;
+    text-shadow: 100px;
+    font-family: "Poppins";
+}
+
+.Question select {
+    height: 80px;
+    width: 80vw;
+}
+
+.Answers {
+    opacity: 1;
+    z-index: 4;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    text-align: center;
+    margin: 10%;
+    margin-top: 0;
+    border: 18px solid rgb(250, 214, 72);
+    
+    border-radius: 20px;
+    width: 80%;
+    padding: 20px 0px;
+    color: black;
+    height: 30vh;
+    font-weight: 600;
+}
+
+.hero_video{
+    
+    border-radius: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index:2;
+    margin-bottom: 40px;
+}
+
+
+.hero_video video{
+    height: 38vh;
+    aspect-ratio: 1;
+    border-radius: 40px;
+    object-fit: cover;
+}

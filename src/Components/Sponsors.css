@@ -1,0 +1,11 @@
+.shubh-sponsor-image{
+    border-radius: 20px;
+    overflow-x: hidden;
+    width: 300px;
+    box-shadow: 12px 17px 34px -1px rgba(0,0,0,0.75);
+
+}
+.shubh-sponsor-image{
+    max-width: fit-content;
+  }
+  

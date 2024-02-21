@@ -1,0 +1,38 @@
+.teams-section{
+    background: #EAE6E6;
+}
+
+.dropdown-wrapper{
+    position: fixed;
+    color: rgb(255, 255, 255);
+    top: 13vh;
+    right: 10vw;
+    z-index: 40;
+    visibility: hidden;
+}
+
+.dropdown{
+    background: #e62b1e;
+    padding:  7px 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 8px;
+    box-shadow: 3px 5px 10px 0px #2e2b2bc2;
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .dropdown-wrapper{
+        position: fixed;
+        color: white;
+        width: 120px;
+        top: 3vh;
+        z-index: 21;
+        left: 50%;
+        margin-left: -60px;
+    }
+    
+}
+
+
