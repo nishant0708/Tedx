@@ -1,0 +1,15 @@
+.shubh-sponsor-image{
+    border-radius: 20px;
+    overflow-x: hidden;
+    width: 300px;
+    box-shadow: 12px 17px 34px -1px rgba(0,0,0,0.75);
+
+}
+
+.shubh-sponsor-card{
+    width: fit-content;
+    height: fit-content;
+    overflow: visible;
+    box-shadow: 12px 17px 34px -1px rgba(0,0,0,0.75);
+    border-radius: 12px;
+}
