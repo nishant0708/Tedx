@@ -113,7 +113,7 @@ export const HeroParallax = ({ products }) => {
       <Breakpoint medium up>
       <div
       ref={ref}
-      className="h-[460vh] py-40 overflow-hidden bg-black pt-96  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[491vh] overflow-hidden mb-0 pb-0 bg-black pt-96  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -123,7 +123,7 @@ export const HeroParallax = ({ products }) => {
           translateY,
           opacity,
         }}
-        className=""
+        className="mb-0 z-10"
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
@@ -143,7 +143,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex mb-60 flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -153,10 +153,10 @@ export const HeroParallax = ({ products }) => {
           ))}
         </motion.div>
       </motion.div>
-      <div className=' m-0 pt-10 sponsor-wrapper'
+      <div className='h-80 -z-10 overflow-y-hidden m-0 sponsor-wrapper'
              ref={sponsorTriggerRef}>
             
-            <div className='sponsors-container'
+            <div className=' sponsors-container'
             style={{
               position: "relative",
               display: "flex",
@@ -179,7 +179,7 @@ export const HeroParallax = ({ products }) => {
             </div>
         </div>
         
-        <div className='mt-20 sponsor-wrapper'
+        <div className='-z-50 m-0  p-0 sponsor-wrapper'
              ref={sponsorTriggerRef2}>
             
             <div className='sponsors-container'
@@ -188,8 +188,10 @@ export const HeroParallax = ({ products }) => {
               display: "flex",
               flexDirection: "row",
               gap: "4vw",
-              duration: 8,
-              margin: 0,
+              duration: 8, 
+              zIndex: -100, 
+              marginTop: "-280px",
+              marginBottom: "0px",
               overflowX: "visible",
           
           }}
@@ -204,7 +206,7 @@ export const HeroParallax = ({ products }) => {
                   ))}   
             </div>
         </div>
-    </div>
+        </div>
   </Breakpoint>
       <Breakpoint small down>
         <HeroParallax2 products={products}/>
