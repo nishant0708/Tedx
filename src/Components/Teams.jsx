@@ -57,7 +57,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 2,
+                        scrub: 1,
                         markers: false,
                         pin: true
                     }
@@ -79,7 +79,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 2,
+                        scrub: 1,
                         markers: false,
                         pin: true
                     }
@@ -100,7 +100,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 2,
+                        scrub: 1,
                         markers: false,
                         pin: true
                     }
@@ -121,7 +121,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 2,
+                        scrub: 1,
                         markers: false,
                         pin: true
                     }
@@ -144,7 +144,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 2,
+                        scrub: 1,
                         markers: false,
                         pin: true
                     } 
@@ -165,7 +165,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 2,
+                        scrub: 1,
                         markers: false,
                         pin: true
                     } 
@@ -179,7 +179,7 @@ export default function Teams(props){
 
         
 
-    }, [])
+    }, [props.team_2024])
     
 
     // console.log(window.innerWidth);
@@ -214,7 +214,7 @@ export default function Teams(props){
                         {
                             coreTeam.map((member) => {
                                 // console.log(member.image)
-                                return (<TeamCard  className={member.id} name={member.name} img={member.image} cuteness={member.cuteness}
+                                return (<TeamCard  id={member.id} name={member.name} img={member.image} cuteness={member.cuteness}
                                 info={member.info} anger={member.anger} humour={member.humour} IQ={member.IQ} fun={member.fun} ig={member.ig}/>)
                             })
                         }
