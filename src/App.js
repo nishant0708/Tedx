@@ -3,6 +3,7 @@ import './App.css';
 import Forscrolldummy from './Components/Forscrolldummy';
 import HeroPg from './Components/HeroPg/HeroPg';
 
+import Loader from './Components/Loader/Loader';
 import LoaderFlower from './Components/Loader/LoaderFlower';
 import Thoughtloom from './Components/thoughtloom/Thoughtloom';
 import Footer from './Components/Footer/Footer';
@@ -83,7 +84,7 @@ function App() {
   useEffect(() => {
     // Simulate loading time for 5 seconds
     const loadingTimeout = setTimeout(() => {
-      // setIsLoaded(true);
+      setIsLoaded(true);
       setShowLoader(false);
     }, 3000);
 
@@ -98,8 +99,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {showLoader && <LoaderFlower />} {/* Show Loader component if showLoader is true */}
-      {!isLoaded && !showLoader && <LoaderFlower />} {/* Show Loader component until resources are loaded */}
+      {showLoader && <Loader />} {/* Show Loader component if showLoader is true */}
+      {!isLoaded && !showLoader && <Loader />} {/* Show Loader component until resources are loaded */}
       {isLoaded && !showLoader && 
       (
         <div className='hey'>

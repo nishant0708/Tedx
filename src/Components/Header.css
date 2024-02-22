@@ -38,18 +38,33 @@
     .meet_our_team-heading{
         display: flex;
         flex-direction: column;
-        width: 390px;
+        height: 100vh;
+        padding: 0;
+        width: 100vw;
         left: 50%;
-        margin-left: -185px;
-        top: 19vh;
+        margin-left: -50vw;
+    }
+    .h1_heading_container{
+        display: flex;
+        flex-direction: column;
+        gap: 0vh;
+        align-items: center;
+        margin: auto;
     }
     .meet_our_team-heading_words{
-        font-size: 140px;
+        position: relative;
+        font-size: 15vh;
+    }
+    .meet_our_team-meet{
+        transform: translateY(0vh);
+        position: relative;
     }
     .meet_our_team-our{
-        margin-top: 70%;
+        transform: translateY(0vh);
+        position: relative;
     }
     .meet_our_team-team{
-        margin-top: 70%;
+        transform: translateY(0vh);
+        position: relative;
     }
 }

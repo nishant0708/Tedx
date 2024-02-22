@@ -46,7 +46,7 @@ export default function Header(props){
 
     return( 
         <div className='meet_our_team-heading'>
-            <h1 className=''>
+            <h1 className='h1_heading_container'>
                 <span className='meet_our_team-heading_words meet_our_team-meet' >
                     {
                         'Meet'.split('').map((word) => {
