@@ -26,15 +26,6 @@
     flex-direction: row;
 }
 
-.sponsors-container{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-    padding-top: 45vh;
-    overflow-x: visible;
-}
-
 .sponsor-wrapper{
     background: #000;
     position: relative;
@@ -67,8 +58,8 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 15vw;
-    padding-top: 45vh;
+    gap: 5vw;
+    margin-top: 49vh;
     overflow-x: visible;
 }
 
