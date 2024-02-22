@@ -35,8 +35,8 @@ export default function HeroPg() {
             
             // Calculate opacity based on scroll position
             let newOpacity = scrollPosition / triggerPoint;
-            newOpacity = Math.min(newOpacity, 1); // Ensure opacity doesn't exceed 1
-            newOpacity = Math.max(newOpacity, 0); // Ensure opacity doesn't go below 0
+            newOpacity = Math.min(newOpacity, 0.8); // Ensure opacity doesn't exceed 1
+            newOpacity = Math.max(newOpacity, 0.09); // Ensure opacity doesn't go below 0
             setOpacity(newOpacity);
         };
 
@@ -54,10 +54,11 @@ export default function HeroPg() {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         }
         
-        const tl = gsap.timeline({ defaults: { ease: 'power1.out', opacity: 0 } });
+        const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
+        const tx = gsap.timeline({ defaults: { ease: 'power1.out' } });
         // tl.set('.hero-text', { opacity: 0 }) // Set initial opacity to 0
-        tl.fromTo(videoRef.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 0.8 })
-        tl.fromTo(videoRef1.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 1 })
+        tx.fromTo(videoRef.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 0.8 })
+        tx.fromTo(videoRef1.current, { opacity: 0 }, { opacity: 1, y: 0, duration: 1 })
         tl.fromTo('.hero-text', { opacity: 0 }, { opacity: 1, duration: 0.01 })
         tl.fromTo('.line1', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.5, delay: 0.5 })
         .fromTo('.line2', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6 })
@@ -65,22 +66,24 @@ export default function HeroPg() {
         .fromTo('.line4', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6 })
         .fromTo('.subliner', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.5, delay: 0.3 })
         .fromTo('.tedxlogo', { opacity: 0 }, { opacity: 1, duration: 0.7 });
+if (isMobile){
 
-        gsap.set(".herowhiteflower img", { opacity: 0, scale: 0.1, rotation: 0 });
-
-        const t1 = gsap.timeline({ease: "Power3" });
-        t1.to(".herowhiteflower img", { duration: 3, opacity: 1, scale: 1, rotation: 360, delay:4 });
-
+    gsap.set(".herowhiteflower img", { opacity: 0, scale: 0.1, rotation: 0 });
+    
+    const t1 = gsap.timeline({ease: "Power3" });
+    t1.to(".herowhiteflower img", { duration: 3, opacity: 1, scale: 1, rotation: 270, delay:2 });
+    
         gsap.set(".heroredflower img", { opacity: 0, scale: 0.1, rotation: 0 });
 
         const t2 = gsap.timeline({ease: "Power3" });
-        t2.to(".heroredflower img", { duration: 4, opacity: 1, scale: 1, rotation: 360,delay:4.5 });
+        t2.to(".heroredflower img", { duration: 2.5, opacity: 1, scale: 1, rotation: 360,delay:2.5 });
 
-        gsap.set("#heroyellow2", { scaleX: 0.1 });
-
+        gsap.set("#heroyellow2", { scaleX: 0.01 });
+        
         const t3 = gsap.timeline({ ease: "Power3" });
         t3.to("#heroyellow2", {scaleX: 1,  // Scale to full width
-        duration: 2, delay:1});
+        duration: 2, delay: 0.5});
+    }
 
         return () => {
             tl.kill(); // Clean up animation when component unmounts

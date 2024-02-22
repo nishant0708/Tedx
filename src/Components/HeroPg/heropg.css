@@ -51,6 +51,7 @@
     font-size: 6.5rem;
     /* font-size: 118px; */
     line-height: 6rem;
+    /* opacity: 0; */
     /* display: flex; */
     /* flex-direction: column; */
 }
@@ -117,21 +118,19 @@
         /* float: left; */
     }
     .mainliner{
-        font-size: 2rem;
-    line-height: 2.2rem;
+        font-size: 2.5rem;
+    line-height: 2.4rem;
     text-align: left;
-    font-size: 2.2rem;
-    line-height: 2.1rem;
     }
     .subliner{
-        font-size: 1rem;
-        line-height: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
         text-align: left;
     }
     .lineimg{
         position: absolute;
         left: -58vw;
-        top: -16vh;
+        top: -12vh;
      z-index:1;
     
     }
@@ -160,7 +159,7 @@
     width: 28vh;
     z-index: 100;
     /* transform: translate(15vw, 35vh); */
-    left: -45vw;
+    left: -47vw;
     top: -5vh;
 }
 
@@ -177,13 +176,13 @@
     position: absolute;
     /* transform: translate(39vw, 10vh); */
     width: 92vw;
-    height: 30vh;
-    background-color: rgb(240, 240, 25);
+    height: 25vh;
+    background-color: #fad648;
     border-radius: 5vh 5vh 5vh 5vh;
-    border-color: yellow;
+    border-color:  #fad648;
     z-index: -1;
     left: -46vw;
-    top: -13vh;
+    top: -12vh;
 ;
 }
 }
