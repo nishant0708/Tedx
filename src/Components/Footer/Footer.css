@@ -85,9 +85,10 @@
     padding-bottom: 0.5rem;
 }
 .mailus input{
-    height: 2.5rem;
+    height: 2.7rem;
     width: 300px;
     padding: 0.5rem;
+    transform: translateY(-5px);
 }
 .copyright p{
     text-align: center;
@@ -147,7 +148,8 @@
     }
     .mailus input{
         width: 200px;
-        height: 40px;
+        height: 42px;
+        transform: translateY(1px);
     }
     .socialmedia{
         width: 60vw;

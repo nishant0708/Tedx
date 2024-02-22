@@ -8,10 +8,15 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  position: relative;
+
   overflow: hidden;
   position: relative;
   z-index: 3;
+}
+.scroller{
+  position: relative;
+  z-index: 1;
+
 }
 
 .svg-container {

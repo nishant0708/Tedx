@@ -17,12 +17,14 @@ const Thoughtloom = () => {
     gsap.registerPlugin(ScrollTrigger);
   
     const tl = gsap.timeline({
+      start:"top 500%",
       scrollTrigger: {
         trigger: '.jay',
-        start: "top top", // Adjust the start position
+        start: "top", // Adjust the start position
         end: "bottom", // Adjust the end position
         scrub: true, // smooth animation
         pin: ".jay",
+        
       }
     });
   
@@ -63,7 +65,7 @@ const Thoughtloom = () => {
   }, []);
 
   return (
-    <div className='scroller'>
+    <div className='scroller'  >
       <div className='jay' ref={jayRef}>
         <div className='svg-container'>
           <div className='mask-box' ref={maskBoxRef}></div>

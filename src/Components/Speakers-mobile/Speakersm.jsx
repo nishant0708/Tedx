@@ -4,16 +4,16 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import mlinkedin from "../Assests/Images/linkedin (1).png";
 import instagram from "../Assests/Images/instagram (1).png";
-import samp_image from "../Assests/Images/ZakirKhan_3x1_WhatsOn.jpg-transformed.webp"
+import samp_image from "../Assests/Images/rev.png"
 
 import badal from "../Assests/Images/Group 29.png"
 
 
 const speakers2024 = [
     {
-        name: 'Revealing',
-        surname: 'Soon',
-        description: '',
+        name: 'r',
+        surname: '',
+        description: 'Revealing Soon...',
         image: samp_image,
         instagramLink: '',
         linkedinLink: ''
@@ -28,8 +28,8 @@ const speakers2024 = [
       description: "Ella D'Verma, delivered a powerful speech on ''Acceptance'', highlighting the significance of embracing diversity and  fostering an inclusive society.",
       image:"https://imgur.com/bXsedhy.png",
       designation: "Miss International Trans Queen",
-      instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-      linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+      instagramLink: 'https://www.instagram.com/elladverma?igsh=MXQ0eHNicGF2b2FsaA',
+    linkedinLink: 'https://www.linkedin.com/in/ella-verma-ab6889236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     
     {
@@ -38,8 +38,8 @@ const speakers2024 = [
       designation: "CTO and Co-founder at Pisarv Technology",
       description: 'Abhishek Mishra captivated the audience with his talk on "Transhumanism" and how technology is reshaping the evolutionary path of humanity',
       image: "https://imgur.com/CAGdBjm.png",
-      instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-      linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+      instagramLink: 'https://www.instagram.com/abhisek.mnit?igsh=MTM2MGg2Y3VweGJveQ',
+      linkedinLink: ''
     },
   
     {
@@ -48,8 +48,8 @@ const speakers2024 = [
       designation: "Member of UNESCO & Winner of India’s Got Talent Season 5",
       description: "Dr. Ragini Makkhar, India's Got Talent Season 5 winner, captivated the audience with her talk on ''Evolve with Dance,'' highlighting dance's transformative impact on personal growth and self-expression.",
       image:"https://imgur.com/EEVejQt.png",
-      instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-      linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+      instagramLink: 'https://www.instagram.com/dr.raginimakkad?igsh=MXJlN245ZWh3N2phZw==',
+      linkedinLink: ''
     },
   
     {
@@ -58,8 +58,8 @@ const speakers2024 = [
       description: 'Bhaskar Indrakanti delivered a thought-provoking talk on "Mental Awareness," raising awareness about mental health and emphasising the importance of de-stigmatization.',
       image:"https://imgur.com/661JHpW.png",
       designation: "Entrepreneur & Social Engineer",
-      instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-      linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+      instagramLink: 'https://www.instagram.com/bhaskar_indrakanti?igsh=MWZjOG1iMzh0bDAzYw==',
+    linkedinLink: 'https://www.linkedin.com/in/bh%C4%81skar-indrakanti-424b6051?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
       name: 'Akshay',
@@ -67,8 +67,8 @@ const speakers2024 = [
       designation: "The youngest deputy collector of the MP government.",
       description: 'Akshay Singh, shared his insights on "Social Rights," advocating for equal opportunities and social justice',
       image: "https://imgur.com/tKpCx8R.png",
-      instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-      linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+      instagramLink: 'https://www.instagram.com/theakshay_jointcollector?igsh=MTF6NjZldWNqbWVqOQ==',
+    linkedinLink: 'https://www.linkedin.com/in/akshay-singh-markam-a70178204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
       name: 'Abhijit',
@@ -76,8 +76,8 @@ const speakers2024 = [
       designation: "Geopolitics, History & Science Expert., Youtuber",
       description: 'Abhijit Chavda delivered a compelling talk on "Geo Politics," shedding light on the dynamic interplay of politics and geography in shaping the global landscape',
       image: "https://imgur.com/8E3IZ7u.png",
-      instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-      linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+      instagramLink: 'https://www.instagram.com/theabhijitchavda?igsh=aXRqMTV2cGljb3pi',
+    linkedinLink: 'https://www.linkedin.com/in/abhijitchavda?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
       name: 'Dr. Vineet',
@@ -85,8 +85,8 @@ const speakers2024 = [
       designation: "Author, History and Mythology Expert",
       description: 'Dr. Vineet Agrawal engaged the audience with his enlightening presentation on "Science and Scriptures," exploring the intersections between scientific advancements and ancient wisdom.',
       image: "https://imgur.com/BoHZel8.png",
-      instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-      linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+      instagramLink: 'https://www.instagram.com/drvineetaggarwal?igsh=MWV5bmxlejN4eXdjcA==',
+    linkedinLink: 'https://www.linkedin.com/in/drvineetaggarwal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
       name: 'Aryan',
@@ -94,8 +94,8 @@ const speakers2024 = [
       designation: "Student at IIPS Founder at Mission Vasundhara & Satat Productions",
       description: 'In his talk, Aryan discussed the power of positive thinking and its potential to drive the evolution of humanity as a whole.',
       image: "https://imgur.com/jzcJX9H.png",
-      instagramLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ',
-      linkedinLink: 'https://www.youtube.com/watch?v=J5twQLXJ-vQ'
+      instagramLink: 'https://www.instagram.com/aryanvijayvergiya?igsh=MWJib2RhcG44dWhwcg==',
+      linkedinLink: 'https://www.linkedin.com/in/aryan-vijayvergiya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
   
   ];
@@ -180,76 +180,85 @@ const Speakersm = () => {
        
        
     } , []);
-    useEffect(() => {
+    const [selectedYear, setSelectedYear] = useState('2023');
+
+    const initializeAnimations = () => {
         gsap.registerPlugin(ScrollTrigger);
-      
+
         const speakerNames = document.querySelectorAll(".mSpeaker-name");
         const oSliderImgs = document.querySelectorAll(".o-mslider__img");
         const speakerDescs = document.querySelectorAll(".mspeaker-desc");
         const speakerDesg = document.querySelectorAll(".mspeaker-desg");
+
+        const animations = [];
+
         speakerNames.forEach(name => {
-          gsap.to(name, {
-            xPercent: -140,
-            duration: 1,
-            scrollTrigger: {
-              trigger: name.closest(".o-mslider__item"),
-              scrub: 1,
-              start: "top 20%",
-              end: "top 100%",
-             
-            },
-            ease: "power3"
-          });
+            animations.push(gsap.to(name, {
+                xPercent: -140,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: name.closest(".o-mslider__item"),
+                    scrub: 1,
+                    start: "top 50%",
+                    end: "top 100%",
+                },
+                ease: "power3"
+            }));
         });
+
         oSliderImgs.forEach(img => {
-        gsap.to(img, {
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-              trigger: img.closest(".o-mslider__item"),
-              scrub: 1,
-              start: "top 30%",
-              end: "top 100%",
-             
-            },
-           
-          });
+            animations.push(gsap.to(img, {
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: img.closest(".o-mslider__item"),
+                    scrub: 1,
+                    start: "top 50%",
+                    end: "top 100%",
+                },
+            }));
         });
 
         speakerDescs.forEach(desc => {
-            gsap.to(desc, {
-              xPercent:162,
-              duration: 1,
-              scrollTrigger: {
-                trigger: desc.closest(".o-mslider__item"),
-                scrub: 1,
-                start: "top 80",
-                end: "top 100%",
-               
-              },
-              ease: "power3"
-            });
-          });
+            animations.push(gsap.to(desc, {
+                xPercent: 162,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: desc.closest(".o-mslider__item"),
+                    scrub: 1,
+                    start: "top 30%",
+                    end: "top 100%",
+                },
+                ease: "power3"
+            }));
+        });
 
-          speakerDesg.forEach(designation => {
-            gsap.to(designation, {
-              opacity:1,
-              duration: 1,
-              scrollTrigger: {
-                trigger: designation.closest(".o-mslider__item"),
-                scrub: 1,
-                start: "top 80",
-                end: "top 100%",
-               
-              },
-              
-            });
-          });
+        speakerDesg.forEach(designation => {
+            animations.push(gsap.to(designation, {
+                opacity: 1,
+                duration: 1.5,
+                scrollTrigger: {
+                    trigger: designation.closest(".o-mslider__item"),
+                    scrub: 1,
+                    start: "top 30%",
+                    end: "top 100%",
+                },
+                ease:"bounce.in"
+            }));
+        });
 
+        return animations;
+    };
 
+    useEffect(() => {
+        // Initialize or reapply animations when selectedYear changes
+        const animations = initializeAnimations();
 
-      }, []);
-    
+        return () => {
+            // Clean up animations when component unmounts or selectedYear changes
+            animations.forEach(animation => animation.kill());
+        };
+    }, [selectedYear]);
        
       const progressBarRef = useRef(null);
       useEffect(() => {
@@ -276,7 +285,7 @@ const Speakersm = () => {
  
 
 
-    const [selectedYear, setSelectedYear] = useState('2023');
+    // const [selectedYear, setSelectedYear] = useState('2023');
     const selectedSpeakers = selectedYear === '2024' ? speakers2024 : speakers2023;
     const handleChange = (event) => {
         setSelectedYear(event.target.value);
@@ -286,7 +295,7 @@ const Speakersm = () => {
   return (
     <div id="mslider" class="o-mslider">
   
-  <h1 class="o-mslider__title">
+  <h1 className={`o-mslider__title ${selectedSpeakers.some(speaker => speaker.name === 'r') ? 'custom-title-style' : ''}`}>
     <span id="mtitle">Speakers</span>
   </h1>
   <img  classname="mbadal" style={{position:'fixed' ,width:"60%", bottom:"0%" , right:"0%"}} src={badal} alt=""/>
@@ -296,8 +305,8 @@ const Speakersm = () => {
       </div>
   <ul class="o-mslider__list">
 
-  <select className='myear-drop' onChange={handleChange} value={selectedYear}>
-          <option className="option" value="2024">2024</option>
+  <select className='myear' onChange={handleChange} value={selectedYear}>
+          <option  value="2024">2024</option>
           <option value="2023">2023</option>
         </select>
 
@@ -338,7 +347,7 @@ const Speakersm = () => {
               // Add switch cases for 2024 here
               switch (speaker.name) {
                 
-                case 'Revealing':
+                case 'r':
                   speakerClass = 'mreveal';
                   break;
                 default:

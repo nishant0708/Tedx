@@ -13,7 +13,9 @@
     width:20vw;
     position:relative;
     top:30vh;
-    left:35%;
+    max-width: none;
+    left: 35%;
+    /* left:50%; */
     /* transform: translateY(-50%); */
 }
 
@@ -21,6 +23,7 @@
     .apploader img{
         width:50vw;
         top:35vh;
+        left: 25%;
         left: 25%;
     }
 }
