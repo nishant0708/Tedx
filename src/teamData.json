@@ -1,71 +1,8 @@
 {
     "2024":{
-		"Organisers": [
-            {
-                "id": 1,
-                "name": "Anurudh",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/yNMJC9l.png",
-                "ig": "",
-                "cuteness":60,
-                "IQ":80,
-                "humour":20,
-                "anger":90,
-                "fun": 46
-                
-            },{
-                "id": 1,
-                "name": "Anushka",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/SmqbVeM.png",
-                "ig": "",
-                "cuteness":60,
-                "IQ":80,
-                "humour":20,
-                "anger":90,
-                "fun": 46
-                
-            },{
-                "id": 1,
-                "name": "Swastik",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/Jplbz15.png",
-                "ig": "",
-                "cuteness":60,
-                "IQ":80,
-                "humour":20,
-                "anger":90,
-                "fun": 46
-                
-            },{
-                "id": 1,
-                "name": "Ashish",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/X88JVpU.png",
-                "ig": "",
-                "cuteness":60,
-                "IQ":80,
-                "humour":20,
-                "anger":90,
-                "fun": 46
-                
-            }
-        ],
         "Web-Dev Team": [
             {
-                "id": 1,
-                "name": "Jay ",
-                "info": "TEDxDAVV ",
-                "image": "https://imgur.com/uHy2GeJ.png",
-                "ig": "",
-                "cuteness":5,
-                "IQ":30,
-                "humour":20,
-                "anger":50,
-                "fun": 46
-                
-            },{
-                "id": 1,
+                "id": "Web-Dev-Team",
                 "name": "Rachita ",
                 "info": "TEDxDAVV ",
                 "image": "https://imgur.com/YfeCrkU.png",
@@ -77,12 +14,9 @@
                 "fun": 46
                 
             }
-        ]
-	},
-    "2023":{
-		"Organisers": [
+        ],"Organisers": [
             {
-                "id": 1,
+                "id": "organisers",
                 "name": "Anurudh",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/yNMJC9l.png",
@@ -94,7 +28,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "organisers",
                 "name": "Swastik",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/Jplbz15.png",
@@ -106,7 +40,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "organisers",
                 "name": "Anushka",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/SmqbVeM.png",
@@ -118,7 +52,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "organisers",
                 "name": "Ashish",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/X88JVpU.png",
@@ -130,10 +64,75 @@
                 "fun": 46
                 
             }
+        ]
+	},
+    "2023":{
+		"Organisers": [
+            {
+                "id": "organisers",
+                "name": "Ashutosh ",
+                "info": "TEDxDAVV ",
+                "image": "https://imgur.com/tJ8pjtb.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": "organisers",
+                "name": "Utkarsh ",
+                "info": "TEDxDAVV ",
+                "image": "https://imgur.com/9pu3jaq.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": "organisers",
+                "name": "Ritu ",
+                "info": "TEDxDAVV",
+                "image": "https://imgur.com/0OpKA6l.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": "organisers",
+                "name": "Pratham ",
+                "info": "TEDxDAVV",
+                "image": "https://imgur.com/WpiL60T.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": "organisers",
+                "name": "Miraj ",
+                "info": "TEDxDAVV",
+                "image": "https://imgur.com/F6mkISp.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            }
         ],
         "Art Team": [
             {
-                "id": 1,
+                "id": "Art-Team",
                 "name": "Meenakshi ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/wRbW7ps.png",
@@ -145,7 +144,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Art-Team",
                 "name": "Surbhi ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/74rp28g.png",
@@ -158,7 +157,7 @@
                 
             },
             {
-                "id": 1,
+                "id": "Art-Team",
                 "name": "Anushka ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/Gy7rgaK.png",
@@ -170,7 +169,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Art-Team",
                 "name": "Saharsh ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/MOgNFip.png",
@@ -185,19 +184,7 @@
         ],
         "Marketing Team": [
             {
-                "id": 1,
-                "name": "Ritu ",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/0OpKA6l.png",
-                "ig": "",
-                "cuteness":5,
-                "IQ":30,
-                "humour":20,
-                "anger":50,
-                "fun": 46
-                
-            },{
-                "id": 1,
+                "id": "Marketing-Team",
                 "name": "Anshul ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/0C3X2Ha.png",
@@ -210,7 +197,7 @@
                 
             },
             {
-                "id": 1,
+                "id": "Marketing-Team",
                 "name": "Manasvi ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/AWHfdjz.png",
@@ -222,7 +209,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Marketing-Team",
                 "name": "Sanjeevni ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/7w1EdCz.png",
@@ -237,7 +224,7 @@
         ],
         "Sponsors Team": [
             {
-                "id": 1,
+                "id": "Sponsors-Team",
                 "name": "Sahil ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/jHgMyFI.png",
@@ -249,7 +236,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Sponsors-Team",
                 "name": "Shreya ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/Y2YY9YB.png",
@@ -262,7 +249,7 @@
                 
             },
             {
-                "id": 1,
+                "id": "Sponsors-Team",
                 "name": "Akshat ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/tGwFMQo.png",
@@ -274,7 +261,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Sponsors-Team",
                 "name": "Atharva ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/UYBcwvw.png",
@@ -286,7 +273,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Sponsors-Team",
                 "name": "Attar ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/hz5w6eD.png",
@@ -300,33 +287,9 @@
             }
         ],
         "Production Team": [
+            
             {
-                "id": 1,
-                "name": "Pratham ",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/WpiL60T.png",
-                "ig": "",
-                "cuteness":5,
-                "IQ":30,
-                "humour":20,
-                "anger":50,
-                "fun": 46
-                
-            },{
-                "id": 1,
-                "name": "Miraj ",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/F6mkISp.png",
-                "ig": "",
-                "cuteness":5,
-                "IQ":30,
-                "humour":20,
-                "anger":50,
-                "fun": 46
-                
-            },
-            {
-                "id": 1,
+                "id": "Production-Team",
                 "name": "Uday ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/xMZCirX.png",
@@ -338,7 +301,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Production-Team",
                 "name": "Shubh ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/hDMmRzS.png",
@@ -350,7 +313,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Production-Team",
                 "name": "Aryan ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/dUa6hZ6.png",
@@ -365,7 +328,7 @@
         ],
         "Curation Team": [
             {
-                "id": 1,
+                "id": "Curation-Team",
                 "name": "Aditi ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/pXuqGA6.png",
@@ -377,7 +340,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Curation-Team",
                 "name": "Komal ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/GzfzBkn.png",
@@ -390,7 +353,7 @@
                 
             },
             {
-                "id": 1,
+                "id": "Curation-Team",
                 "name": "Samriddhi ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/yyjX5hv.png",
@@ -402,7 +365,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Curation-Team",
                 "name": "Niharika ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/b0fgrUx.png",
@@ -414,7 +377,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Curation-Team",
                 "name": "Aastha ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/Dsk1L5y.png",
@@ -429,7 +392,7 @@
         ],
         "Design Team": [
             {
-                "id": 1,
+                "id": "Design-Team",
                 "name": "Anuj ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/IichnZZ.png",
@@ -441,7 +404,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Design-Team",
                 "name": "Sajal ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/IRR99gs.png",
@@ -454,7 +417,7 @@
                 
             },
             {
-                "id": 1,
+                "id": "Design-Team",
                 "name": "Harshada ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/X9V2wfy.png",
@@ -466,7 +429,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Design-Team",
                 "name": "Ishika ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/rSLjXey.png",
@@ -481,7 +444,7 @@
         ],
         "Content Team": [
             {
-                "id": 1,
+                "id": "Content-Team",
                 "name": "Renuka ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/XxrL7Yp.png",
@@ -493,7 +456,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Content-Team",
                 "name": "Tejaswini ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/aa7wk5e.png",
@@ -506,7 +469,7 @@
                 
             },
             {
-                "id": 1,
+                "id": "Content-Team",
                 "name": "Vartika ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/a4E7RdM.png",
@@ -520,21 +483,9 @@
             }
         ],
         "Event Management": [
+            
             {
-                "id": 1,
-                "name": "Utkarsh ",
-                "info": "TEDxDAVV ",
-                "image": "https://imgur.com/9pu3jaq.png",
-                "ig": "",
-                "cuteness":5,
-                "IQ":30,
-                "humour":20,
-                "anger":50,
-                "fun": 46
-                
-            },
-            {
-                "id": 1,
+                "id": "Management-Team",
                 "name": "Jay ",
                 "info": "TEDxDAVV ",
                 "image": "https://imgur.com/uHy2GeJ.png",
@@ -546,7 +497,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Management-Team",
                 "name": "Rachita ",
                 "info": "TEDxDAVV ",
                 "image": "https://imgur.com/YfeCrkU.png",
@@ -558,7 +509,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "Management-Team",
                 "name": "Yati ",
                 "info": "TEDxDAVV ",
                 "image": "https://imgur.com/H5SivgK.png",
@@ -603,19 +554,6 @@
                 "name": "Ojas ",
                 "info": "TEDxDAVV ",
                 "image": "https://imgur.com/UBxBqku.png",
-                "ig": "",
-                "cuteness":5,
-                "IQ":30,
-                "humour":20,
-                "anger":50,
-                "fun": 46
-                
-            },
-            {
-                "id": 1,
-                "name": "Ashutosh ",
-                "info": "TEDxDAVV ",
-                "image": "https://imgur.com/tJ8pjtb.png",
                 "ig": "",
                 "cuteness":5,
                 "IQ":30,

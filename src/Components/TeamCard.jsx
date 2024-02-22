@@ -31,6 +31,9 @@ export default function TeamCard(props){
                 delay: 1,
                 duration: 1.5,
                 ease: "power3.inOut",
+                stagger:{
+                    each: 0.5
+                }
             })
         }else{
             tl.fromTo('.teams-card',{
@@ -79,7 +82,7 @@ export default function TeamCard(props){
 
 
     return(
-        <div className='teams-card-wrapper'><Tilt>
+        <div className='teams-card-wrapper' id={props.id}><Tilt>
             <div className='teams-card'  >
                 <div>
                     <h1 className='member-name'>{name}</h1>
