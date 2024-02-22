@@ -14,7 +14,7 @@ const FaqPage = () => {
     {
       title: "What is the Theme of the event?",
       description:
-        "The theme of TedxDavv2024 Thought loom. Which symbolizes a weaving of ideas and interconnected thoughts, akin to threads in a loom. It represents creation of an inspiring fabric that goes beyond individual perspectives, fostering a collective consciousness.",
+        "The theme of TedxDavv2024 is Thought loom. Which symbolizes a weaving of ideas and interconnected thoughts, akin to threads in a loom. It represents creation of an inspiring fabric that goes beyond individual perspectives, fostering a collective consciousness.",
     },
     {
       title: "What is the date and time of the Event?",
@@ -41,10 +41,10 @@ const FaqPage = () => {
   
   return (
     <BreakpointProvider>
-        <Breakpoint small down>
+        <Breakpoint customQuery="(max-width: 1025px)">
             <StickyScroll2 content={content}/>
         </Breakpoint>
-        <Breakpoint medium up>
+        <Breakpoint customQuery="(min-width: 1025px)">
             <StickyScroll content={content}/>
         </Breakpoint>
     </BreakpointProvider>

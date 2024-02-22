@@ -156,7 +156,7 @@ export const ProductCard = ({ product, translate }) => {
         className="group/product opacity-100 mt-20 h-60 w-40 relative flex-shrink-0"
       >
         <a
-          href={product.link}
+          href='javascript:void(0)'
           className="block opacity-100 group-hover/product:shadow-2xl"
         >
           <img

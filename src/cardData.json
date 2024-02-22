@@ -1,8 +1,8 @@
 {
     "2024":{
-		"Core Team": [
+		"Organisers": [
             {
-                "id": 1,
+                "id": "organisers",
                 "name": "Tony Eades",
                 "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
                 "image": "https://www.saltedstone.com/hubfs/TeamPortraitsAPAC/tonyEades500.jpg",
@@ -14,7 +14,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "organisers",
                 "name": "Tony Eades",
                 "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
                 "image": "https://www.saltedstone.com/hubfs/TeamPortraitsAPAC/tonyEades500.jpg",
@@ -26,7 +26,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "organisers",
                 "name": "Tony Eades",
                 "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
                 "image": "https://www.saltedstone.com/hubfs/TeamPortraitsAPAC/tonyEades500.jpg",
@@ -39,7 +39,7 @@
                 
             },
             {
-                "id": 1,
+                "id": "organisers",
                 "name": "Tony Eades",
                 "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
                 "image": "https://www.saltedstone.com/hubfs/TeamPortraitsAPAC/tonyEades500.jpg",
@@ -51,7 +51,7 @@
                 "fun": 46
                 
             },{
-                "id": 1,
+                "id": "organisers",
                 "name": "Tony Eades",
                 "info": "Agra is a city in northern India, known for the iconic Taj Mahal, a stunning white marble mausoleum built by .",
                 "image": "https://www.saltedstone.com/hubfs/TeamPortraitsAPAC/tonyEades500.jpg",

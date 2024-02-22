@@ -52,8 +52,8 @@ const StickyScroll = ({ content }) => {
   useEffect(() => {
     const tween2 = gsap.to("#whiteflower", {
       y: 150,
-      x: 140,
-      width: 300,
+      x: "3vw",
+      width: "30vh",
       opacity: 1,
     rotate: -60,
     duration: 1,
@@ -68,8 +68,8 @@ const StickyScroll = ({ content }) => {
 
 useEffect(() => {
   const tween2 = gsap.to("#redflower", {
-    x: 530,
-width: 400,
+    x: "35vw",
+width: "30vh",
       rotate: 60,
     opacity: 1,
 
@@ -86,7 +86,7 @@ width: 400,
 useEffect(() => {
   const tween2 = gsap.to("#faq", {
     opacity: 1,
-    x: 300,
+    x: "12vw",
   duration: 1,
   delay: 1,
   scrollTrigger: "#yes5",
@@ -97,7 +97,7 @@ useEffect(() => {
     
   
     const tween = gsap.to("#answers", {
-      x: 380,
+      x: "15vw",
       opacity: 1,
       duration: 1,
       delay: 1.5,
@@ -118,8 +118,8 @@ useEffect(() => {
 
   useEffect(() => {
     const tween = gsap.to("#yellow2", {
-      width:500,
-      x:260,
+      width:"35vw",
+      x:"10vw",
       opacity: 1,
     duration: 1,
     delay: 0.5,

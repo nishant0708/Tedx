@@ -38,71 +38,47 @@ export const HeroParallax = ({ products }) => {
 
   console.log(scrollChange);
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, 1000]),
+    useTransform(scrollYProgress, [0, 1], [0, 3000]),
     springConfig
   );
-  const translateXF = useSpring(
-    useTransform(scrollChange, [0, 1], [0, -100]),
+  
+  const translateX3 = useSpring(
+    useTransform(scrollYProgress, [0, 1], [-1000, 2000]),
     springConfig
   );
+
+  const translateX5 = useSpring(
+    useTransform(scrollYProgress, [0, 1], [-2000, 1000]),
+    springConfig
+  );
+
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -1000]),
+    useTransform(scrollYProgress, [0, 1], [0, -2500]),
     springConfig
   );
+  const translateXReverse4 = useSpring(
+    useTransform(scrollYProgress, [0, 1], [1000, -1500]),
+    springConfig
+  );  
+
   const rotateX = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
     springConfig
   );
   const opacity = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [0.5, 1]),
+    useTransform(scrollYProgress, [0, 0.1], [0.5, 1]),
     springConfig
   );
   const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [20, 0]),
+    useTransform(scrollYProgress, [0, 0.4], [30, 0]),
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 200]),
+    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
 
-  const sponsorContainerRef2 = useRef(null);
-  const sponsorTriggerRef2 = useRef(null);
-  useEffect(() => {
-    const pin = gsap.fromTo(sponsorContainerRef2.current,{
-      translateX:'-150vw',
-  },{
-      translateX: '+0vw',
-      ease:'none',
-      duration:4,
-      scrollTrigger:{
-          trigger: sponsorTriggerRef2.current,
-          start:'top 60%',
-          end:'${sponsorLen*370} top',
   
-      }
-  })
-  
-  }, []);
-
-
-  useEffect(() => {
-  const pin = gsap.fromTo(sponsorContainerRef.current,{
-    translateX:'+0vw',
-},{
-    translateX: '-90vw',
-    duration:4,
-    scrollTrigger:{
-        trigger: sponsorTriggerRef.current,
-        start:'top 50%',
-        end:'${sponsorLen*370} top',
-
-    }
-})
-
-}, []);
-
-
 
 
   return (
@@ -125,7 +101,7 @@ export const HeroParallax = ({ products }) => {
         }}
         className="mb-0 z-10"
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="FIRST flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -134,7 +110,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="SECOND flex flex-row  mb-20 space-x-20 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -143,17 +119,36 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="THIRD flex flex-row-reverse space-x-reverse space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
-              translate={translateX}
+              translate={translateX3}
               key={product.title}
             />
           ))}
         </motion.div>
+        
       </motion.div>
-      <div className='h-80 -z-10 overflow-y-hidden m-0 sponsor-wrapper'
+      <motion.div className="FOURth row flex flex-row  mt-[78vh] space-x-20 ">
+          {secondRow.map((product) => (
+            <ProductCard
+              product={product}
+              translate={translateXReverse4}
+              key={product.title}
+            />
+          ))}
+        </motion.div>
+        <motion.div className="FIFTH flex flex-row-reverse mt-20 space-x-reverse space-x-20">
+          {thirdRow.map((product) => (
+            <ProductCard
+              product={product}
+              translate={translateX5}
+              key={product.title}
+            />
+          ))}
+        </motion.div>
+      {/* <div className='h-80 -z-10 overflow-y-hidden m-0 sponsor-wrapper'
              ref={sponsorTriggerRef}>
             
             <div className=' sponsors-container'
@@ -205,7 +200,7 @@ export const HeroParallax = ({ products }) => {
                   />
                   ))}   
             </div>
-        </div>
+        </div> */}
         </div>
   </Breakpoint>
       <Breakpoint small down>
@@ -240,7 +235,7 @@ export const ProductCard = ({ product, translate }) => {
       className="group/product rounded-xl  h-96 w-[30rem] relative flex-shrink-0"
     >
       <a
-        href={product.link}
+        href='javascript:void(0)'
         className="block rounded-xl group-hover/product:shadow-2xl"
       >
         <img

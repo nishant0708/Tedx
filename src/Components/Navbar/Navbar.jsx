@@ -71,17 +71,20 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  //our team handler 
+
+  //our team handler and sponsors handler
+  // it reloads
+
   const [reloadPage, setReloadPage] = useState(false);
 
   const handleReload = () => {
     window.scrollTo(0, 0);
-    //setReloadPage(false);
+    setReloadPage(true);
   };
 
-  // if (reloadPage) {
-    // window.location.reload();
-  // }
+  if (reloadPage) {
+    window.location.reload();
+  }
 
   const handleMenuItemClick = (menuItem) => {
     setMenu(menuItem);
@@ -120,7 +123,7 @@ const Navbar = () => {
 
       <ul ref={menuRef} className={`nav-menu ${isOpen ? 'open' : ''}`}>
       <li onClick={() => handleMenuItemClick("home")} style={{ color: menu === "home" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "home" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/'><span>Home</span></Link> {menu === "home" ? <hr /> : <></>} </li>
-        <li onClick={() => handleMenuItemClick("sponsors")} style={{ color: menu === "sponsors" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "sponsors" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/sponsors'><span>Sponsors</span></Link> {menu === "sponsors" ? <hr /> : <></>}</li>
+        <li onClick={() => handleMenuItemClick("sponsors")} style={{ color: menu === "sponsors" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "sponsors" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/sponsors'><span onClick={handleReload}>Sponsors</span></Link> {menu === "sponsors" ? <hr /> : <></>}</li>
         <li onClick={() => handleMenuItemClick("gallery")} style={{ color: menu === "gallery" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "gallery" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/gallery'><span>Gallery</span></Link> {menu === "gallery" ? <hr /> : <></>}</li>
         <li onClick={() => handleMenuItemClick("teams")} style={{ color: menu === "teams" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "teams" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/teams'><span onClick={handleReload}>Our Team</span> </Link>{menu === "teams" ? <hr /> : <></>}</li>
         <li className='con' onClick={() => { handleMenuItemClick("contact"); window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }) }} style={{ color: menu === "contact" ? '#eb0028' : navTextColor, transition: "1s ease-out", cursor: 'pointer' }}><span>Contact Us</span> {menu === "contact" ? <hr /> : <></>}</li>
