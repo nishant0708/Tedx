@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 481px){
     .team-cards-container{
-        left: -80vw;
+        left: -110vw;
     } 
     .team-name{
         padding-bottom: 40px;

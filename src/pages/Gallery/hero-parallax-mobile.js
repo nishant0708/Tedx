@@ -28,6 +28,8 @@ export const HeroParallax2 = ({ products }) => {
     springConfig
   );
 
+  
+
   const translateXThird = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 500]),
     springConfig
@@ -42,7 +44,7 @@ export const HeroParallax2 = ({ products }) => {
     springConfig
   );
   const rotateX = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+    useTransform(scrollYProgress, [0, 0.2], [35, 0]),
     springConfig
   );
   const opacity = useSpring(
@@ -58,6 +60,8 @@ export const HeroParallax2 = ({ products }) => {
     springConfig
   );
   
+
+
   return (
     <div
       ref={ref}
@@ -120,17 +124,25 @@ export const HeroParallax2 = ({ products }) => {
 export default HeroParallax2;
 
 export const Header = () => {
-    
     const ref = React.useRef(null);
+    
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start start", "end start"],
       });
     
-      const springConfig = { stiffness: 500, damping: 300, bounce: 1 };
+    const rotateX = useSpring(
+      useTransform(scrollYProgress, [0, 0.1], [35, 0]),
+      
+    );
+    const rotateZ = useSpring(
+      useTransform(scrollYProgress, [0, 0.2], [20, 0]),
+      
+    );
     
+     
     const translateY = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [0, 400]),
+        useTransform(scrollYProgress, [0, 0.3], [150, 800]),
     
   );
 
@@ -138,7 +150,15 @@ export const Header = () => {
     <div
     
         className="absolute z-[100000] h-28  mx-auto  bg-transparent px-4  right-0 top-[5vh]">
-       <h1 className=" text-6xl h-28 text-right font-bold text-white">HighLights</h1>
+       <motion.div
+        style={{
+          rotateX,
+          rotateZ,
+          translateY,
+        }}
+        className=""
+      ><h1 className=" text-6xl h-28 text-right font-Poppins text-white"><span className="text-[#eb0028] poppins-bold">HIGH</span>LIGHTS</h1></motion.div>
+       
       </div>
   );
 };
@@ -156,7 +176,7 @@ export const ProductCard = ({ product, translate }) => {
         className="group/product opacity-100 mt-20 h-60 w-40 relative flex-shrink-0"
       >
         <a
-          href={product.link}
+          href='javascript:void(0)'
           className="block opacity-100 group-hover/product:shadow-2xl"
         >
           <img
