@@ -159,7 +159,7 @@ const speakerData2023 = [
     name: "Ella D'",
     surname: "Verma",
     description: "Ella D'Verma, delivered a powerful speech on ''Acceptance'', highlighting the significance of embracing diversity and  fostering an inclusive society.",
-    image:"https://imgur.com/bXsedhy.png",
+    image:"https://imgur.com/0CzNwIT.png",
     designation: "Miss International Trans Queen",
     instagramLink: 'https://www.instagram.com/elladverma?igsh=MXQ0eHNicGF2b2FsaA',
     linkedinLink: 'https://www.linkedin.com/in/ella-verma-ab6889236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
@@ -170,7 +170,7 @@ const speakerData2023 = [
     surname: 'Mishra',
     designation: "CTO and Co-founder at Pisarv Technology",
     description: 'Abhishek Mishra captivated the audience with his talk on "Transhumanism" and how technology is reshaping the evolutionary path of humanity',
-    image: "https://imgur.com/CAGdBjm.png",
+    image: "https://imgur.com/wY7gfX2.png",
     instagramLink: 'https://www.instagram.com/abhisek.mnit?igsh=MTM2MGg2Y3VweGJveQ',
     linkedinLink: ''
   },
@@ -180,7 +180,7 @@ const speakerData2023 = [
     surname: 'Makkhar',
     designation: "Member of UNESCO & Winner of India’s Got Talent Season 5",
     description: "Dr. Ragini Makkhar, the winner of India's Got Talent Season 5 inspired the audience with her talk on ''Evolve with Dance,'' showcasing the transformative power of dance in personal growth and self-expression.",
-    image:"https://imgur.com/EEVejQt.png",
+    image:"https://imgur.com/d7hhaL2.png",
     instagramLink: 'https://www.instagram.com/dr.raginimakkad?igsh=MXJlN245ZWh3N2phZw==',
     linkedinLink: ''
   },
@@ -189,7 +189,7 @@ const speakerData2023 = [
     name: 'Bhaskar',
     surname: 'Indrakanti',
     description: 'Bhaskar Indrakanti delivered a thought-provoking talk on "Mental Awareness," raising awareness about mental health and emphasising the importance of de-stigmatization.',
-    image:"https://imgur.com/661JHpW.png",
+    image:"https://imgur.com/SatTy2f.png",
     designation: "Entrepreneur & Social Engineer",
     instagramLink: 'https://www.instagram.com/bhaskar_indrakanti?igsh=MWZjOG1iMzh0bDAzYw==',
     linkedinLink: 'https://www.linkedin.com/in/bh%C4%81skar-indrakanti-424b6051?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
@@ -199,7 +199,7 @@ const speakerData2023 = [
     surname: 'Singh',
     designation: "The youngest deputy collector of the MP government.",
     description: 'Akshay Singh, shared his insights on "Social Rights," advocating for equal opportunities and social justice',
-    image: "https://imgur.com/tKpCx8R.png",
+    image: "https://imgur.com/dLQqQ8B.png",
     instagramLink: 'https://www.instagram.com/theakshay_jointcollector?igsh=MTF6NjZldWNqbWVqOQ==',
     linkedinLink: 'https://www.linkedin.com/in/akshay-singh-markam-a70178204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   },
@@ -208,7 +208,7 @@ const speakerData2023 = [
     surname: 'Chavda',
     designation: "Geopolitics, History & Science Expert., Youtuber",
     description: 'Abhijit Chavda delivered a compelling talk on "Geo Politics," shedding light on the dynamic interplay of politics and geography in shaping the global landscape',
-    image: "https://imgur.com/8E3IZ7u.png",
+    image: "https://imgur.com/qoZ3Os1.png",
     instagramLink: 'https://www.instagram.com/theabhijitchavda?igsh=aXRqMTV2cGljb3pi',
     linkedinLink: 'https://www.linkedin.com/in/abhijitchavda?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   },
@@ -217,7 +217,7 @@ const speakerData2023 = [
     surname: 'Agrawal',
     designation: "Author, History and Mythology Expert",
     description: 'Dr. Vineet Agrawal engaged the audience with his enlightening presentation on "Science and Scriptures," exploring the intersections between scientific advancements and ancient wisdom.',
-    image: "https://imgur.com/BoHZel8.png",
+    image: "https://imgur.com/0H4cr82.png",
     instagramLink: 'https://www.instagram.com/drvineetaggarwal?igsh=MWV5bmxlejN4eXdjcA==',
     linkedinLink: 'https://www.linkedin.com/in/drvineetaggarwal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   },
