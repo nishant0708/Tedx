@@ -6,16 +6,17 @@
     color: black;
     display: flex;
     flex-direction: row;
+    padding-top: 5vh;
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     z-index:15;
     height:100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* padding: 3rem; */
     /* padding: 0 4rem 0 4rem; */
 }
-.hero-video{
+.hero-video, .flower{
     /* background-color: #fad648; */
     border-radius: 25px;
     /* padding-bottom: 0; */
@@ -97,13 +98,13 @@
 @media screen and (max-width: 750px) {
     .heropg{
         flex-direction: column-reverse;
-        height: auto;
+        height: 100vh;
         /* padding: 1rem; */
         padding: 2rem 0rem;
     }
     .hero-video video{
         width: 85vw;
-        height:50vh;
+        height:60vh;
     }
     .hero-text{
         z-index: 2;
@@ -111,7 +112,7 @@
         /* flex-grow: 1; */
         text-align: left;
         align-items: flex-start;
-        padding: 1rem;
+        /* padding: 1rem; */
         gap: 0.5rem;
         /* float: left; */
     }
@@ -129,18 +130,60 @@
     }
     .lineimg{
         position: absolute;
-        left: -35vw;
-        top: -20vh;
-        z-index: 1;
+        left: -58vw;
+        top: -16vh;
+     z-index:1;
+    
     }
     .lineimg img{
-        width: 146vw;
-        height: 104vh;
-        transform: rotate(90deg) rotate(313deg);
+        width: 175vw;
+    height: 87vh;
+    transform: rotate(90deg) rotate(313deg);
     }
     .tedxlogo img{
         width: 40vw;
         position: relative;
         left: -1vw;
     }
+    .flower{
+        position: relative;
+    }
+.herowhiteflower img, .heroredflower img, .lineimg img {
+    max-width: none;
+}
+.heroredflower,  .heroredflower{
+    z-index: 100;
+}
+.herowhiteflower img {
+    /* opacity: 0; */
+    position: absolute;
+    width: 28vh;
+    z-index: 100;
+    /* transform: translate(15vw, 35vh); */
+    left: -45vw;
+    top: -5vh;
+}
+
+.heroredflower img{
+       /* opacity: 0; */
+       width: 22vh;
+       position: absolute;
+       z-index: 100;
+       top: -21vh;
+       left: 1vw;
+   
+}
+.heroyellow2 hr {
+    position: absolute;
+    /* transform: translate(39vw, 10vh); */
+    width: 92vw;
+    height: 30vh;
+    background-color: rgb(240, 240, 25);
+    border-radius: 5vh 5vh 5vh 5vh;
+    border-color: yellow;
+    z-index: -1;
+    left: -46vw;
+    top: -13vh;
+;
+}
 }
