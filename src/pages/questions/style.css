@@ -96,7 +96,7 @@ button {
     
     width: 5vh;
     position: absolute;
-    z-index: 100;
+    z-index: 100000;
         transform: translate(42vw, 1vh);
    
 }

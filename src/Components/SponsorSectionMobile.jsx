@@ -48,7 +48,7 @@ gsap.registerPlugin(ScrollTrigger);
         const pin2 = gsap.fromTo('.sponsor_scroll',{
             translateX:'25vw',
         },{
-            translateX:`-${sponsorLen*60}vw`,
+            translateX:`-${sponsorLen*68}vw`,
             ease:'none',
             duration:1,
             scrollTrigger:{

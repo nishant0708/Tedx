@@ -3,6 +3,7 @@ import HeroPg from "../HeroPg/HeroPg"
 import Speakerf from '../nik-pages/Speakerf'
 import Thoughtloom from '../thoughtloom/Thoughtloom'
 import StickyScroll from "../../pages/questions/faq"
+import FaqPage from '../../pages/questions/faqSection'
 
 const Main = () => {
     const content = [
@@ -42,9 +43,8 @@ const Main = () => {
         <HeroPg/>
         <Thoughtloom/>
         <Speakerf/>
-        
+        <FaqPage/>
        
-        <StickyScroll content={content}/>
     
     </div>
   )

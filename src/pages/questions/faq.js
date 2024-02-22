@@ -85,7 +85,6 @@ width: 400,
 
 useEffect(() => {
   const tween2 = gsap.to("#faq", {
-    
     opacity: 1,
     x: 300,
   duration: 1,
@@ -93,38 +92,7 @@ useEffect(() => {
   scrollTrigger: "#yes5",
   ease: Power1.easeOut, // pause the animation initially
 });
-
-
-  
-
 }, []);
-
-  
-// useEffect(() => {
-
-   
-  
-//     const tween = gsap.to("#redflower", {
-//       x: 530,
-//       width: 400,
-//       opacity: 1,
-//       rotate: 60,
-//       duration: 1,
-//       ease: Power1.easeOut,
-//       paused: true, // pause the animation initially
-//     });
-  
-//     ScrollTrigger.create({
-//       trigger: "#yes6", // change the trigger to the whole page
-//       start: "top 500px",  // pin the whole page
-      
-//     });
-  
-// }, []);
-
-
-
-
   useEffect(() => {
     
   
@@ -134,8 +102,9 @@ useEffect(() => {
       duration: 1,
       delay: 1.5,
       ease: Power1.easeOut,
-      scrollTrigger: "#faq",
-      start: "bottom 20%", // pause the animation initially
+      scrollTrigger: {
+        trigger: "#faq", // pause the animation initially
+      },
     });
       
       
@@ -155,8 +124,11 @@ useEffect(() => {
     duration: 1,
     delay: 0.5,
     ease: Power1.easeOut,
-    scrollTrigger: "#whiteflower",
-    start:"top 50%"
+    scrollTrigger: {
+      trigger: "#whiteflower",
+      start:"top 50%",
+    } ,
+    
   });
 
     
@@ -294,7 +266,7 @@ useEffect(() => {
           <div className="yellow2"><hr id="yellow2"></hr></div>
           <div id='answers' className="Answers">
             {selectedQuestionIndex !== null && (
-              <p>{content[selectedQuestionIndex].description}</p>
+              <h3>{content[selectedQuestionIndex].description}</h3>
             )}
           </div>
           <div id="faq" className="faq">

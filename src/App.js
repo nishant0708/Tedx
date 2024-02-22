@@ -12,7 +12,6 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 
 import Trybox from "./Components/ContactUS/Trybox";
-
 import HeroParallax from "./pages/Gallery/hero-parallax"
 import Main from "./Components/Main/Main";
 import TeamSection from "./Components/TeamSection"
@@ -23,27 +22,27 @@ function App() {
   const [showLoader, setShowLoader] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
   const productsData = [
-    { title: 'Product 1', link: '', thumbnail: "https://imgur.com/xhL7iFw.png" },
-    { title: 'Product 2', link: '', thumbnail: "https://imgur.com/ylbeY3I.png" },
-    { title: 'Product 3', link: '', thumbnail: 'https://imgur.com/NUFlBwq.png' },
-    { title: 'Product 4', link: '#', thumbnail: "https://imgur.com/MhndRuJ.png" },
-    { title: 'Product 5', link: '#', thumbnail: "https://imgur.com/XzRbvPx.png" },
-    { title: 'Product 6', link: '#', thumbnail: "https://imgur.com/gq8pguj.png" },
-    { title: 'Product 7', link: '#', thumbnail: "https://imgur.com/0Bhckd5.png" },
-    { title: 'Product 8', link: '#', thumbnail: "https://imgur.com/Zx353W2.png" },
-    { title: 'Product 9', link: '#', thumbnail: "https://imgur.com/CzNn0fd.png" },
-    { title: 'Product 10', link: '#', thumbnail: "https://imgur.com/3l7IorT.png" },
-    { title: 'Product 11', link: '#', thumbnail: "https://imgur.com/w6yEU83.png" },
-    { title: 'Product 12', link: '#', thumbnail: "https://imgur.com/F1lzuZ8.png" },
-    { title: 'Product 13', link: '#', thumbnail: "https://imgur.com/UreBDRN.png" },
-    { title: 'Product 14', link: '#', thumbnail: "https://imgur.com/M3yIIND.png" },
-    { title: 'Product 15', link: '#', thumbnail: "https://imgur.com/NUFlBwq.png" },
-    { title: 'Product 16', link: '#', thumbnail: "https://imgur.com/hj1Wwk5.png" },
-    { title: 'Product 17', link: '#', thumbnail: "https://imgur.com/E2XhfPT.png" },
-    { title: 'Product 18', link: '#', thumbnail: "https://imgur.com/p6tcGPl.png" },
-    { title: 'Product 19', link: '#', thumbnail: "https://imgur.com/M3yIIND.png" },
-    { title: 'Product 20', link: '#', thumbnail: "https://imgur.com/NUFlBwq.png" },
-    { title: 'Product 21', link: '#', thumbnail: "https://imgur.com/NUFlBwq.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/xhL7iFw.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/ylbeY3I.png" },
+    { title: '', link: '', thumbnail: 'https://imgur.com/NUFlBwq.png' },
+    { title: '', link: '', thumbnail: "https://imgur.com/MhndRuJ.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/XzRbvPx.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/gq8pguj.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/0Bhckd5.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/Zx353W2.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/CzNn0fd.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/3l7IorT.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/w6yEU83.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/F1lzuZ8.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/UreBDRN.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/M3yIIND.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/NUFlBwq.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/hj1Wwk5.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/E2XhfPT.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/p6tcGPl.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/M3yIIND.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/NUFlBwq.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/NUFlBwq.png" },
     // Add more product data as needed
   ];
   

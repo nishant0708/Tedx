@@ -16,7 +16,6 @@
 .scroller{
   position: relative;
   z-index: 1;
-
 }
 
 .svg-container {
@@ -257,12 +256,12 @@
   }
 
   .circle{
-    transform: translate(-660px,300px);
+    transform: translate(-660px,280px);
     height: 350px;
   }
 
   .whiteStroke{
-    transform: translate(-980px, 710px);
+    transform: translate(-960px, 670px);
     scale: (0.5);
   }
 
@@ -270,7 +269,7 @@
     transform: translate(800px,500px);
   }
   .rainbow{
-    transform: translate(400px,250px);
+    transform: translate(400px,220px);
   }
 
   .mask-box{
