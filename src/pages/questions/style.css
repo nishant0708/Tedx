@@ -1,6 +1,6 @@
 
 .hero {
-    height: 110vh;
+    height: 10  0vh;
     width: 100vw;
     background-color: rgb(232, 228, 232);
     z-index: 2;
@@ -20,7 +20,8 @@
 }
 
 .right {
-    margin-right: 5vw;
+    margin-top: 4vh;
+    margin-right: 9vw;
     padding-top: 1vw;
     height: 100vh;
     width: 30vw;
@@ -30,7 +31,8 @@
 .Question {
     opacity: 0;
     transform: translateY(-100px);
-    width: 100%;
+    width: 33vw;
+    margin-top: 1vh;
     font-size: 36px;
     text-align: right;
     z-index: 2;
@@ -97,36 +99,37 @@ button {
     width: 5vh;
     position: absolute;
     z-index: 100000;
-        transform: translate(42vw, 1vh);
+        transform: translate(42vw, -1vh);
    
 }
 
 
 .Answers {
     opacity: 0;
-    transform: translate(20vw, 32vh);
+    transform: translate(10vw, 30vh);
     position: relative;
+    margin: 2vh 4vw;
     z-index: 2;
     display: grid;
     align-items: center;
     text-align: center;
-    font-size: 28px;
+    font-size: 3.5vh;
     font-weight: 200;
     text-align: right;
-    margin-left: 10vw;
-    width: 30vw;
+    width: 35vw;
     color: black;
     height: 40vh;
-    line-height: 30px;
+    line-height: 3vh;
 }
 
 .faq {
     margin-top: 20vh;
     opacity: 0;
     z-index: 2;
-    width: 30vw;
+    height: 5vh;
+    position: absolute;
     height: 20vh;
-    transform: translate(2vw, 20vh);
+    bottom: 5vh;
 }
 
 .samarth{
