@@ -105,7 +105,8 @@ const Thoughtloom = () => {
           </div>
           <div className='top-text'>
           <h1 class="top-text">
-          As the white light passes through a prism and splits itself into a range of colors, our brain deals with the unfinished and un- addressed thoughts and philosophies creating a “thought loom” which if left looming without comprehensive addressal can become a hurdle in ones intellectual abilities.
+          An unfinished thought splits through the mind, weaving into a colourful spectrum of different perspectives and ideas
+
           </h1>
           </div>
         </div>
