@@ -71,12 +71,12 @@ if (isMobile){
     gsap.set(".herowhiteflower img", { opacity: 0, scale: 0.1, rotation: 0 });
     
     const t1 = gsap.timeline({ease: "Power3" });
-    t1.to(".herowhiteflower img", { duration: 3, opacity: 1, scale: 1, rotation: 270, delay:2 });
+    t1.to(".herowhiteflower img", { duration: 4, opacity: 1, scale: 1, rotation: 270, delay:1.5 });
     
         gsap.set(".heroredflower img", { opacity: 0, scale: 0.1, rotation: 0 });
 
         const t2 = gsap.timeline({ease: "Power3" });
-        t2.to(".heroredflower img", { duration: 2.5, opacity: 1, scale: 1, rotation: 360,delay:2.5 });
+        t2.to(".heroredflower img", { duration: 2.5, opacity: 1, scale: 1, rotation: 180,delay:2 });
 
         gsap.set("#heroyellow2", { scaleX: 0.01 });
         
@@ -114,6 +114,17 @@ if (isMobile){
                 </div>
                 )}
 
+               
+
+            <div className="hero-text" ref={heroTextRef}>
+
+                    <div className="mainliner poppins-black">
+                        <div className="line1" ref={line1Ref}>Thoughts </div>
+                        <div className="line2" ref={line2Ref}>dance on</div>
+                        <div className="line3" ref={line3Ref}>the edge</div>
+                        <div className="line4" ref={line4Ref}>of <span className='redtext'> chaos.</span> </div>
+                    </div>
+            
                 {isMobile && (
                     <div className='flower'>
                         <div id='herowhiteflower' className="herowhiteflower">
@@ -127,26 +138,7 @@ if (isMobile){
                         <div className="heroyellow2"><hr id="heroyellow2"></hr></div>
                     </div>
                 )}
-
-            <div className="hero-text" ref={heroTextRef}>
-                {!isMobile && (
-
-                    <div className="mainliner poppins-black">
-                        <div className="line1" ref={line1Ref}>Thoughts </div>
-                        <div className="line2" ref={line2Ref}>dance on</div>
-                        <div className="line3" ref={line3Ref}>the edge</div>
-                        <div className="line4" ref={line4Ref}>of <span className='redtext'> chaos.</span> </div>
-                    </div>
-                )}
-                {isMobile && (
-                    <div className="mainliner poppins-black">
-                        <div className="line1" ref={line1Ref} style={{ whiteSpace: 'nowrap' }}>Thoughts dance</div>
-                        <div className="line2" ref={line2Ref}>on the edge</div>
-                        {/* <div className="line3" ref={line3Ref}>the edge</div> */}
-                        <div className="line3" ref={line3Ref}>of <span className='redtext'> chaos.</span> </div>
-                    </div>
-                )}
-                <div className="subliner poppins-regular" style={{ whiteSpace: 'nowrap' }}>
+                <div className="subliner poppins-regular">
                     Discover your inner strife with <br /> <span className='bold'>TEDxDAVV : ThoughtLoom </span>
                 </div>
                 <div className="tedxlogo">

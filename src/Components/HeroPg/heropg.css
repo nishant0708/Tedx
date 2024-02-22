@@ -13,10 +13,11 @@
     z-index:15;
     height:100vh;
     /* overflow: hidden; */
-    /* padding: 3rem; */
+    padding: 3rem;
+    gap: 3rem;
     /* padding: 0 4rem 0 4rem; */
 }
-.hero-video, .flower{
+.hero-video{
     /* background-color: #fad648; */
     border-radius: 25px;
     /* padding-bottom: 0; */
@@ -30,7 +31,7 @@
 .hero-video video{
     /* height: 90vh; */
     height: 80vh;
-    width: 30vw;
+    /* width: 30vw; */
     border-radius: 40px;
     object-fit: cover;
 }
@@ -58,6 +59,7 @@
 .subliner{
     font-size: 1.5rem;
     line-height: 1.8rem;
+    white-space: normal;
 }
 .tedxlogo img{
     width: 20vw;
@@ -96,37 +98,51 @@
     left: 20vw;
     top: -10vw;
 }
+@media screen and (max-width: 1024px){
+    .mainliner{
+        font-size: 5rem;
+        line-height: 5.3rem;
+    }
+    .hero-video video{
+        height:auto;
+    }
+}
 @media screen and (max-width: 750px) {
     .heropg{
         flex-direction: column-reverse;
         height: 100vh;
+        justify-content: flex-end;
         /* padding: 1rem; */
-        padding: 2rem 0rem;
+        padding: 3rem 0rem;
     }
-    .hero-video video{
-        width: 85vw;
-        height:60vh;
-    }
+   
     .hero-text{
         z-index: 2;
         width:85vw;
         /* flex-grow: 1; */
         text-align: left;
-        align-items: flex-start;
+        align-items: flex-end;
         /* padding: 1rem; */
         gap: 0.5rem;
         /* float: left; */
     }
     .mainliner{
-        font-size: 2.5rem;
-    line-height: 2.4rem;
+        font-size: 3.7rem;
+    line-height: 3.4rem;
     text-align: left;
+    align-self: flex-start;
     }
     .subliner{
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        text-align: left;
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+        text-align: right;
+        white-space: normal;
+        /* align-self: flex-end; */
     }
+    /* .texlogo {
+        align-self: flex-end;
+        right: -1vw;
+    } */
     .lineimg{
         position: absolute;
         left: -58vw;
@@ -140,12 +156,14 @@
     transform: rotate(90deg) rotate(313deg);
     }
     .tedxlogo img{
-        width: 40vw;
+        width: 60vw;
         position: relative;
-        left: -1vw;
+        right: -3vw;
     }
     .flower{
         position: relative;
+    height: 40vh;
+    align-self: flex-start;
     }
 .herowhiteflower img, .heroredflower img, .lineimg img {
     max-width: none;
@@ -154,35 +172,32 @@
     z-index: 100;
 }
 .herowhiteflower img {
-    /* opacity: 0; */
-    position: absolute;
-    width: 28vh;
+    position: relative;
+    width: 27vh;
     z-index: 100;
-    /* transform: translate(15vw, 35vh); */
-    left: -47vw;
-    top: -5vh;
+    /* left: 33vw; */
+    right: -32vw;
+    /* top: -5vh;*/
 }
 
 .heroredflower img{
-       /* opacity: 0; */
-       width: 22vh;
-       position: absolute;
-       z-index: 100;
-       top: -21vh;
-       left: 1vw;
+    width: 24vh;
+    position: relative;
+    z-index: 100;
+    top: -11vh;
+    left: -7vw;
    
 }
 .heroyellow2 hr {
-    position: absolute;
+    position: relative;
     /* transform: translate(39vw, 10vh); */
-    width: 92vw;
-    height: 25vh;
+    width: 95vw;
+    height: 26vh;
     background-color: #fad648;
     border-radius: 5vh 5vh 5vh 5vh;
-    border-color:  #fad648;
+    border-color: #fad648;
     z-index: -1;
-    left: -46vw;
-    top: -12vh;
-;
+    left: -5vw;
+    top: -42vh;
 }
 }
