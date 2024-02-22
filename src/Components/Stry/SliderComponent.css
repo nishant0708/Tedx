@@ -256,7 +256,7 @@ button:focus {
     font-style: italic;
 }
 .Aryan-style .speaker-name {
-    font-size: 50px;
+    font-size: 48px;
     line-height: 70px;
     
     transform: translateY(0%);
@@ -265,15 +265,17 @@ button:focus {
     transform: translateY(10%);
 }
 .Aryan-style .speaker_desg{
-    left: -33%;
+    left: -26%;
+    font-size: 18px;
 }
 .Aryan-style .slider__desc{
-    left: -25%;
+    left: -18%;
+    font-size: 18px;
 }
 .Aryan-style .o-slider__img{
     width: 100vh;
     height: 110vh;
-    left: 25%;
+    left: 29%;
    
 }
 
@@ -302,6 +304,14 @@ button:focus {
     top: 115%;
     left: 22%;
 }
+.vineet-style .slider__desc{
+    left: -24%;
+    font-size: 19px;
+}
+.vineet-style .speaker_desg{
+    left: -32%;
+}
+
 .akshay-style .o-slider__img{
     width: 100vh;
     height: 110vh;
