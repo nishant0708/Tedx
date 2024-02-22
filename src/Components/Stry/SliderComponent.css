@@ -89,7 +89,7 @@ button:focus {
     width: 100%;
     padding-top: calc(100vh - var(--title-size));
     padding-bottom: var(--title-size);
-    overflow: hidden;
+    overflow-y: hidden;
 }
 .o-slider__item {
     --size: calc(2/3 * 100vw);
@@ -110,10 +110,10 @@ button:focus {
 .o-slider__img {
     position: absolute;
     top: 110%;
-    left: 5%;
+    left: 17%;
     filter: brightness(100%);
     display: block;
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     z-index: 5;
@@ -272,16 +272,16 @@ button:focus {
     left: -18%;
     font-size: 18px;
 }
-.Aryan-style .o-slider__img{
+/* .Aryan-style .o-slider__img{
     width: 100vh;
     height: 110vh;
     left: 29%;
    
-}
+} */
 
 /*images */
 
-.ella-style .o-slider__img{
+/* .ella-style .o-slider__img{
     width: 100vh;
     height: 110vh;
     left: 25%;
@@ -304,6 +304,13 @@ button:focus {
     top: 115%;
     left: 22%;
 }
+
+.akshay-style .o-slider__img{
+    width: 100vh;
+    height: 110vh;
+    top: 115%;
+    left: 12%;
+} */
 .vineet-style .slider__desc{
     left: -24%;
     font-size: 19px;
@@ -311,10 +318,156 @@ button:focus {
 .vineet-style .speaker_desg{
     left: -32%;
 }
+@media(max-width:1280px){
+ 
+    .o-slider{
+       
+        overflow: hidden;
+    }
+    .o-slider__item{
+      
+        overflow: hidden;
+    }
+    .o-slider__img{
+       
+       left: 16%;
+        top: 115%;
+        overflow: hidden;
+    }
+    .speaker-name{
+        top: 18%;
+       left: 150%;
+       font-size: 65px;
+    }
+    .speaker-name p{
+        font-size: 65px;
+        
+    }
+    .speaker_desg{
+        left: -50%;
+        font-size: 16px;
+    }
+    .slider__desc{
+        left: -32.5%;
+        z-index: 30;
+        font-size: 16px;
+        width: 250px;
+    }
+    .Abhijit-style .speaker_desg{
+        left: -44%;
+    }
+    .Abhijit-style .slider__desc{
+        left: -27%;
+    }
+    .vineet-style .speaker-name{
+        font-size: 65px;
+    }
+    .vineet-style .o-slider__img{
+        width: 90%;
+        height: 110%;
+    }
+    .vineet-style .speaker_desg{
+        left: -38.5%;
+    }
+    .vineet-style .slider__desc{
+        left: -21%;
+    }
+    .Aryan-style .o-slider__img{
+        left: 21%;
+    }
+    .Aryan-style .speaker-name{
+        font-size: 44px;
+        top: 20%;
+    }
+    .Aryan-style .speaker_desg{
+        width: 200px;
+        left: -8%;
+        font-size: 14px;
+    }
+    .Aryan-style .slider__desc{
+        width: 200px;
+        left: -7%;
+        top: 45%;
+        font-size: 14px;
+    }
+    .Aryan-style .log img{
+      width: 25px;
+    }
+}
+@media(max-width:1080px){
+    ul{
+        overflow: hidden;
+    }
+    .o-slider{
+        overflow: hidden;
+    }
+    .o-slider__item{
+        width: 80vw;
+        overflow: hidden;
+    }
+    .o-slider__img{
+        top:130%;
+        height: 120%;
+    }
+    .speaker-name{
+        font-size: 54px;
+        line-height: 59px;
+    }
+    .akshay-style .o-slider__img{
+        left: 18%;
+       
+    }
+     .akshay-style .speaker_desg{
+        left: -42%;
+    
+    }
+    .akshay-style .slider__desc{
+        left: -25%;
+    }
 
-.akshay-style .o-slider__img{
-    width: 100vh;
-    height: 110vh;
-    top: 115%;
-    left: 12%;
+    .Abhijit-style .o-slider__img{
+        left: 25%;
+    }
+    .Abhijit-style .speaker_desg{
+        left: -38%;
+    }
+    .Abhijit-style .slider__desc{
+        left: -20.5%;
+    }
+    .vineet-style .o-slider__img{
+        top: 115%;
+        left: 20%;
+    }
+    .vineet-style .speaker-name{
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .vineet-style .speaker_desg{
+        width: 200px;
+        font-size: 16px;
+        left: -6%;
+    }
+    .vineet-style .slider__desc{
+        font-size: 16px;
+        width: 200px;
+        left: -5%;
+    }
+    .Aryan-style .speaker-name{
+        font-size: 44px;
+        line-height: 48px;
+    }
+    .Aryan-style .o-slider__img{
+        left: 25%;
+    }
+    .Aryan-style .speaker_desg{
+        width: 220px;
+        font-size: 15px;
+        left: -6%;
+    }
+    .Aryan-style .slider__desc{
+        width: 200px;
+        font-size: 15px;
+        left: -2%;
+    }
+
 }
