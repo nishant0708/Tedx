@@ -4,16 +4,16 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import mlinkedin from "../Assests/Images/linkedin (1).png";
 import instagram from "../Assests/Images/instagram (1).png";
-import samp_image from "../Assests/Images/ZakirKhan_3x1_WhatsOn.jpg-transformed.webp"
+import samp_image from "../Assests/Images/rev.png"
 
 import badal from "../Assests/Images/Group 29.png"
 
 
 const speakers2024 = [
     {
-        name: 'Revealing',
-        surname: 'Soon',
-        description: '',
+        name: 'r',
+        surname: '',
+        description: 'Revealing Soon...',
         image: samp_image,
         instagramLink: '',
         linkedinLink: ''
@@ -180,76 +180,85 @@ const Speakersm = () => {
        
        
     } , []);
-    useEffect(() => {
+    const [selectedYear, setSelectedYear] = useState('2023');
+
+    const initializeAnimations = () => {
         gsap.registerPlugin(ScrollTrigger);
-      
+
         const speakerNames = document.querySelectorAll(".mSpeaker-name");
         const oSliderImgs = document.querySelectorAll(".o-mslider__img");
         const speakerDescs = document.querySelectorAll(".mspeaker-desc");
         const speakerDesg = document.querySelectorAll(".mspeaker-desg");
+
+        const animations = [];
+
         speakerNames.forEach(name => {
-          gsap.to(name, {
-            xPercent: -140,
-            duration: 1,
-            scrollTrigger: {
-              trigger: name.closest(".o-mslider__item"),
-              scrub: 1,
-              start: "top 20%",
-              end: "top 100%",
-             
-            },
-            ease: "power3"
-          });
+            animations.push(gsap.to(name, {
+                xPercent: -140,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: name.closest(".o-mslider__item"),
+                    scrub: 1,
+                    start: "top 50%",
+                    end: "top 100%",
+                },
+                ease: "power3"
+            }));
         });
+
         oSliderImgs.forEach(img => {
-        gsap.to(img, {
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-              trigger: img.closest(".o-mslider__item"),
-              scrub: 1,
-              start: "top 30%",
-              end: "top 100%",
-             
-            },
-           
-          });
+            animations.push(gsap.to(img, {
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: img.closest(".o-mslider__item"),
+                    scrub: 1,
+                    start: "top 50%",
+                    end: "top 100%",
+                },
+            }));
         });
 
         speakerDescs.forEach(desc => {
-            gsap.to(desc, {
-              xPercent:162,
-              duration: 1,
-              scrollTrigger: {
-                trigger: desc.closest(".o-mslider__item"),
-                scrub: 1,
-                start: "top 80",
-                end: "top 100%",
-               
-              },
-              ease: "power3"
-            });
-          });
+            animations.push(gsap.to(desc, {
+                xPercent: 162,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: desc.closest(".o-mslider__item"),
+                    scrub: 1,
+                    start: "top 30%",
+                    end: "top 100%",
+                },
+                ease: "power3"
+            }));
+        });
 
-          speakerDesg.forEach(designation => {
-            gsap.to(designation, {
-              opacity:1,
-              duration: 1,
-              scrollTrigger: {
-                trigger: designation.closest(".o-mslider__item"),
-                scrub: 1,
-                start: "top 80",
-                end: "top 100%",
-               
-              },
-              
-            });
-          });
+        speakerDesg.forEach(designation => {
+            animations.push(gsap.to(designation, {
+                opacity: 1,
+                duration: 1.5,
+                scrollTrigger: {
+                    trigger: designation.closest(".o-mslider__item"),
+                    scrub: 1,
+                    start: "top 30%",
+                    end: "top 100%",
+                },
+                ease:"bounce.in"
+            }));
+        });
 
+        return animations;
+    };
 
+    useEffect(() => {
+        // Initialize or reapply animations when selectedYear changes
+        const animations = initializeAnimations();
 
-      }, []);
-    
+        return () => {
+            // Clean up animations when component unmounts or selectedYear changes
+            animations.forEach(animation => animation.kill());
+        };
+    }, [selectedYear]);
        
       const progressBarRef = useRef(null);
       useEffect(() => {
@@ -276,7 +285,7 @@ const Speakersm = () => {
  
 
 
-    const [selectedYear, setSelectedYear] = useState('2023');
+    // const [selectedYear, setSelectedYear] = useState('2023');
     const selectedSpeakers = selectedYear === '2024' ? speakers2024 : speakers2023;
     const handleChange = (event) => {
         setSelectedYear(event.target.value);
@@ -286,7 +295,7 @@ const Speakersm = () => {
   return (
     <div id="mslider" class="o-mslider">
   
-  <h1 class="o-mslider__title">
+  <h1 className={`o-mslider__title ${selectedSpeakers.some(speaker => speaker.name === 'r') ? 'custom-title-style' : ''}`}>
     <span id="mtitle">Speakers</span>
   </h1>
   <img  classname="mbadal" style={{position:'fixed' ,width:"60%", bottom:"0%" , right:"0%"}} src={badal} alt=""/>
@@ -296,8 +305,8 @@ const Speakersm = () => {
       </div>
   <ul class="o-mslider__list">
 
-  <select className='myear-drop' onChange={handleChange} value={selectedYear}>
-          <option className="option" value="2024">2024</option>
+  <select className='myear' onChange={handleChange} value={selectedYear}>
+          <option  value="2024">2024</option>
           <option value="2023">2023</option>
         </select>
 
@@ -338,7 +347,7 @@ const Speakersm = () => {
               // Add switch cases for 2024 here
               switch (speaker.name) {
                 
-                case 'Revealing':
+                case 'r':
                   speakerClass = 'mreveal';
                   break;
                 default:

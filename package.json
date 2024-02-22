@@ -15,6 +15,7 @@
     "gsap-trial": "^3.12.5",
     "hamburger-react": "^2.5.0",
     "jquery": "^3.7.1",
+    "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
     "react-card-flip": "^1.2.2",
     "react-dom": "^18.2.0",
@@ -31,7 +32,10 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "npm-run-all -p start:react start:server",
+    "start:react": "react-scripts start",
+    "start:server": "node server.js",
+    "install": "npm install && npm run start:server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

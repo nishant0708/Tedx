@@ -40,9 +40,12 @@ const Main = () => {
   return (
     <div>
         <HeroPg/>
-        <Speakerf/>
         <Thoughtloom/>
+        <Speakerf/>
+        
+       
         <StickyScroll content={content}/>
+    
     </div>
   )
 }

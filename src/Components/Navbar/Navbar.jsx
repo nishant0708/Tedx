@@ -92,14 +92,14 @@ const Navbar = () => {
       setNavLogo(logoblack); // Reset logo to the default logo
     }
   };
-
+  const hamburgerColor = location.pathname.includes('gallery') ? '#fff' : '#000';
   return (
     <div className="navbar">
       <div className='Nav-logo'>
         <img className="tedx-logo" src={navLogo} alt=''/>
         {isMobile && (
       <div className="fixed-hamburger">
-        <Hamburger size={44} color="#000" toggled={isOpen} toggle={handleHamburgerClick} />
+        <Hamburger size={44} color={hamburgerColor} toggled={isOpen} toggle={handleHamburgerClick} />
       </div>
     )}
       </div>

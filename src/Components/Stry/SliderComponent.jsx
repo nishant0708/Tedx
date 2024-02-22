@@ -254,7 +254,7 @@ const SpeakerComponent = ({ name, surname, description, designation,image, insta
         scrollTrigger: {
           trigger: imgRef.current.closest('.o-slider__item'),
           scrub: 1,
-          start: 'top 70',
+          start: 'top 40%',
           end: 'top 90%',
         },
       });
@@ -265,7 +265,7 @@ const SpeakerComponent = ({ name, surname, description, designation,image, insta
         scrollTrigger: {
           trigger: descRef.current.closest('.o-slider__item'),
           scrub: 1,
-          start: 'top 70',
+          start: 'top 40%',
           end: 'top 90%',
           
         },
@@ -277,7 +277,7 @@ const SpeakerComponent = ({ name, surname, description, designation,image, insta
         scrollTrigger: {
           trigger: nameRef.current.closest('.o-slider__item'),
           scrub: 1,
-          start: 'top 70',
+          start: 'top 30%',
           end: 'top 90%',
         },
       });
@@ -287,7 +287,7 @@ const SpeakerComponent = ({ name, surname, description, designation,image, insta
         scrollTrigger: {
           trigger: nameRef.current.closest('.o-slider__item'),
           scrub: 1,
-          start: 'top 70',
+          start: 'top 40%',
           end: 'top 90%',
          
         },
@@ -357,7 +357,7 @@ const [selectedYear, setSelectedYear] = useState('2023');
                   
             </h1>
             <select  className='year-drop'   onChange={handleChange}>
-                <option className="option" value="2024" >2024</option>
+               {/* <option className="option" value="2024" >2024</option> */}
         <option value="2023" selected>2023</option>
        
       </select>   

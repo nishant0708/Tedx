@@ -16,6 +16,7 @@ button:focus {
     position: relative;
     overflow: hidden;
     z-index: 0;
+    min-height: max-content;
 }
 
 
@@ -67,7 +68,7 @@ button:focus {
     margin-top: 55%;
     z-index: 5;
     padding-top: calc(var(--size) * 2/3);
-  border: 2px solid black;
+  /* border: 2px solid black; */
     overflow: hidden;
       transform:  skewY(calc(var(--scroll-y) * var(--scroll-vel) * 2deg));
 }
@@ -149,19 +150,14 @@ text-align: center;
     background-color: #FFD116;
     transition: 1s forwards;
   }
-  .myear-drop{
-    position: absolute;
-   background-color: #eae6e6;
-    font-size: 21px;
-    z-index: 1;
-    /* border: 2px solid black; */
-    padding: 10px 20px;
-    align-items: center;
-    width: fit-content;
-    z-index: 1;
-   top: 4%;
-   right: 0%;
-    border-radius: 999rem;
+  .myear{
+   position: absolute;
+   width: 150px;
+   padding: 10px 20px;
+   border-radius: 999rem;
+   font-size: 21px;
+  right: 0;
+   transform: translateY(270%);
 }
 .option:hover {
     background-color: yellow;
@@ -240,6 +236,18 @@ left: 40%;
     top: 65%;
 }
 
-.mreveal .o-mslider__img{
-   
+.mreveal .mSpeaker-name{
+   right: -250%;
+}
+.mreveal .mspeaker-desc{
+    top:50%;
+    font-size: 60px;
+    font-weight: bolder;
+
+}
+.mreveal .o-mslider__title{
+   background-color: bisque;
+}
+.custom-title-style span{
+    left: 25%;
 }
