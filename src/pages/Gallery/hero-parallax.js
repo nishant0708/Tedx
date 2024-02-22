@@ -113,7 +113,7 @@ export const HeroParallax = ({ products }) => {
       <Breakpoint medium up>
       <div
       ref={ref}
-      className="h-[500vh] py-40 overflow-hidden bg-black pt-96  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[460vh] py-40 overflow-hidden bg-black pt-96  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -143,7 +143,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex mb-60 flex-row-reverse space-x-reverse space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -153,17 +153,17 @@ export const HeroParallax = ({ products }) => {
           ))}
         </motion.div>
       </motion.div>
-      <div className='mt-80  sponsor-wrapper'
+      <div className=' m-0 pt-10 sponsor-wrapper'
              ref={sponsorTriggerRef}>
             
-            <div className='p-0 sponsors-container'
+            <div className='sponsors-container'
             style={{
               position: "relative",
               display: "flex",
               flexDirection: "row",
               gap: "4vw",
               duration: 8,
-              paddingTop: "0",
+              margin: 0,
               overflowX: "visible",
           
           }}
@@ -179,7 +179,7 @@ export const HeroParallax = ({ products }) => {
             </div>
         </div>
         
-        <div className='sponsor-wrapper'
+        <div className='mt-20 sponsor-wrapper'
              ref={sponsorTriggerRef2}>
             
             <div className='sponsors-container'
@@ -189,8 +189,6 @@ export const HeroParallax = ({ products }) => {
               flexDirection: "row",
               gap: "4vw",
               duration: 8,
-              paddingTop: "0",
-              paddingBottom: "0",
               margin: 0,
               overflowX: "visible",
           
@@ -221,7 +219,7 @@ export default HeroParallax;
 export const Header = () => {
   return (
     <div className="max-w-7xl z-50 py-60 mx-auto px-4 w-full  left-0 top-0">
-       <h1 className="text-8xl h-72 right-10 top-40 absolute p-0 font-[Poppins] dark:text-white">HIGHLIGHTS</h1>
+       <h1 className="text-8xl h-72 right-10 top-40 absolute p-0 font-[Poppins]  dark:text-white"><span className="text-[#eb0028] poppins-bold">HIGH</span>LIGHTS</h1>
        
       </div>
   );
