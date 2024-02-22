@@ -57,7 +57,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 3.3,
+                        scrub: 2,
                         markers: false,
                         pin: true
                     }
@@ -79,7 +79,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 3.3,
+                        scrub: 2,
                         markers: false,
                         pin: true
                     }
@@ -100,7 +100,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 3.3,
+                        scrub: 2,
                         markers: false,
                         pin: true
                     }
@@ -121,7 +121,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 3.3,
+                        scrub: 2,
                         markers: false,
                         pin: true
                     }
@@ -144,7 +144,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 3.3,
+                        scrub: 2,
                         markers: false,
                         pin: true
                     } 
@@ -165,7 +165,7 @@ export default function Teams(props){
                         trigger: triggerRef.current,
                         start:'top top',
                         end:`${len*370} top`,
-                        scrub: 3.3,
+                        scrub: 2,
                         markers: false,
                         pin: true
                     } 

@@ -3,6 +3,18 @@
 		"Organisers": [
             {
                 "id": 1,
+                "name": "Anurudh",
+                "info": "TEDxDAVV",
+                "image": "https://imgur.com/yNMJC9l.png",
+                "ig": "",
+                "cuteness":60,
+                "IQ":80,
+                "humour":20,
+                "anger":90,
+                "fun": 46
+                
+            },{
+                "id": 1,
                 "name": "Anushka",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/SmqbVeM.png",
@@ -30,19 +42,6 @@
                 "name": "Ashish",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/X88JVpU.png",
-                "ig": "",
-                "cuteness":60,
-                "IQ":80,
-                "humour":20,
-                "anger":90,
-                "fun": 46
-                
-            },
-            {
-                "id": 1,
-                "name": "Anurudh",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/yNMJC9l.png",
                 "ig": "",
                 "cuteness":60,
                 "IQ":80,
@@ -84,9 +83,9 @@
 		"Organisers": [
             {
                 "id": 1,
-                "name": "Anushka",
+                "name": "Anurudh",
                 "info": "TEDxDAVV",
-                "image": "https://imgur.com/SmqbVeM.png",
+                "image": "https://imgur.com/yNMJC9l.png",
                 "ig": "",
                 "cuteness":60,
                 "IQ":80,
@@ -108,9 +107,9 @@
                 
             },{
                 "id": 1,
-                "name": "Ashish",
+                "name": "Anushka",
                 "info": "TEDxDAVV",
-                "image": "https://imgur.com/X88JVpU.png",
+                "image": "https://imgur.com/SmqbVeM.png",
                 "ig": "",
                 "cuteness":60,
                 "IQ":80,
@@ -118,12 +117,11 @@
                 "anger":90,
                 "fun": 46
                 
-            },
-            {
+            },{
                 "id": 1,
-                "name": "Anurudh",
+                "name": "Ashish",
                 "info": "TEDxDAVV",
-                "image": "https://imgur.com/yNMJC9l.png",
+                "image": "https://imgur.com/X88JVpU.png",
                 "ig": "",
                 "cuteness":60,
                 "IQ":80,
@@ -584,18 +582,6 @@
                 "anger":50,
                 "fun": 46
                 
-            },{
-                "id": 1,
-                "name": "Ojas ",
-                "info": "TEDxDAVV ",
-                "image": "https://imgur.com/UBxBqku.png",
-                "ig": "",
-                "cuteness":5,
-                "IQ":30,
-                "humour":20,
-                "anger":50,
-                "fun": 46
-                
             }
             
         ],
@@ -605,6 +591,18 @@
                 "name": "Rashi ",
                 "info": "TEDxDAVV ",
                 "image": "https://imgur.com/UwvgCPH.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": 1,
+                "name": "Ojas ",
+                "info": "TEDxDAVV ",
+                "image": "https://imgur.com/UBxBqku.png",
                 "ig": "",
                 "cuteness":5,
                 "IQ":30,

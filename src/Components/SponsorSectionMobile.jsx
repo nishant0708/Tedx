@@ -60,6 +60,7 @@ gsap.registerPlugin(ScrollTrigger);
                 pin: true
             }
         })
+        
 
         gsap.fromTo('.sponsor_image',{
             yPercent: 100,
