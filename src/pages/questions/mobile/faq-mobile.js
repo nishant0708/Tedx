@@ -31,13 +31,12 @@ const StickyScroll2 = ({ content }) => {
         <div className={styles.background}>
           <img  src={bg}></img>
         </div>
-        <div id="faq" className={styles.faq}>
-        </div>
+        
         <div id="faq" className={styles.faq}>
           <img src={faq} alt="FAQs" />
         </div>
 
-        <div>
+        <div id="questions" >
               <select className={styles.Question} value={selectedOption} onChange={handleOptionChange}>
             <option value="0">{content[0].title}</option>
             <option value="1">{content[1].title}</option>

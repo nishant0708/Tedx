@@ -153,17 +153,17 @@ export const HeroParallax = ({ products }) => {
           ))}
         </motion.div>
       </motion.div>
-      <div className='sponsor-wrapper'
+      <div className='mt-80  sponsor-wrapper'
              ref={sponsorTriggerRef}>
             
-            <div className='sponsors-container'
+            <div className='p-0 sponsors-container'
             style={{
               position: "relative",
               display: "flex",
               flexDirection: "row",
               gap: "4vw",
               duration: 8,
-              paddingTop: "35vh",
+              paddingTop: "0",
               overflowX: "visible",
           
           }}
@@ -189,7 +189,9 @@ export const HeroParallax = ({ products }) => {
               flexDirection: "row",
               gap: "4vw",
               duration: 8,
-              paddingTop: "15vh",
+              paddingTop: "0",
+              paddingBottom: "0",
+              margin: 0,
               overflowX: "visible",
           
           }}
