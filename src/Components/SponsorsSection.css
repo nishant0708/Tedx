@@ -4,9 +4,7 @@
     display: flex;
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
-    transform: translateY(1px);
-    
+    overflow: hidden;
 }
 
 .sponsor-heading{
@@ -59,7 +57,7 @@
     display: flex;
     flex-direction: row;
     gap: 5vw;
-    margin-top: 49vh;
+    top: 49vh;
     overflow-x: visible;
 }
 
