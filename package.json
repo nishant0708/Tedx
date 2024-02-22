@@ -32,10 +32,10 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "npm-run-all -p start:react start:server",
-    "start:react": "react-scripts start",
-    "start:server": "node server.js",
-    "install": "npm install && npm run start:server",
+    "start": "react-scripts start",
+    
+    
+    "install": "npm install",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
