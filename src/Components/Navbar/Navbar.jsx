@@ -79,7 +79,7 @@ const Navbar = () => {
 
   const handleReload = () => {
     window.scrollTo(0, 0);
-    setReloadPage(true);
+    setReloadPage(false);
   };
 
   if (reloadPage) {

@@ -4,12 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Thoughtloom2.css';
 
 const Thoughtloom2 = () => {
-  const whitepathRef = useRef(null);
-  const maskBoxRef = useRef(null);
-  const maskBox2Ref = useRef(null);
-  const circleRef = useRef(null);
-  const jayRef = useRef(null);
-  const svgPathRef = useRef(null);
   
 
   
