@@ -68,7 +68,7 @@ button:focus {
     margin-top: 55%;
     z-index: 5;
     padding-top: calc(var(--size) * 2/3);
-  border: 2px solid black;
+
     overflow: hidden;
       transform:  skewY(calc(var(--scroll-y) * var(--scroll-vel) * 2deg));
 }
@@ -81,7 +81,7 @@ button:focus {
     z-index: 1;
     opacity: 1;
     background-color: rgb(104, 47, 34);
-    box-shadow: -20px 20px 0px 0px #FFD116;
+    box-shadow: -2vh 2vh 0vh 0vh #FFD116;
     top: 10vw;
     left: 24vw;
     border-radius: 10%;
@@ -100,7 +100,7 @@ button:focus {
     left: -95vw;
     width: 70vw;
 
-  
+  z-index: 3;
 font-size: 24px;
 font-weight: 300;
 text-align: center;
@@ -181,7 +181,7 @@ text-align: center;
     opacity: 0;
     text-align: center;
     font-style: italic;
-    
+    z-index: 3;
     top: 58vh;
     left: 12vw;
     
@@ -223,7 +223,7 @@ text-align: center;
     width: 50vw;
     height: 30vh;
     left: 21vw;
-    box-shadow: -4vw 4vw 0vw 0vw #FFD116;
+    box-shadow: -4vh 4vh 0vw 0vw #FFD116;
   }
   .mSpeaker-name{
     right: -57vw;
