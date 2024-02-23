@@ -15,7 +15,6 @@ const Main = () => {
         <Thoughtloom />
         <Speakerf/>
         <FaqPage/>
-       
     
     </div>
   )

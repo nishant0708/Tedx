@@ -9,9 +9,12 @@ import SponsorData from '../Sponors.json';
 gsap.registerPlugin(ScrollTrigger);
 
  function SponsorsSection(){
+    
+    const pinRef =useRef(null);
 
     useEffect(() => {
         
+
         let tl2 = gsap.timeline();
         tl2.fromTo('.word', {
             y:340,
@@ -30,7 +33,7 @@ gsap.registerPlugin(ScrollTrigger);
         })
 
        
-        const pin = gsap.fromTo(sponsorContainerRef.current,{
+        pinRef.current = gsap.fromTo(sponsorContainerRef.current,{
             translateX:'25vw',
         },{
             translateX:`-${sponsorLen*17}vw`,
@@ -46,7 +49,9 @@ gsap.registerPlugin(ScrollTrigger);
             }
         })
         return() =>{
-            pin.kill();
+            if(pinRef.current){
+                pinRef.current.scrollTrigger.kill();
+            }
         }
     
 
