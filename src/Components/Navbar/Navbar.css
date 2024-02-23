@@ -153,13 +153,15 @@
     .tedx-logo{
         display: none;
     }
-    
+    .nav-menu li span{
+        color: white;
+    }
  .nav-menu.open {
     background-color: transparent;
     display: flex; /* Display when open class is present */
     background-color: transparent;
     flex-direction: column;
-   background-color: #706a6a8c;
+    background-color: rgba(0, 0, 0, 0.912);
    transform: translateY(-4%);
     max-height: 150vh; /* Adjust the max-height based on your content */
     opacity: 1;
@@ -174,18 +176,20 @@
         position: fixed;
         background-color: transparent;
         padding: 8px 0px;
-        gap: 0;
+        
         z-index: 55;
     }
     .nav-menu li{
-        font-size: 54px;
+        font-size: 5vh;
         font-weight: bold;
-
+    
     } 
     .nav-menu li span{
         color: white;
     }
-    
+    .nav-menu {
+        gap: 1vh;
+    }
     .tedx-logo{
        display: none;
     }
@@ -197,14 +201,14 @@
     }
     .nav-menu{
 
-    background-color: #040404f8;
+   
       z-index: 60;
-        height: 130vh;
+        height: 150vh;
         transform: translateY(-10%);
        
     }
     .nav-menu.open{
-       
+       background-color: rgba(0, 0, 0, 0.912);
         clip-path: circle(1511px at 270% -20%);
     }
    
