@@ -1,0 +1,112 @@
+.thought-loom-section{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eb0028;
+}
+
+.thought_loom-top-content{
+  position: relative;
+  margin: 0% auto;
+  width: fit-content;
+  margin-top: 40px;
+}
+
+.date-venue-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 5vh;
+  top: 50vh;
+  width: fit-content;
+}
+.boy-animation{
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+.boy-image{
+  position: relative;
+  height: 70vh;
+  z-index: 40;
+}
+.thought_loom_img{
+  position: absolute;
+  max-width: 500px;
+  bottom: 4vh;
+  left: 50%;
+  margin-left: -250px;
+  object-fit: contain;
+}
+
+.white_light{
+  position: absolute;
+  right: 50%;
+  width: 56vw;
+  height: 35vh;
+}
+.rainbow_img{
+  position: absolute;
+  width: 65vw;
+  height: 40vh;
+  left: 55vw;
+  top: 24vh;
+}
+.head_circle{
+  height: 25vh;
+  width: 25vh;
+  position: absolute;
+  background: #e9e222;
+  margin-left: -50px;
+  left: 50vw;
+  border-radius: 100%;
+  top: 27vh;
+  z-index: 10;
+}
+@media screen and (max-width:900px){
+  .white_light{
+    top: 7vh;
+    rotate: -10deg;
+  }
+}
+
+@media screen and (max-width:700px){
+  .rainbow_img{
+    height: 25vh;
+    top: 30vh;
+  }
+}
+
+@media screen and (max-width:550px){
+  .thought_loom_img{
+    width: 90vw;
+    margin-left: -45vw;
+    left: 50%;
+  }
+  .shift{
+    transform: translateX(-7vw);
+    scale: 0.7;
+  }
+  .boy-animation{
+    z-index: 20;
+  }
+  .head_circle{
+    z-index: 10;
+    top: 33vh;
+  }
+  .rainbow_img{
+    top: 37vh;
+  }
+  .white_light{
+    top: 15vh;
+    right: 46vw;
+    width: 65vw;
+  }
+  .date-venue-container{
+    top: 20vh;
+    left: 60vw;
+  }
+}
