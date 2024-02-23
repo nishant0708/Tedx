@@ -11,7 +11,7 @@ button:focus {
     --scroll-perc: 0;
     --scroll-vel: 0;
     --scroll-y: 0;
-    --title-size: calc(1/10 * 100vw);
+    --title-size: calc(1/5 * 100vh);
     background-color: #eae6e6;
     position: relative;
     overflow: hidden;
@@ -36,7 +36,7 @@ button:focus {
 .o-mslider__title span {
     position: absolute;
     top: 0;
-    left: -20vw;
+    left: 22vw;
     display: flex;
     align-items: center;
     line-height: 1;
@@ -213,11 +213,11 @@ text-align: center;
 
  @media(max-width:550px){
   .o-mslider{
-    --title-size: calc(1/8 * 100vw);
+    --title-size: calc(1/8 * 100vh);
   }
   
   .o-mslider__title span{
-     left: -12vw;
+     left: 25vw;
   }
   .o-mslider__img{
     width: 50vw;

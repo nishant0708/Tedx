@@ -57,7 +57,7 @@ export default function Footer() {
             <p >Anurudh Mhatre: <a href="tel:+91 9658748596" style={{color:"#ffffff"}}> +91 9658748596</a> <br />
               E-mail: &nbsp;
               <a href="mailto:itsraavann@gmail.com" style={{color:"#ffffff"}}>
-                itsraavann[at]gmail[dot]com
+               tedxdavv@gmail.com
               </a>
             </p>
             <h4 className='redtext'>GET UPDATED</h4>

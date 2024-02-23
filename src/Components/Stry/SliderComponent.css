@@ -129,7 +129,7 @@ button:focus {
     height: fit-content;
     text-align: left;
     top: 38%;
-    left: -30%;
+    left: -28%;
     z-index: 9;
     color: rgb(251, 251, 251);
     font-size: 20px;
@@ -249,7 +249,7 @@ button:focus {
     text-align: left;
    line-height: 30px;
   
-    left: -38%;
+    left: -36%;
    
     color: #ffffff;
     font-size: 20px;
@@ -266,11 +266,11 @@ button:focus {
     transform: translateY(10%);
 }
 .Aryan-style .speaker_desg{
-    left: -26%;
+    left: -24%;
     font-size: 18px;
 }
 .Aryan-style .slider__desc{
-    left: -18%;
+    left: -16%;
     font-size: 18px;
 }
 /* .Aryan-style .o-slider__img{
@@ -313,11 +313,38 @@ button:focus {
     left: 12%;
 } */
 .vineet-style .slider__desc{
-    left: -24%;
+    left: -21%;
     font-size: 19px;
 }
 .vineet-style .speaker_desg{
-    left: -32%;
+    left: -29%;
+}
+
+
+
+@media (max-width:1450px) {
+    .o-slider__title span{
+        left: -10%;
+    }
+    .speaker-name{
+        font-size: 68px;
+    }
+    
+    .speaker_desg{
+       
+        font-size: 20px;
+    }
+    .slider__desc{
+   
+    font-size: 20px;
+    }
+    .vineet-style .speaker_desg{
+        left: -31%;
+        font-size: 18px;
+    }
+    .vineet-style .slider__desc{
+        left: -22%;
+    }
 }
 @media(max-width:1280px){
  

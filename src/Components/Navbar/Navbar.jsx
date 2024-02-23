@@ -41,21 +41,31 @@ const Navbar = () => {
   }, [menu]);
 
   useEffect(() => {
-    // Set initial state based on location
-    if (location.pathname.includes('gallery')) {
-      setNavTextColor('#fff'); // Set text color to white for gallery page
-      setNavLogo(logowhite); // Set logo to the white logo for gallery page
-    } 
-    else if (location.pathname.includes('sponsors')) {
-      setNavTextColor('#fff'); // Set text color to white for sponsors page
-      setNavLogo(logowhite); // Set logo to the white logo for sponsors page
+    function handleResize() {
+      if (window.innerWidth > 800) {
+        // Set initial state based on location
+        if (location.pathname.includes('gallery')) {
+          setNavTextColor('#fff'); // Set text color to white for gallery page
+          setNavLogo(logowhite); // Set logo to the white logo for gallery page
+        } else if (location.pathname.includes('sponsors')) {
+          setNavTextColor('#fff'); // Set text color to white for sponsors page
+          setNavLogo(logowhite); // Set logo to the white logo for sponsors page
+        } else {
+          setNavTextColor('#000'); // Set default text color
+          setNavLogo(logoblack); // Set default logo
+        }
+      }
     }
-    else {
-      setNavTextColor('#000'); // Set default text color
-      setNavLogo(logoblack); // Set default logo
-    }
-  }, [location]);
 
+    // Call handleResize initially
+    handleResize();
+
+    // Add event listener to listen for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, [location]);
 
   const handleHamburgerClick = () => {
     setOpen(!isOpen);
@@ -79,7 +89,7 @@ const Navbar = () => {
 
   const handleReload = () => {
     window.scrollTo(0, 0);
-    //setReloadPage(false);
+    // setReloadPage(false);
   };
 
   // if (reloadPage) {
@@ -94,20 +104,20 @@ const Navbar = () => {
 
     //change Navbar color
 
-    if (menuItem === 'gallery') {
-      setNavTextColor('#fff'); // Change text color to white
-      setNavLogo(logowhite); // Change logo to the gallery logo
-    } 
-    else if(menuItem === 'sponsors'){
-      setNavTextColor('#fff'); // Change text color to white
-      setNavLogo(logowhite);
-    }
-    else {
-      setNavTextColor('#000'); // Reset text color to default
-      setNavLogo(logoblack); // Reset logo to the default logo
-    }
+  //   if (menuItem === 'gallery') {
+  //     setNavTextColor('#fff'); // Change text color to white
+  //     setNavLogo(logowhite); // Change logo to the gallery logo
+  //   } 
+  //   else if(menuItem === 'sponsors'){
+  //     setNavTextColor('#fff'); // Change text color to white
+  //     setNavLogo(logowhite);
+  //   }
+  //   else {
+  //     setNavTextColor('#000'); // Reset text color to default
+  //     setNavLogo(logoblack); // Reset logo to the default logo
+  //   }
   };
-  const hamburgerColor = location.pathname.includes('gallery') ? '#fff' : '#000';
+  const hamburgerColor = isOpen ? '#fff' : (location.pathname.includes('gallery') ? '#fff' : '#000');
   return (
     <div className="navbar">
       <div className='Nav-logo'>
@@ -122,11 +132,11 @@ const Navbar = () => {
      
 
       <ul ref={menuRef} className={`nav-menu ${isOpen ? 'open' : ''}`}>
-      <li onClick={() => handleMenuItemClick("home")} style={{ color: menu === "home" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "home" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/'><span>Home</span></Link> {menu === "home" ? <hr /> : <></>} </li>
-        <li onClick={() => handleMenuItemClick("sponsors")} style={{ color: menu === "sponsors" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "sponsors" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/sponsors'><span onClick={handleReload}>Sponsors</span></Link> {menu === "sponsors" ? <hr /> : <></>}</li>
-        <li onClick={() => handleMenuItemClick("gallery")} style={{ color: menu === "gallery" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "gallery" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/gallery'><span>Gallery</span></Link> {menu === "gallery" ? <hr /> : <></>}</li>
-        <li onClick={() => handleMenuItemClick("teams")} style={{ color: menu === "teams" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "teams" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/teams'><span onClick={handleReload}>Our Team</span> </Link>{menu === "teams" ? <hr /> : <></>}</li>
-        <li className='con' onClick={() => { handleMenuItemClick("contact"); window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }) }} style={{ color: menu === "contact" ? '#eb0028' : navTextColor, transition: "1s ease-out", cursor: 'pointer' }}><span>Contact Us</span> {menu === "contact" ? <hr /> : <></>}</li>
+      <li onClick={() => handleMenuItemClick("home")} style={{ color: menu === "home" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "home" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/'><span  style={{ color: menu === "home" ? '#eb0028' : "", transition: "0.5s ease-out" }}>Home</span></Link> {menu === "home" ? <hr /> : <></>} </li>
+        <li onClick={() => handleMenuItemClick("sponsors")} style={{ color: menu === "sponsors" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "sponsors" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/sponsors'><span style={{ color: menu === "sponsors" ? '#eb0028' : "", transition: "0.5s ease-out" }}>Sponsors</span></Link> {menu === "sponsors" ? <hr /> : <></>}</li>
+        <li onClick={() => handleMenuItemClick("gallery")} style={{ color: menu === "gallery" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "gallery" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/gallery'><span style={{ color: menu === "gallery" ? '#eb0028' : "", transition: "0.5s ease-out" }}>Gallery</span></Link> {menu === "gallery" ? <hr /> : <></>}</li>
+        <li onClick={() => handleMenuItemClick("teams")} style={{ color: menu === "teams" ? '#eb0028' : navTextColor, transition: "0.5s ease-out" }}><Link  style={{ textDecoration:'none',color: menu === "teams" ? '#eb0028' : navTextColor, transition: "1s ease-out" }} to='/teams'><span  style={{ color: menu === "teams" ? '#eb0028' : "", transition: "0.5s ease-out" }}>Our Team</span> </Link>{menu === "teams" ? <hr /> : <></>}</li>
+        <li className='con' onClick={() => { handleMenuItemClick("contact"); window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }) }} style={{ color: menu === "contact" ? '#eb0028' : "", transition: "1s ease-out", cursor: 'pointer' }}><span style={{ color: menu === "contact" ? '#eb0028' : "", transition: "0.5s ease-out" }}>Contact Us</span> {menu === "contact" ? <hr /> : <></>}</li>
       </ul>
     </div>
   );
