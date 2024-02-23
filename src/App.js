@@ -40,47 +40,18 @@ function App() {
     { title: '', link: '', thumbnail: "https://imgur.com/hj1Wwk5.png" },
     { title: '', link: '', thumbnail: "https://imgur.com/E2XhfPT.png" },
     { title: '', link: '', thumbnail: "https://imgur.com/p6tcGPl.png" },
-    { title: '', link: '', thumbnail: "https://imgur.com/M3yIIND.png" },
-    { title: '', link: '', thumbnail: "https://imgur.com/NUFlBwq.png" },
-    { title: '', link: '', thumbnail: "https://imgur.com/NUFlBwq.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/dCvMOYS.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/v6uPbJC.png" },
+    { title: 'Aryan Vijayvargiya', link: '', thumbnail: "https://imgur.com/Qebc43j.png" },
+    { title: 'Dr. Ragini Makkhar', link: '', thumbnail: "https://imgur.com/azvGCcl.png" },
+    { title: 'Abhishek Mishra', link: '', thumbnail: "https://imgur.com/VB6xoI2.png" },
+    { title: 'Bhaskar Indrakanti', link: '', thumbnail: "https://imgur.com/iV9tnue.png" },
+    { title: 'Akshay Singh', link: '', thumbnail: "https://imgur.com/L2tS0Cz.png" },
     // Add more product data as needed
   ];
   
  
-  const content = [
-    {
-      title: "What is Ted and what is Tedx?",
-      description:
-        "TEDx is a program created by TED (Technology, Entertainment, Design), a global platform known for its conferences featuring influential speakers and thought leaders. TEDx events are independently organized, community-driven gatherings licensed by TED. ",
-    },
-    {
-      title: "What is the Theme of the event?",
-      description:
-        "The theme of TedxDavv2024 Thought loom. Which symbolizes a weaving of ideas and interconnected thoughts, akin to threads in a loom. It represents creation of an inspiring fabric that goes beyond individual perspectives, fostering a collective consciousness.",
-    },
-    {
-      title: "What is the date and time of the Event?",
-      description:
-        "The TEDxDAVV 2024 event will take place on March 6 and March 7, 2024  from 4pm to 8pm.",
-    },
-    {
-      title: "What language is spoken at the event?",
-      description:
-        "The languages spoken during the event are Hindi and English.",
-      },
-    {
-      title: "What is the price of tickets?",
-      description:
-        "The price of the tickets are yet to be revealed.",
-    },
-    {
-      title: "Are there different ticket types of packages available?",
-      description:
-        "Yes, there are but the diff ticket types of packages are yet to be announced.",
-    },
-  ];
- 
-
+  
   useEffect(() => {
     // Simulate loading time for 5 seconds
     const loadingTimeout = setTimeout(() => {

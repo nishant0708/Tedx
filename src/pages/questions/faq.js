@@ -53,7 +53,7 @@ const StickyScroll = ({ content }) => {
     const tween2 = gsap.to("#whiteflower", {
       y: 150,
       x: "3vw",
-      width: "30vh",
+      width: "15vw",
       opacity: 1,
     rotate: -60,
     duration: 1,
@@ -69,7 +69,7 @@ const StickyScroll = ({ content }) => {
 useEffect(() => {
   const tween2 = gsap.to("#redflower", {
     x: "35vw",
-width: "30vh",
+width: "15vw",
       rotate: 60,
     opacity: 1,
 
@@ -97,7 +97,7 @@ useEffect(() => {
     
   
     const tween = gsap.to("#answers", {
-      x: "15vw",
+      x: "10vw",
       opacity: 1,
       duration: 1,
       delay: 1.5,
