@@ -11,7 +11,7 @@ const Speakerf = () => {
 
     useEffect(() => {
         const handleResize = () => {
-          setIsSmallScreen(window.innerWidth < 800);
+          setIsSmallScreen(window.innerWidth < 830);
         };
     
         handleResize(); // Initial check

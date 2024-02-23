@@ -5,7 +5,7 @@
     justify-content: space-around;
     padding: 5px;
     background-color: transparent;
-    
+    padding-top: 15px;
     align-items: center;
     z-index: 5555555555555;
 }
@@ -123,6 +123,7 @@
     .navbar{
         position: fixed;
         padding: 10px 0px;
+        background-color: transparent;
         z-index: 5777775;
         display: block;
         width: 100%;
@@ -130,17 +131,14 @@
    
     .nav-menu{
        
-      
-       
-        width: 100%;
         height: 150vh;
        display: flex;
         background-color: transparent;
         justify-content: center;
         list-style: none;
         gap: 10px;
-        max-height: 0;
-        opacity: 0;
+       
+        
         clip-path: circle(100px at 100% -10%);
         transition: all 0.5s;
        transform: translateY(-20px);
@@ -155,17 +153,19 @@
         display: none;
     }
     
-    .nav-menu.open {
-        background-color: transparent;
-        display: flex; /* Display when open class is present */
-        background-color: transparent;
-        flex-direction: column;
-       background-color: #706a6a8c;
-        max-height: 150vh; /* Adjust the max-height based on your content */
-        opacity: 1;
-      
-      }
-      
+ .nav-menu.open {
+    background-color: transparent;
+    display: flex; /* Display when open class is present */
+    background-color: transparent;
+    flex-direction: column;
+   background-color: #706a6a8c;
+   transform: translateY(-4%);
+    max-height: 150vh; /* Adjust the max-height based on your content */
+    opacity: 1;
+   height: 110vh;
+   clip-path: circle(2311px at 150% -100%);
+      } 
+       
     
 }
 @media (max-width:500px){
