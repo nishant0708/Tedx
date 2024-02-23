@@ -10,9 +10,9 @@ const Main = () => {
     
   return (
     <div>
-        <Thoughtloom2 />
-        <HeroPg/>
         
+        <HeroPg/>
+        {/* <Thoughtloom2 /> */}
         <Thoughtloom/>
         <Speakerf/>
         <FaqPage/>
