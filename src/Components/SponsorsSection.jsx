@@ -10,8 +10,11 @@ gsap.registerPlugin(ScrollTrigger);
 
  function SponsorsSection(){
 
+    const pinRef =useRef(null);
+
     useEffect(() => {
         
+
         let tl2 = gsap.timeline();
         tl2.fromTo('.word', {
             y:340,
@@ -30,23 +33,25 @@ gsap.registerPlugin(ScrollTrigger);
         })
 
        
-        const pin = gsap.fromTo(sponsorContainerRef.current,{
+        pinRef.current = gsap.fromTo(sponsorContainerRef.current,{
             translateX:'25vw',
         },{
             translateX:`-${sponsorLen*17}vw`,
-            ease:'none',
+            ease:'power1.inOut',
             duration:1,
             scrollTrigger:{
                 trigger: sponsorTriggerRef.current,
                 start:'top top',
-                end:`${sponsorLen*370} top`,
+                end:`+=${sponsorLen*370} top`,
                 scrub: 3.3,
                 markers: false,
                 pin: true
             }
         })
         return() =>{
-            pin.kill();
+            if(pinRef.current){
+                pinRef.current.scrollTrigger.kill();
+            }
         }
     
 

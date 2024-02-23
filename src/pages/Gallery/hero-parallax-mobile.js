@@ -138,7 +138,7 @@ export default HeroParallax2;
 
 export const Header = () => {
     const ref = React.useRef(null);
-    
+    const springConfig = { stiffness: 200, damping: 25 };
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start start", "end start"],
@@ -146,28 +146,27 @@ export const Header = () => {
     
     const rotateX = useSpring(
       useTransform(scrollYProgress, [0, 0.1], [35, 0]),
-      
+      springConfig,
     );
     const rotateZ = useSpring(
       useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-      
+      springConfig,
     );
     
      
     const translateY = useSpring(
         useTransform(scrollYProgress, [0, 0.3], [50, 800]),
-    
+        springConfig,
   );
 
   return (
     <div
     
-        className="absolute z-[100000] h-28  mx-auto  bg-transparent px-4  right-0 top-[5vh]">
+        className="absolute z-[100000] h-28 translate-y-32 mx-auto  bg-transparent px-4  right-0 top-[5vh]">
        <motion.div
         style={{
           rotateX,
           rotateZ,
-          translateY,
         }}
         className=""
       ><h1 className=" text-6xl h-28 text-right font-Poppins text-white"><span className="text-[#eb0028] poppins-bold">HIGH</span>LIGHTS</h1></motion.div>
