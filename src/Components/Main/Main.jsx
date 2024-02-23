@@ -5,15 +5,13 @@ import Thoughtloom from '../thoughtloom/Thoughtloom'
 import StickyScroll from "../../pages/questions/faq"
 import FaqPage from '../../pages/questions/faqSection'
 import Thoughtloom2 from '../thoughtloom/Thoughtloom2'
-
 const Main = () => {
     
   return (
     <div>
-        <Thoughtloom2 />
         <HeroPg/>
         
-        <Thoughtloom/>
+        <Thoughtloom2/>
         <Speakerf/>
         <FaqPage/>
        
