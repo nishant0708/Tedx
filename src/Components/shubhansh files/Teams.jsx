@@ -4,7 +4,7 @@ import Header from './Header';
 import './Teams.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import data from '../teamData.json';
+import Marquee from "react-fast-marquee";
 
 
 
@@ -23,7 +23,7 @@ export default function Teams(props){
     // console.log(coreTeam);
 
     
-    
+    const pinRef = useRef(null);
     
 
     useEffect(() =>{
@@ -47,7 +47,7 @@ export default function Teams(props){
 
         if(len>=4){
             if(window.innerWidth>1000){
-                const pin = gsap.fromTo(sectionRef.current,{
+                pinRef.current = gsap.fromTo(sectionRef.current,{
                     translateX:'25vw'
                 },{
                     translateX:`-${len*17}vw`,
@@ -64,11 +64,11 @@ export default function Teams(props){
                 })
         
                 return() =>{
-                    pin.kill();
+                    pinRef.current.scrollTrigger.kill();
 
                 }
             }if(window.innerWidth>800){
-                const pin = gsap.fromTo(sectionRef.current,{
+                pinRef.current = gsap.fromTo(sectionRef.current,{
                     translateX:'45vw',
                     
                 },{
@@ -86,10 +86,10 @@ export default function Teams(props){
                 })
         
                 return() =>{
-                    pin.kill();
+                    pinRef.current.scrollTrigger.kill();
                 }
             }if(window.innerWidth>400){
-                const pin = gsap.fromTo(sectionRef.current,{
+                pinRef.current = gsap.fromTo(sectionRef.current,{
                     translateX:'130vw',
                     
                 },{
@@ -107,10 +107,10 @@ export default function Teams(props){
                 })
         
                 return() =>{
-                    pin.kill();
+                    pinRef.current.scrollTrigger.kill();
                 }
             }else{
-                const pin = gsap.fromTo(sectionRef.current,{
+                pinRef.current = gsap.fromTo(sectionRef.current,{
                     translateX:'100vw',
                     
                 },{
@@ -128,7 +128,7 @@ export default function Teams(props){
                 })
         
                 return() =>{
-                    pin.kill();
+                    pinRef.current.scrollTrigger.kill();
                 }
             }
         }
@@ -200,7 +200,7 @@ export default function Teams(props){
             
             <div className='team' ref={triggerRef}>
 
-                <div className='single-team-container' >
+                <div className='single-team-container' style={{height: "unset"}}>
                     <div className='team-name team-name-organisers'>
                                 {
                                     `${nm}`.split('').map((word) => {
@@ -208,6 +208,7 @@ export default function Teams(props){
                                     })
                                 }
                     </div>
+                    
 
                     {/* team cards */}
                     <div className='team-cards-container team-scroll'  ref={sectionRef}>

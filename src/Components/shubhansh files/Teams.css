@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20vh;
+    row-gap: 0px;
     padding-top: 5vh;
     /* this removes glitch */
     transform: translateY(1px);
@@ -55,11 +55,15 @@
     }
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-height: 990px){
     .team{
-        margin-top: 0px;
+        padding-top: 20vh;
     } 
+    .team-cards-container{
+        margin-top: 10vh;
+    }
 }
+
 
 
 

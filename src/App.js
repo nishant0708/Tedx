@@ -14,7 +14,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Trybox from "./Components/ContactUS/Trybox";
 import HeroParallax from "./pages/Gallery/hero-parallax"
 import Main from "./Components/Main/Main";
-import TeamSection from "./Components/TeamSection"
+import TeamSection from "./Components/shubhansh files/TeamSection"
 import Subh from "./Components/Subhanshpage/Subh";
 
 import React, { useState, useEffect } from 'react';

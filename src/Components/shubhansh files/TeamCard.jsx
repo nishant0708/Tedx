@@ -31,9 +31,7 @@ export default function TeamCard(props){
                 delay: 1,
                 duration: 1.5,
                 ease: "power3.inOut",
-                stagger:{
-                    each: 0.5
-                }
+                
             })
         }else{
             tl.fromTo('.teams-card',{

@@ -2,7 +2,7 @@ import './TeamSection.css';
 import Teams from './Teams';
 import Header from './Header';
 import { useEffect, useRef, useState } from 'react';
-import teamData from '../teamData.json';
+import teamData from '../../teamData.json';
 import gsap from 'gsap';
 
 

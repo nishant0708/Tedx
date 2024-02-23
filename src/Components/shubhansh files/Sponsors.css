@@ -1,0 +1,16 @@
+.shubh-sponsor-card{
+    border-radius: 20px;
+    overflow-x: hidden;
+    box-shadow: 12px 17px 34px -1px rgba(0,0,0,0.75);
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.shubh-sponsor-image{
+    max-width: 200px;
+    position: relative;
+    margin: auto;
+  }
+  

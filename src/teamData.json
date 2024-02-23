@@ -70,6 +70,18 @@
 		"Organisers": [
             {
                 "id": "organisers",
+                "name": "Miraj ",
+                "info": "TEDxDAVV",
+                "image": "https://imgur.com/F6mkISp.png",
+                "ig": "",
+                "cuteness":5,
+                "IQ":30,
+                "humour":20,
+                "anger":50,
+                "fun": 46
+                
+            },{
+                "id": "organisers",
                 "name": "Ashutosh ",
                 "info": "TEDxDAVV ",
                 "image": "https://imgur.com/tJ8pjtb.png",
@@ -109,18 +121,6 @@
                 "name": "Pratham ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/WpiL60T.png",
-                "ig": "",
-                "cuteness":5,
-                "IQ":30,
-                "humour":20,
-                "anger":50,
-                "fun": 46
-                
-            },{
-                "id": "organisers",
-                "name": "Miraj ",
-                "info": "TEDxDAVV",
-                "image": "https://imgur.com/F6mkISp.png",
                 "ig": "",
                 "cuteness":5,
                 "IQ":30,

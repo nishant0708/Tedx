@@ -75,16 +75,16 @@ const Navbar = () => {
   //our team handler and sponsors handler
   // it reloads
 
-  const [reloadPage, setReloadPage] = useState(false);
+  // const [reloadPage, setReloadPage] = useState(false);
 
   const handleReload = () => {
     window.scrollTo(0, 0);
-    setReloadPage(false);
+    //setReloadPage(false);
   };
 
-  if (reloadPage) {
-    window.location.reload();
-  }
+  // if (reloadPage) {
+  //   window.location.reload();
+  // }
 
   const handleMenuItemClick = (menuItem) => {
     setMenu(menuItem);
