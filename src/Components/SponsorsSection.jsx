@@ -9,7 +9,7 @@ import SponsorData from '../Sponors.json';
 gsap.registerPlugin(ScrollTrigger);
 
  function SponsorsSection(){
-    
+
     const pinRef =useRef(null);
 
     useEffect(() => {
@@ -37,12 +37,12 @@ gsap.registerPlugin(ScrollTrigger);
             translateX:'25vw',
         },{
             translateX:`-${sponsorLen*17}vw`,
-            ease:'none',
+            ease:'power1.inOut',
             duration:1,
             scrollTrigger:{
                 trigger: sponsorTriggerRef.current,
                 start:'top top',
-                end:`${sponsorLen*370} top`,
+                end:`+=${sponsorLen*370} top`,
                 scrub: 3.3,
                 markers: false,
                 pin: true
