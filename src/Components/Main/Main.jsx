@@ -10,7 +10,6 @@ const Main = () => {
     
   return (
     <div>
-        
         <HeroPg/>
  
         <Thoughtloom/>

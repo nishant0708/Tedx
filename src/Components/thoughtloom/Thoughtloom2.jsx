@@ -3,7 +3,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Thoughtloom2.css';
 
-
 const Thoughtloom2 = () => {
   const whitepathRef = useRef(null);
   const maskBoxRef = useRef(null);
@@ -28,14 +27,14 @@ const Thoughtloom2 = () => {
           Indore</pre>
       </div>
 
-      <img className='rainbow_img shift' src={require('../images/rainbow.png')}></img>
+      <img className='rainbow_img shift' src='https://imgur.com/QMVLPsi.png'></img>
 
       
-      <img className='thought_loom_img' src={require('../images/thoughtloom.png')}></img>
+      <img className='thought_loom_img' src='https://imgur.com/SXty7kU.png'></img>
 
-      <img className='white_light shift' src={require('../images/white-stroke.png')}></img>
+      <img className='white_light shift' src='https://imgur.com/QMVLPsi.png'></img>
       <div className='boy-animation shift'>
-        <img className='boy-image' src={require('../images/person.png')} alt="person"></img>
+        <img className='boy-image' src='https://imgur.com/fN0NV9J.png' alt="person"></img>
       </div>
     </div>
   );
