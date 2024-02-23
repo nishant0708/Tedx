@@ -30,10 +30,12 @@
 
 .hero-video video{
     /* height: 90vh; */
-    height: 80vh;
+    max-height: 80vh;
+    /* height: 80vh; */
     /* width: 30vw; */
     border-radius: 40px;
     object-fit: cover;
+        min-width: 30vw;
 }
 .hero-text{
     z-index: 2;
@@ -98,13 +100,15 @@
     left: 20vw;
     top: -10vw;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1025px){
     .mainliner{
         font-size: 5rem;
         line-height: 5.3rem;
     }
     .hero-video video{
-        height:auto;
+        /* height:auto; */
+        min-height: 50vh;
+        min-width: 30vw;
     }
 }
 @media screen and (max-width: 750px) {

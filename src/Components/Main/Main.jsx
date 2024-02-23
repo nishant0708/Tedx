@@ -11,7 +11,7 @@ const Main = () => {
     <div>
         <HeroPg/>
         
-        <Thoughtloom2/>
+        <Thoughtloom/>
         <Speakerf/>
         <FaqPage/>
        

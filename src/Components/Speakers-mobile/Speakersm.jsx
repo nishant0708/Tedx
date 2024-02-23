@@ -11,8 +11,8 @@ import badal from "../Assests/Images/Group 29.png"
 
 const speakers2024 = [
     {
-        name: 'r',
-        surname: '',
+        name: 'Stay',
+        surname: 'tuned',
         description: 'Revealing Soon...',
         image: samp_image,
         instagramLink: '',
@@ -347,7 +347,7 @@ const Speakersm = () => {
               // Add switch cases for 2024 here
               switch (speaker.name) {
                 
-                case 'r':
+                case 'Stay':
                   speakerClass = 'mreveal';
                   break;
                 default:
