@@ -184,7 +184,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #f2f98b;
+		background-color: #fad648;
 		transform: scaleX(0);
 		transform-origin: 0 50%;
 		pointer-events: none;
@@ -244,14 +244,14 @@
     font-size: 1.5rem;
     line-height: 1.6rem;
     width: 100vw;
-    top:5vh;
+    top:0vh;
     text-align: center;
   }
   
   
   .text-box{
     transform: scale(0.8);
-    top: 32vh;
+    top: 28vh;
     left: -5vw;
     /* margin-left: 20px; */
     line-height: 1rem;
@@ -279,7 +279,7 @@
   .circle{
     transform: translate(-660px,30vh);
     height: 350px;
-    top:0;
+    top:-2vh;
   }
 
   .whiteStroke{
@@ -288,14 +288,16 @@
   }
 
   .mask-box-2{
-    transform: translate(800px,500px);
+    /* transform: translate(800px,500px); */
+    left:0;
   }
   .rainbow{
     transform: translate(400px,220px);
   }
 
   .mask-box{
-    transform: translate(1050px,300px);
+    /* transform: translate(1050px,300px); */
+    left:10vw;
   }
 
 }
