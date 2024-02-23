@@ -4,7 +4,7 @@ import Speakerf from '../nik-pages/Speakerf'
 import Thoughtloom from '../thoughtloom/Thoughtloom'
 import StickyScroll from "../../pages/questions/faq"
 import FaqPage from '../../pages/questions/faqSection'
-import Thoughtloom2 from '../thoughtloom/Thoughtloom2'
+
 
 const Main = () => {
     
@@ -12,7 +12,7 @@ const Main = () => {
     <div>
         
         <HeroPg/>
-        {/* <Thoughtloom2 /> */}
+ 
         <Thoughtloom/>
         <Speakerf/>
         <FaqPage/>

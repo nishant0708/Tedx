@@ -27,8 +27,9 @@
 }
 
 .circle {
-    transform: scale(0.6) translate(-1vw, 320px);
+    /* transform: scale(0.6) translate(-1vw, 320px); */
     position: relative; /* Ensure the circle is positioned relative to its parent */
+    top:30vh;
     z-index: 4; /* Set a higher z-index value for the circle */
 }
 
@@ -46,13 +47,13 @@
     bottom: 0;
     transform: translate(-930px,590px);
     rotate: 2deg ;
-    z-index: 2;
+    z-index: 1;
 }
 
 .rainbow{
     position: relative;
     transform: translate(650px,280px) scaleX(2.2) scaleY(1.5);
-    z-index: 3;
+    z-index: 1;
 }
 
 .mask-box{
@@ -133,6 +134,7 @@
   top:30vh;
   left:20px;
   display: flex;
+ 
   flex-direction: column; /* Change from row to column */
   justify-content: flex-start; /* Aligns items to the left */
   align-items: flex-start;
@@ -219,22 +221,32 @@
 
 @media only screen and (max-device-width: 768px) {
   .thoughtloom-container{
-    transform: scale(1.5) translate(-72px, -15px);
+    position: absolute;
+    /* transform: scale(0.8) translate(-400px); */
+    bottom: 3rem;
+    left: 50%;
+    transform: translate(-50%) scale(1.5);
+    z-index: 4;
   }
 
 
   .top-text{
     position: absolute;
-    top: 5;
-    margin-left: 10px;
-    font-size: 15px;
-    width: 90vw;
+    /* top: 5; */
+    /* margin-left: 10px; */
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    width: 100vw;
+    top:10vh;
+    text-align: center;
   }
   
   
   .text-box{
-    transform: scale(1.6) translateY(30px);
-    margin-left: 20px;
+    transform: scale(1.6) translateX(6vw) translateY(3vh);
+    /* margin-left: 20px; */
+    line-height: 1rem;
+    /* font-size: 1.5rem;*/
   }
 
 
@@ -258,6 +270,7 @@
   .circle{
     transform: translate(-660px,280px);
     height: 350px;
+    top:0;
   }
 
   .whiteStroke{

@@ -65,7 +65,7 @@ const Thoughtloom = () => {
   }, []);
 
   return (
-    <div className='scroller'  >
+    <div className='scroller poppins-regular'  >
       <div className='jay' ref={jayRef}>
         <div className='svg-container'>
           <div className='mask-box' ref={maskBoxRef}></div>
@@ -93,21 +93,21 @@ const Thoughtloom = () => {
         <div className='second-trigger'></div>
           <div className="container">
           <div className="text-box">
-          <h1 className="reveal-text date">
+          <h1 className="reveal-text date ">
             7 March 2024
           </h1>
-          <h1 className="reveal-text place">
-            Davv Auditorium
+          <h1 className="reveal-text poppins-bold place">
+            DAVV Auditorium
           </h1>
-          <h1 className="reveal-text place2">
+          <h1 className="reveal-text poppins-bold place2">
             Indore
           </h1>
           </div>
           <div className='top-text'>
-          <h1 class="top-text">
+ 
           An unfinished thought splits through the mind, weaving into a colourful spectrum of different perspectives and ideas
 
-          </h1>
+
           </div>
         </div>
         </div>
