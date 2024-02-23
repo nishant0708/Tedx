@@ -27,9 +27,11 @@
 }
 
 .circle {
-    transform: scale(0.6) translate(-1vw, 320px);
-    position: relative; /* Ensure the circle is positioned relative to its parent */
-    z-index: 4; /* Set a higher z-index value for the circle */
+  position: relative;
+    top: 27vh;
+    left: -1vw;
+    z-index: 4;
+    
 }
 
 .person {
@@ -46,17 +48,17 @@
     bottom: 0;
     transform: translate(-930px,590px);
     rotate: 2deg ;
-    z-index: 2;
+    z-index: 1;
 }
 
 .rainbow{
     position: relative;
     transform: translate(650px,280px) scaleX(2.2) scaleY(1.5);
-    z-index: 3;
+    z-index: 1;
 }
 
 .mask-box{
-  width: 1080px;
+  width: 1180px;
   height: 600px;
   background-color:#eae6e6;
   transform: translate(1065px,300px);
@@ -65,13 +67,13 @@
 }
 
 .mask-box-2{
-  width: 1000px;
+  width: 1500px;
   height: 600px;
   background-color:#eae6e6;
   z-index: 1;
   position: absolute;
   top : 0;
-  left:0;
+
   transform: translate(49px,500px);
   z-index: 2;
 }
@@ -96,13 +98,16 @@
 .top-text{
   position: absolute;
   top:30px;
-  left:0%;
+  left:50%;
+  transform: translate(-50%);
+  font-size:1.5rem;
+  line-height:1.7rem;
   z-index: 10;
   padding: 10px;
-  width: 100vw;
+  width: 70vw;
   font-weight: normal;
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 7vh;
+  /* font-size: 20px; */
   font-family: "Poppins";
 }
 
@@ -130,15 +135,19 @@
 .text-box{
   z-index: 4;
   position: absolute;
-  top:30vh;
+  top:40vh;
   left:20px;
   display: flex;
+ gap:0.5rem;
   flex-direction: column; /* Change from row to column */
   justify-content: flex-start; /* Aligns items to the left */
   align-items: flex-start;
   margin-left: 20px;
   }
-
+.text-box h1{
+  font-size:2rem;
+  line-height:1.5rem;
+}
 .reveal-text {
     margin: 0px 0; /* Adjust the top and bottom margin as needed */
   }
@@ -219,22 +228,34 @@
 
 @media only screen and (max-device-width: 768px) {
   .thoughtloom-container{
-    transform: scale(1.5) translate(-72px, -15px);
+    position: absolute;
+    /* transform: scale(0.8) translate(-400px); */
+    bottom: 3rem;
+    left: 50%;
+    transform: translate(-50%) scale(1.5);
+    z-index: 4;
   }
 
 
   .top-text{
     position: absolute;
-    top: 5;
-    margin-left: 10px;
-    font-size: 15px;
-    width: 90vw;
+    /* top: 5; */
+    /* margin-left: 10px; */
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    width: 100vw;
+    top:5vh;
+    text-align: center;
   }
   
   
   .text-box{
-    transform: scale(1.6) translateY(30px);
-    margin-left: 20px;
+    transform: scale(0.8);
+    top: 32vh;
+    left: -5vw;
+    /* margin-left: 20px; */
+    line-height: 1rem;
+    /* font-size: 1.5rem;*/
   }
 
 
@@ -256,8 +277,9 @@
   }
 
   .circle{
-    transform: translate(-660px,280px);
+    transform: translate(-660px,30vh);
     height: 350px;
+    top:0;
   }
 
   .whiteStroke{
