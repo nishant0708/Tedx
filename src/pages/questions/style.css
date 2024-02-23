@@ -33,7 +33,6 @@
     transform: translateY(-100px);
     width: 33vw;
     margin-top: 1vh;
-    font-size: 36px;
     text-align: right;
     z-index: 2;
     font-family: "Poppins";
@@ -42,14 +41,71 @@
 
 
 button {
+    margin-top: 1vh;
     text-align: right;
     padding-left: 3%;
     padding-right: 3%;
     margin-bottom: 3vh;
-    font-size: 30px;
+    font-size: 4vh;
     color: black;
     z-index: 2;
 }
+
+@media (max-aspect-ratio: 1.3/1) {
+    button {
+        text-align: right;
+        padding-right: 3%;
+        margin-bottom: 1vh;
+        font-size: 3.5vh;
+        color: black;
+        z-index: 2;
+    }
+
+    .right {
+        margin-top: 4vh;
+        margin-right: -2vw;
+        padding-top: 1vw;
+        height: 100vh;
+        width: 45vw;
+        z-index: 2;
+    }
+
+  
+
+  }
+
+  @media (max-aspect-ratio: 1.76/1) {
+    button {
+        padding-top: 2vh;
+        text-align: right;
+        padding-right: 3%;
+        margin-bottom: 1vh;
+        font-size: 3.5vh;
+        color: black;
+        z-index: 2;
+    }
+
+    .right {
+        margin-top: 4vh;
+        margin-right: -2vw;
+        padding-top: 1vw;
+        height: 100vh;
+        width: 45vw;
+        z-index: 2;
+    }
+
+    .Answers {
+        transform: translateY(10vh);
+        margin: 10vh 4vw;
+        margin-bottom: 8vh;
+        font-size: 3.5vh;
+        width: 35vw;
+        height: 40vh;
+        line-height: 3.3vh;
+    }
+
+  }
+
 
 
 
@@ -119,8 +175,10 @@ button {
     width: 35vw;
     color: black;
     height: 40vh;
-    line-height: 3vh;
+    line-height: 3.3vh;
 }
+
+
 
 .faq {
     margin-top: 20vh;
