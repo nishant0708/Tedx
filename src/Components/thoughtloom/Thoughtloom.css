@@ -67,13 +67,13 @@
 }
 
 .mask-box-2{
-  width: 1100px;
+  width: 1500px;
   height: 600px;
   background-color:#eae6e6;
   z-index: 1;
   position: absolute;
   top : 0;
-  left:0;
+
   transform: translate(49px,500px);
   z-index: 2;
 }
@@ -277,7 +277,7 @@
   }
 
   .circle{
-    transform: translate(-660px,280px);
+    transform: translate(-660px,30vh);
     height: 350px;
     top:0;
   }
