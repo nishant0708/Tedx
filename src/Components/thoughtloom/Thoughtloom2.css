@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #eb0028;
+  z-index: 5;
 }
 
 .thought_loom-top-content{

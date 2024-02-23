@@ -27,7 +27,7 @@ const Thoughtloom2 = () => {
           Indore</pre>
       </div>
 
-      <img className='rainbow_img shift' src='https://imgur.com/QMVLPsi.png'></img>
+      <img className='rainbow_img shift' src='https://imgur.com/w81ZkLh.png'></img>
 
       
       <img className='thought_loom_img' src='https://imgur.com/SXty7kU.png'></img>

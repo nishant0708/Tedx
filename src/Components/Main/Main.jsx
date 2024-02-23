@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <div>
         <HeroPg/>
-        
+        <Thoughtloom2 />
         <Thoughtloom/>
         <Speakerf/>
         <FaqPage/>
