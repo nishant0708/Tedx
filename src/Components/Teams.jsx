@@ -29,7 +29,7 @@ export default function Teams(props){
     useEffect(() =>{
 
         let len = coreTeam.length;
-        console.log(len);
+        //console.log(len);
         
         gsap.fromTo('.team-word', {
             y:140,
@@ -197,7 +197,7 @@ export default function Teams(props){
     
     return(
         <div>
-            {console.log("we are inside the team card")}
+            
             <div className='team' ref={triggerRef}>
 
                 <div className='single-team-container' >

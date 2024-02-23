@@ -11,7 +11,7 @@ button:focus {
     --scroll-perc: 0;
     --scroll-vel: 0;
     --scroll-y: 0;
-    --title-size: calc(1/13 * 100vh);
+    --title-size: calc(1/10 * 100vw);
     background-color: #eae6e6;
     position: relative;
     overflow: hidden;
@@ -24,7 +24,7 @@ button:focus {
 .o-mslider__title {
     z-index: 50;
     position: fixed;
-    top: 8%;
+    top: 8vh;
     left: 0;
     display: block;
     width: 100%;
@@ -36,7 +36,7 @@ button:focus {
 .o-mslider__title span {
     position: absolute;
     top: 0;
-    left: -2%;
+    left: -20vw;
     display: flex;
     align-items: center;
     line-height: 1;
@@ -55,8 +55,8 @@ button:focus {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-   
-    width: 100%;
+ 
+    width: 100vw;
     padding-top: calc(10vh - var(--title-size));
     padding-bottom: var(--title-size);
     overflow: hidden;
@@ -68,7 +68,7 @@ button:focus {
     margin-top: 55%;
     z-index: 5;
     padding-top: calc(var(--size) * 2/3);
-  /* border: 2px solid black; */
+
     overflow: hidden;
       transform:  skewY(calc(var(--scroll-y) * var(--scroll-vel) * 2deg));
 }
@@ -79,15 +79,15 @@ button:focus {
 .o-mslider__img {
     position: absolute;
     z-index: 1;
-    opacity: 0;
+    opacity: 1;
     background-color: rgb(104, 47, 34);
-    box-shadow: -10px 10px 0px 0px #FFD116;
-    top: 10%;
-    left: 18%;
+    box-shadow: -2vh 2vh 0vh 0vh #FFD116;
+    top: 10vw;
+    left: 24vw;
     border-radius: 10%;
     display: block;
-    width: 219px;
-    height: 262px;
+    width: 45vw;
+    height: 45vh;
     object-fit: cover;
     object-position: 50% 50%;
     transform: scale(1.1);
@@ -96,12 +96,12 @@ button:focus {
 
 .mspeaker-desc{
     position: absolute;
-    top: 69%;
-    left: -120%;
-    width: 300px;
+    top: 67vh;
+    left: -95vw;
+    width: 70vw;
 
-  
-font-size: 21px;
+  z-index: 3;
+font-size: 24px;
 font-weight: 300;
 text-align: center;
 }
@@ -110,23 +110,29 @@ text-align: center;
 }
 .mSpeaker-name{
     position: absolute;
-    top: 15%;
-   right: -80%;
+    top: 15vh;
+   right: -65vw;
     z-index: 2;
-    width: 200px;
+    width: 40vw;
     display: inline-block;
-    line-height: 40px;
+    line-height: 55px;
     text-align: right;
     display: flex;
    flex-direction: row;
-    font-size: 36px;
+    font-size: 45px;
     font-weight: bolder;
+}
+.icon{
+    width: 25px;
+}
+ .lin .ic{
+    width: 5vw;
 }
 .lin{
     display: flex;
     position: absolute;
     flex-direction: row;
-    top: 110%;
+    top: 114%;
     left: 19%;
     gap: 3px;
     
@@ -134,15 +140,15 @@ text-align: center;
 }
 .mprogress-bar {
     position: relative;
-    height: 200px; /* Adjust height as needed */
+    height: 400px; /* Adjust height as needed */
     z-index: 1;
   }
   
   .mprogress {
    position: fixed;
-    top: 80%;
+    top: 70%;
     left: -10px;
-    height: 7%;
+    height: 8vh;
     z-index: 1;
     background-color: none;
     border-top-right-radius: 999rem;
@@ -163,91 +169,91 @@ text-align: center;
     background-color: yellow;
   }
 .maryan-style .mSpeaker-name{
-    top:10%;
-    font-size: 25px;
+    right: -60vw;
+    font-size: 45px;
     line-height: 34px;
 }
 
 
 .mspeaker-desg{
     position: absolute;
-    width: 300px;
+    width: 70vw;
     opacity: 0;
     text-align: center;
     font-style: italic;
-    margin-bottom: 5%;
-    top: 55%;
-    left: 10%;
+    z-index: 3;
+    top: 58vh;
+    left: 12vw;
     
-   font-size: 21px;
+   font-size: 28px;
    font-weight: bold;
 }
-
-.makshay-style .o-mslider__img{
-    transform: scaleX(-1);
-     box-shadow: 10px 10px 0px 0px #FFD116;;
-}
-.mbhaskar-style .mSpeaker-name{
- font-size: 28px;
- line-height: 35px;
- top: 12%;
-}
 .mbhaskar-style .lin{
-    left: 35%;
-}
-.maryan-style .lin{
-    left: 37%;
-}
-.mvineet-style .mspeaker-desc{
-  top: 65%;
-}
-.mvineet-style .lin{
     left: 45%;
 }
-.mabhijit-style .mSpeaker-name{
-    right: -90%;
+.maryan-style .lin{
+    left: 58%;
+}
+.mvineet-style .lin{
+    left: 41%;
 }
 .mabhijit-style .lin{
-     left: 28%;
-}
-.makshay-style .mSpeaker-name{
-    right: -90%;
+    left: 27%;
 }
 .makshay-style .lin{
     left: 27%;
 }
-.mAbhishek-style .mSpeaker-name{
-    right:-85%
-}
 .mAbhishek-style .lin{
-left: 41%;
+    left: 41%;
+ }
+
+ .mragini .lin{
+    left: 40%;
+    }
+
+ @media(max-width:550px){
+  .o-mslider{
+    --title-size: calc(1/8 * 100vw);
+  }
+  
+  .o-mslider__title span{
+     left: -12vw;
+  }
+  .o-mslider__img{
+    width: 50vw;
+    height: 30vh;
+    left: 21vw;
+    box-shadow: -4vw 4vw 0vw 0vw #FFD116;
+  }
+  .mSpeaker-name{
+    right: -57vw;
+    top: 8vh;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .mspeaker-desg{
+    top: 42vh;
+    font-size: 17px;
+  }
+  .mspeaker-desc{
+    top: 54vh;
+    font-size: 17px;
+  }
+.maryan-style .mSpeaker-name{
+    right: -54vw;
+    top: 8vh;
+    font-size: 26px;
+    line-height: 40px;
 }
-.Ella .mSpeaker-name{
- right: -88%;
-}
-.Ella .mspeaker-desc{
-    top: 65%;
-}
-.mragini .lin{
-left: 40%;
-}
-.mragini .mspeaker-desc{
-    font-size: 19px;
-    top: 65%;
+.maryan-style .lin{
+    left: 51%;
 }
 
-.mreveal .mSpeaker-name{
-   right: -250%;
-}
-.mreveal .mspeaker-desc{
-    top:50%;
-    font-size: 60px;
-    font-weight: bolder;
 
-}
-.mreveal .o-mslider__title{
-   background-color: bisque;
-}
-.custom-title-style span{
-    left: 25%;
+
+
+
+ }
+.mreveal .lin{
+    display: none;
 }

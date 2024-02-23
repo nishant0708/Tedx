@@ -19,9 +19,9 @@ export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0,5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
-  const fourthRow = products.slice(15, 20);
-  
-  const fifthRow = products.slice(20, 25);
+  const fourthRow = products.slice(10, 20);
+  const sponsorContainerRef = useRef(null);
+  const sponsorTriggerRef = useRef(null);
  
   
   const ref = React.useRef(null);
@@ -89,7 +89,7 @@ export const HeroParallax = ({ products }) => {
       <Breakpoint medium up>
       <div
       ref={ref}
-      className="h-fit overflow-hidden mb-0 pb-0 bg-black pt-96  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[491vh] overflow-hidden mb-0 pb-0 bg-black pt-96  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -131,7 +131,7 @@ export const HeroParallax = ({ products }) => {
         
       </motion.div>
       <motion.div className="FOURth row flex flex-row  mt-[78vh] space-x-20 ">
-          {fourthRow.map((product) => (
+          {secondRow.map((product) => (
             <ProductCard
               product={product}
               translate={translateXReverse4}
@@ -140,7 +140,7 @@ export const HeroParallax = ({ products }) => {
           ))}
         </motion.div>
         <motion.div className="FIFTH flex flex-row-reverse mt-20 space-x-reverse space-x-20">
-          {fifthRow.map((product) => (
+          {thirdRow.map((product) => (
             <ProductCard
               product={product}
               translate={translateX5}
