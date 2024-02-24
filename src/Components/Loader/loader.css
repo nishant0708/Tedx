@@ -17,26 +17,31 @@
   opacity: 1;
   visibility: visible;
 }
+
 .loading-icon {
-  font-size: 20rem;
-  font-weight: bold;
+  /* Remove font-size and font-weight properties */
+  /* font-size: 20rem;
+  font-weight: bold; */
   color: #eae6e6;
 }
 
 .loading-icon.zoom {
   animation: zoomOut 6s ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 3s;
+}
+
+.svg-icon {
+  /* Add any styling you want for the SVG */
+  width: 30vw; /* Adjust according to your SVG size */
+  height: 30vh; /* Adjust according to your SVG size */
+  fill: #eae6e6; /* Change fill color if needed */
 }
 
 @keyframes zoomOut {
   0% {
-    transform: scale(1);
-    
+    transform: scale(3);  
   }
   100% {
-    
     transform: scale(800);
-    /* opacity: 0; */
-    
   }
 }
