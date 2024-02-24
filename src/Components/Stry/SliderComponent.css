@@ -326,25 +326,52 @@ button:focus {
     .o-slider__title span{
         left: -10%;
     }
+    .o-slider__img{
+        left: 21%;
+    }
     .speaker-name{
         font-size: 68px;
     }
     
     .speaker_desg{
-       
+        left: -31%;
         font-size: 20px;
     }
     .slider__desc{
-   
+        left: -23%;
     font-size: 20px;
     }
+    .vineet-style .speaker-name{
+        font-size: 50px;
+        line-height: 55px;
+    }
     .vineet-style .speaker_desg{
-        left: -31%;
-        font-size: 18px;
+        width: 200px;
+        left: 3%;
+        font-size: 16px;
     }
     .vineet-style .slider__desc{
-        left: -22%;
+        width: 200px;
+        left: 5%;
     }
+    .Aryan-style .speaker_desg{
+        left: 6%;
+        font-size: 16px;
+        width: 220px;
+    }
+    .Aryan-style .slider__desc{
+        left: 7%;
+        width: 220px;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
 }
 @media(max-width:1280px){
  
@@ -395,10 +422,10 @@ button:focus {
         height: 110%;
     }
     .vineet-style .speaker_desg{
-        left: -38.5%;
+        left: -11.5%;
     }
     .vineet-style .slider__desc{
-        left: -21%;
+        left: -10%;
     }
     .Aryan-style .o-slider__img{
         left: 21%;

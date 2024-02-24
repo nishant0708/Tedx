@@ -45,7 +45,7 @@ const Thoughtloom = () => {
     );
 
     tl.to(maskBox2Ref.current, {
-      x: "1500",
+      x: "1900",
       ease: "power1.inOut",
       // delay:0,
       // duration: 8, // Increase the duration here
