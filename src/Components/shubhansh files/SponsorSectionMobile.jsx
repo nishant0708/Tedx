@@ -3,13 +3,15 @@ import gsap from 'gsap';
 import { useEffect, useState, useRef } from 'react';
 import Sponsors from './Sponsors';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Marquee from "react-fast-marquee";
 
-import SponsorData from '../Sponors.json';
+import SponsorData from '../../Sponors.json';
 
 gsap.registerPlugin(ScrollTrigger);
 
  function SponsorMobileSection(){
 
+    // const pinRef = useRef(null);
     useEffect(() => {
         
         let tl2 = gsap.timeline();
@@ -29,37 +31,21 @@ gsap.registerPlugin(ScrollTrigger);
              ease: "elastic.out(1,0.9)",
         })
 
-        // const pin = gsap.fromTo(sponsorContainerRefMobile.current,{
+        // pinRef.current = gsap.fromTo('.sponsor_scroll',{
         //     translateX:'25vw',
         // },{
-        //     translateX:`-${sponsorLen*60}vw`,
+        //     translateX:`-${sponsorLen*68}vw`,
         //     ease:'none',
         //     duration:1,
         //     scrollTrigger:{
-        //         trigger: sponsorTriggerRefMobile.current,
-        //         start:'top top',
-        //         end:`${sponsorLen*370} top`,
+        //         trigger: '.sponsor-wrapper-Mobile',
+        //         // start:'top top',
+        //         end:`+=${sponsorLen*1000}`,
         //         scrub: 2,
         //         markers: false,
         //         pin: true
         //     }
         // })
-        
-        const pin2 = gsap.fromTo('.sponsor_scroll',{
-            translateX:'25vw',
-        },{
-            translateX:`-${sponsorLen*68}vw`,
-            ease:'none',
-            duration:1,
-            scrollTrigger:{
-                trigger: '.sponsor-wrapper-Mobile',
-                // start:'top top',
-                end:`${sponsorLen*1000}`,
-                scrub: 2,
-                markers: false,
-                pin: true
-            }
-        })
         
 
         gsap.fromTo('.sponsor_image',{
@@ -77,9 +63,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 
         
-        return() =>{
-            pin2.kill(); 
-        }
+        // return() =>{
+        //     pinRef.current.scrollTrigger.kill(); 
+        // }
     }, [])  
 
     let sponsor_2024 = SponsorData[2024];
@@ -171,7 +157,7 @@ gsap.registerPlugin(ScrollTrigger);
                 </h1>
            </div>
 
-
+           <Marquee speed={80} pauseOnClick={true}>
             <div className='sponsors-container-Mobile sponsor_scroll' ref={sponsorContainerRefMobile}>
                 {
                     sponsor_2024.map((sponsor) => {
@@ -180,7 +166,8 @@ gsap.registerPlugin(ScrollTrigger);
                     })
                 }
             </div>
-
+            </Marquee>
+            <Marquee speed={80} pauseOnClick={true}>
             <div className='sponsors-container-Mobile2 sponsor_scroll' ref={sponsorContainerRefMobile}>
                 {
                     sponsor_2024.map((sponsor) => {
@@ -189,6 +176,7 @@ gsap.registerPlugin(ScrollTrigger);
                     })
                 }
             </div>
+            </Marquee>
         </div>
     )
 }

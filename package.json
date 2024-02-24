@@ -19,6 +19,7 @@
     "react": "^18.2.0",
     "react-card-flip": "^1.2.2",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.4",
     "react-parallax-tilt": "^1.7.210",
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.22.1",
@@ -33,8 +34,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    
-    
     "install": "npm install",
     "build": "react-scripts build",
     "test": "react-scripts test",

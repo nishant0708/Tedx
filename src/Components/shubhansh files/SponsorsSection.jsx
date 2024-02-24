@@ -3,14 +3,14 @@ import gsap from 'gsap';
 import { useEffect, useState, useRef } from 'react';
 import Sponsors from './Sponsors';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-import SponsorData from '../Sponors.json';
+import Marquee from "react-fast-marquee";
+import SponsorData from '../../Sponors.json';
 
 gsap.registerPlugin(ScrollTrigger);
 
  function SponsorsSection(){
 
-    const pinRef =useRef(null);
+    // const pinRef =useRef(null);
 
     useEffect(() => {
         
@@ -33,26 +33,26 @@ gsap.registerPlugin(ScrollTrigger);
         })
 
        
-        pinRef.current = gsap.fromTo(sponsorContainerRef.current,{
-            translateX:'25vw',
-        },{
-            translateX:`-${sponsorLen*17}vw`,
-            ease:'power1.inOut',
-            duration:1,
-            scrollTrigger:{
-                trigger: sponsorTriggerRef.current,
-                start:'top top',
-                end:`+=${sponsorLen*370} top`,
-                scrub: 3.3,
-                markers: false,
-                pin: true
-            }
-        })
-        return() =>{
-            if(pinRef.current){
-                pinRef.current.scrollTrigger.kill();
-            }
-        }
+        // pinRef.current = gsap.fromTo(sponsorContainerRef.current,{
+        //     translateX:'25vw',
+        // },{
+        //     translateX:`-${sponsorLen*17}vw`,
+        //     ease:'power1.inOut',
+        //     duration:1,
+        //     scrollTrigger:{
+        //         trigger: sponsorTriggerRef.current,
+        //         start:'top top',
+        //         end:`+=${sponsorLen*370} top`,
+        //         scrub: 3.3,
+        //         markers: false,
+        //         pin: true
+        //     }
+        // })
+        // return() =>{
+        //     if(pinRef.current){
+        //         pinRef.current.scrollTrigger.kill();
+        //     }
+        // }
     
 
         
@@ -80,7 +80,7 @@ gsap.registerPlugin(ScrollTrigger);
                     }
             </h1>
 
-
+            <Marquee speed={100} pauseOnClick={true}>
             <div className='sponsors-container' ref={sponsorContainerRef}>
                 {
                     sponsor_2024.map((sponsor) => {
@@ -89,7 +89,7 @@ gsap.registerPlugin(ScrollTrigger);
                     })
                 }
             </div>
-
+            </Marquee>
             
         </div>
     )

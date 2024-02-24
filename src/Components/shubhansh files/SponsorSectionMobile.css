@@ -16,8 +16,9 @@
     position: absolute;
     display: flex;
     width: 340px;
+    height: 95vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     left: 50%;
     row-gap: 1vh;
@@ -45,10 +46,10 @@
     display: flex;
     flex-direction: row;
     gap: 5vw;
-    height: 40vh;
+    height: max-content ;
     left: 0vw;
     margin-top: 15vh;
-    padding: 30px;
+    padding: 55px;
     overflow-x: visible;
 }
 .sponsors-container-Mobile2{
@@ -56,12 +57,13 @@
     display: flex;
     flex-direction: row;
     gap: 5vw;
-    margin-top: -7vh;
+    margin-top: 7vh;
     margin-left: 25vw;
     height: 40vh;
     right: 0vw;
     padding: 30px;
     overflow-x: visible;
+    z-index: 22;
 }
 
 

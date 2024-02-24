@@ -55,9 +55,16 @@
 .sponsors-container{
     position: relative;
     display: flex;
+    height: fit-content;
     flex-direction: row;
     gap: 5vw;
-    top: 49vh;
+    top: 14vh;
     overflow-x: visible;
+    margin-left: 5vw;
 }
 
+@media screen and (max-width: 980px){
+    .sponsor-heading{
+        font-size: 20vw;
+    }
+}

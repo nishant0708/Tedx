@@ -1,8 +1,8 @@
 import React from 'react'
 import { Breakpoint,BreakpointProvider, } from 'react-socks'
 
-import SponsorMobileSection from '../SponsorSectionMobile'
-import SponsorsSection from '../SponsorsSection'
+import SponsorMobileSection from '../shubhansh files/SponsorSectionMobile'
+import SponsorsSection from '../shubhansh files/SponsorsSection'
 
 
 
@@ -20,12 +20,12 @@ const Subh = () => {
 
             <div className="sponsor_section-container">
 
-                <Breakpoint medium up>
+                <Breakpoint customQuery="(min-width: 769px)">
                <SponsorsSection/>
                 
                 </Breakpoint>
 
-                <Breakpoint medium down>
+                <Breakpoint customQuery="(max-width: 768px)">
                 < SponsorMobileSection/>
                 </Breakpoint>
             </div>
