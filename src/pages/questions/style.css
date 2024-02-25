@@ -2,7 +2,7 @@
 .hero {
     height: 10  0vh;
     width: 100vw;
-    background-color: rgb(232, 228, 232);
+    background-color:#eae6e6;
     z-index: 2;
     display: flex;
     font-family: "Poppins";
