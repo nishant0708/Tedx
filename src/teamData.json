@@ -11,8 +11,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             }
         ],"Organisers": [
             {
@@ -25,8 +25,8 @@
                 "IQ":80,
                 "humour":20,
                 "anger":90,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },{
                 "id": "organisers",
                 "name": "Swastik",
@@ -37,8 +37,8 @@
                 "IQ":80,
                 "humour":20,
                 "anger":90,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },{
                 "id": "organisers",
                 "name": "Anushka",
@@ -49,8 +49,8 @@
                 "IQ":80,
                 "humour":20,
                 "anger":90,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },{
                 "id": "organisers",
                 "name": "Ashish",
@@ -61,8 +61,8 @@
                 "IQ":80,
                 "humour":20,
                 "anger":90,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             }
         ]
 	},
@@ -73,14 +73,14 @@
                 "name": "Miraj ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/F6mkISp.png",
-                "ig": "",
+                "ig": "https://www.instagram.com/mirraajjjj/",
                 "cuteness":25,
                 "IQ":40,
                 "humour":20,
                 "anger":50,
-                "fun":46
-                
-            },{
+                "fun":46,                
+                "ln":""
+                },{
                 "id": "organisers",
                 "name": "Ashutosh ",
                 "info": "TEDxDAVV ",
@@ -90,8 +90,8 @@
                 "IQ":60,
                 "humour":80,
                 "anger":50,
-                "fun": 16
-                
+                "fun": 16,
+                "ln":""
             },{
                 "id": "organisers",
                 "name": "Utkarsh ",
@@ -102,8 +102,8 @@
                 "IQ":70,
                 "humour":20,
                 "anger":10,
-                "fun": 96
-                
+                "fun": 96,
+                "ln":""
             },{
                 "id": "organisers",
                 "name": "Ritu ",
@@ -114,20 +114,70 @@
                 "IQ":50,
                 "humour":90,
                 "anger":10,
-                "fun": 66
-                
+                "fun": 66,
+                "ln":""
             },{
                 "id": "organisers",
                 "name": "Pratham ",
                 "info": "TEDxDAVV",
                 "image": "https://imgur.com/WpiL60T.png",
-                "ig": "",
+                "ig": "https://www.instagram.com/prxthaam/",
                 "cuteness":95,
                 "IQ":80,
                 "humour":40,
                 "anger":20,
-                "fun": 16
-                
+                "fun": 16,
+                "ln":""
+            }
+        ],"Web-Dev Team": [
+            {
+                "id": "Web-Dev-Team",
+                "name": "Shubhansh ",
+                "info": "TEDxDAVV ",
+                "image": "https://imgur.com/kbVbWMV.png",
+                "ig": "https://www.instagram.com/shubhansh364/",
+                "cuteness":25,
+                "IQ":70,
+                "humour":80,
+                "anger":10,
+                "fun": 46,
+                "ln":""
+            },{
+                "id": "Web-Dev-Team",
+                "name": "Nishant ",
+                "info": "TEDxDAVV ",
+                "image": "https://imgur.com/iWm1s4H.png",
+                "ig": "https://www.instagram.com/nishant0760/",
+                "cuteness":35,
+                "IQ":80,
+                "humour":90,
+                "anger":40,
+                "fun": 36,
+                "ln":""
+            },{
+                "id": "Web-Dev-Team",
+                "name": "Samarth ",
+                "info": "TEDxDAVV ",
+                "image": "https://imgur.com/XVAuQVJ.png",
+                "ig": "https://www.instagram.com/samarth__sv/",
+                "cuteness":85,
+                "IQ":40,
+                "humour":70,
+                "anger":10,
+                "fun": 76,
+                "ln":""
+            },{
+                "id": "Web-Dev-Team",
+                "name": "Rachita ",
+                "info": "TEDxDAVV ",
+                "image": "https://imgur.com/YfeCrkU.png",
+                "ig": "https://www.instagram.com/rchta_dshre/",
+                "cuteness":95,
+                "IQ":70,
+                "humour":20,
+                "anger":50,
+                "fun": 86,
+                "ln":""
             }
         ],
         "Sponsorship Team": [
@@ -141,8 +191,8 @@
                 "IQ":40,
                 "humour":60,
                 "anger":20,
-                "fun": 76
-                
+                "fun": 76,
+                "ln":""
             },{
                 "id": "Sponsors-Team",
                 "name": "Shreya ",
@@ -153,8 +203,8 @@
                 "IQ":50,
                 "humour":60,
                 "anger":70,
-                "fun": 26
-                
+                "fun": 26,
+                "ln":""
             },
             {
                 "id": "Sponsors-Team",
@@ -166,8 +216,8 @@
                 "IQ":90,
                 "humour":30,
                 "anger":60,
-                "fun": 76
-                
+                "fun": 76,
+                "ln":""
             },{
                 "id": "Sponsors-Team",
                 "name": "Atharva ",
@@ -178,8 +228,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },{
                 "id": "Sponsors-Team",
                 "name": "Attar ",
@@ -190,8 +240,8 @@
                 "IQ":30,
                 "humour":90,
                 "anger":20,
-                "fun": 66
-                
+                "fun": 66,
+                "ln":""
             }
         ],
         "Marketing Team": [
@@ -205,8 +255,8 @@
                 "IQ":10,
                 "humour":40,
                 "anger":50,
-                "fun": 86
-                
+                "fun": 86,
+                "ln":""
             },
             {
                 "id": "Marketing-Team",
@@ -218,8 +268,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":20,
-                "fun": 86
-                
+                "fun": 86,
+                "ln":""
             },{
                 "id": "Marketing-Team",
                 "name": "Sanjeevni ",
@@ -230,8 +280,8 @@
                 "IQ":90,
                 "humour":20,
                 "anger":60,
-                "fun": 26
-                
+                "fun": 26,
+                "ln":""
             }
         ],
         "Event Management": [
@@ -246,8 +296,8 @@
                 "IQ":30,
                 "humour":60,
                 "anger":50,
-                "fun": 26
-                
+                "fun": 26,
+                "ln":""
             },{
                 "id": "Management-Team",
                 "name": "Rachita ",
@@ -258,8 +308,8 @@
                 "IQ":20,
                 "humour":20,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },{
                 "id": "Management-Team",
                 "name": "Yati ",
@@ -270,8 +320,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },
             {
                 "id": 1,
@@ -283,8 +333,8 @@
                 "IQ":70,
                 "humour":20,
                 "anger":80,
-                "fun": 56
-                
+                "fun": 56,
+                "ln":""
             }
             
         ],
@@ -299,8 +349,8 @@
                 "IQ":60,
                 "humour":70,
                 "anger":30,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },{
                 "id": 1,
                 "name": "Ojas ",
@@ -311,8 +361,8 @@
                 "IQ":50,
                 "humour":60,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },{
                 "id": 1,
                 "name": "Pritanshi ",
@@ -323,8 +373,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":50,
-                "fun": 86
-                
+                "fun": 86,
+                "ln":""
             }
         ],
         "Curation Team": [
@@ -338,8 +388,8 @@
                 "IQ":30,
                 "humour":50,
                 "anger":70,
-                "fun": 26
-                
+                "fun": 26,
+                "ln":""
             },{
                 "id": "Curation-Team",
                 "name": "Komal ",
@@ -350,8 +400,8 @@
                 "IQ":30,
                 "humour":80,
                 "anger":30,
-                "fun": 16
-                
+                "fun": 16,
+                "ln":""
             },
             {
                 "id": "Curation-Team",
@@ -363,8 +413,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":50,
-                "fun": 76
-                
+                "fun": 76,
+                "ln":""
             },{
                 "id": "Curation-Team",
                 "name": "Niharika ",
@@ -375,8 +425,8 @@
                 "IQ":60,
                 "humour":20,
                 "anger":50,
-                "fun": 16
-                
+                "fun": 16,
+                "ln":""
             },{
                 "id": "Curation-Team",
                 "name": "Aastha ",
@@ -387,8 +437,8 @@
                 "IQ":10,
                 "humour":60,
                 "anger":80,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             }
         ],
         "Design Team": [
@@ -402,8 +452,8 @@
                 "IQ":60,
                 "humour":70,
                 "anger":50,
-                "fun": 96
-                
+                "fun": 96,
+                "ln":""
             },{
                 "id": "Design-Team",
                 "name": "Sajal ",
@@ -414,8 +464,8 @@
                 "IQ":80,
                 "humour":20,
                 "anger":50,
-                "fun": 96
-                
+                "fun": 96,
+                "ln":""
             },
             {
                 "id": "Design-Team",
@@ -427,8 +477,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":50,
-                "fun": 96
-                
+                "fun": 96,
+                "ln":""
             },{
                 "id": "Design-Team",
                 "name": "Ishika ",
@@ -439,8 +489,8 @@
                 "IQ":10,
                 "humour":60,
                 "anger":50,
-                "fun": 96
-                
+                "fun": 96,
+                "ln":""
             }
         ],
         "Production Team": [
@@ -455,8 +505,8 @@
                 "IQ":80,
                 "humour":40,
                 "anger":10,
-                "fun": 90
-                
+                "fun": 90,
+                "ln":""
             },{
                 "id": "Production-Team",
                 "name": "Shubh ",
@@ -467,8 +517,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             },{
                 "id": "Production-Team",
                 "name": "Aryan ",
@@ -479,8 +529,8 @@
                 "IQ":20,
                 "humour":40,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             }
         ],
         "Content Team": [
@@ -494,8 +544,8 @@
                 "IQ":80,
                 "humour":20,
                 "anger":50,
-                "fun": 86
-                
+                "fun": 86,
+                "ln":""
             },{
                 "id": "Content-Team",
                 "name": "Tejaswini ",
@@ -506,8 +556,8 @@
                 "IQ":90,
                 "humour":20,
                 "anger":50,
-                "fun": 66
-                
+                "fun": 66,
+                "ln":""
             },
             {
                 "id": "Content-Team",
@@ -519,8 +569,8 @@
                 "IQ":80,
                 "humour":20,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             }
         ],
         "Art Team": [
@@ -534,8 +584,8 @@
                 "IQ":20,
                 "humour":15,
                 "anger":40,
-                "fun": 96
-                
+                "fun": 96,
+                "ln":""
             },{
                 "id": "Art-Team",
                 "name": "Surbhi ",
@@ -546,8 +596,8 @@
                 "IQ":10,
                 "humour":5,
                 "anger":80,
-                "fun": 96
-                
+                "fun": 96,
+                "ln":""
             },
             {
                 "id": "Art-Team",
@@ -559,8 +609,8 @@
                 "IQ":10,
                 "humour":20,
                 "anger":50,
-                "fun": 96
-                
+                "fun": 96,
+                "ln":""
             },{
                 "id": "Art-Team",
                 "name": "Saharsh ",
@@ -571,8 +621,8 @@
                 "IQ":30,
                 "humour":20,
                 "anger":50,
-                "fun": 46
-                
+                "fun": 46,
+                "ln":""
             }
         ]
 	}

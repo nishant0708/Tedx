@@ -216,7 +216,7 @@ export default function Teams(props){
                             coreTeam.map((member) => {
                                 // console.log(member.image)
                                 return (<TeamCard  id={member.id} name={member.name} img={member.image} cuteness={member.cuteness}
-                                info={member.info} anger={member.anger} humour={member.humour} IQ={member.IQ} fun={member.fun} ig={member.ig}/>)
+                                info={member.info} anger={member.anger} humour={member.humour} IQ={member.IQ} fun={member.fun} ig={member.ig} ln={member.ln}/>)
                             })
                         }
                     </div>

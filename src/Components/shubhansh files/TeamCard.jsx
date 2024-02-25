@@ -77,6 +77,8 @@ export default function TeamCard(props){
     let ig = props.ig;
     let info = props.info;
     let finesse = props.fun;
+    let ln = props.ln;
+    console.log(ln);
 
 
     return(
@@ -95,11 +97,11 @@ export default function TeamCard(props){
                 </p>
 
                 <div className='team-card-icons'>
-                    <a href='' className='member-insta-container'>
+                    <a href={ig} className='member-insta-container' target="_blank">
                         <i className="fa-brands fa-instagram member-insta"></i>
                     </a>
 
-                    <a href='' className='member-linkedin-container'>
+                    <a href={ln} className='member-linkedin-container' target="_blank">
                     <i className="fa-brands fa-linkedin member-linkedin"></i>
                     </a>
                 </div>
