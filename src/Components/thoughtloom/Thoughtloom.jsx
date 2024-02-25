@@ -11,31 +11,33 @@ const Thoughtloom = () => {
   const circleRef = useRef(null);
   const jayRef = useRef(null);
   const svgPathRef = useRef(null);
-  
+
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-  
+
     const tl = gsap.timeline({
-      start:"top 500%",
+      start: "top 500%",
       scrollTrigger: {
         trigger: '.jay',
         start: "top", // Adjust the start position
         end: "bottom", // Adjust the end position
         scrub: true, // smooth animation
         pin: ".jay",
-        
+
       }
     });
-  
-    tl.to([jayRef.current,maskBox2Ref.current,maskBoxRef.current], {
+
+    tl.to([jayRef.current, maskBox2Ref.current, maskBoxRef.current], {
       backgroundColor: '#eb0028',
       // duration: 8, // Increase the duration to slow down the animation
     });
-  
+
     tl.fromTo(circleRef.current,
-      { scale: 0,
-      x: -490 }, // From scale 0
+      {
+        scale: 0,
+        x: -490
+      }, // From scale 0
       {
         scale: 0.6,
         x: -310,
@@ -45,19 +47,19 @@ const Thoughtloom = () => {
     );
 
     tl.to(maskBox2Ref.current, {
-      x: "2000",
+      x: "1500",
       ease: "power1.inOut",
       // delay:0,
       // duration: 8, // Increase the duration here
     });
-  
+
     tl.to(maskBoxRef.current, {
-      x: "8000", // move to the right
+      x: "2000", // move to the right
       ease: "power1.inOut",
       // delay:0,
       // duration: 8, // Increase the duration here
     });
-  
+
     // Clean up ScrollTrigger on unmount
     return () => {
       ScrollTrigger.getAll().forEach(t => t.kill());
@@ -65,7 +67,7 @@ const Thoughtloom = () => {
   }, []);
 
   return (
-    <div className='scroller poppins-regular'  >
+    <div className='scroller'  >
       <div className='jay' ref={jayRef}>
         <div className='svg-container'>
           <div className='mask-box' ref={maskBoxRef}></div>
@@ -80,7 +82,7 @@ const Thoughtloom = () => {
             </div>
             <div className='circle' ref={circleRef}>
               <svg width="263" height="263" viewBox="0 0 263 263" fill="none">
-                <circle cx="131.5" cy="131.5" r="131.5" fill="#FFD116" fillOpacity="0.86"/>
+                <circle cx="131.5" cy="131.5" r="131.5" fill="#FFD116" fillOpacity="0.86" />
               </svg>
             </div>
             <img className='person' src={process.env.PUBLIC_URL + '/assets/other/person.png'} alt="person"></img>
@@ -91,8 +93,8 @@ const Thoughtloom = () => {
           <img src={process.env.PUBLIC_URL + '/assets/other/thoughtloom.png'}></img>
         </div>
         <div className='second-trigger'></div>
-          <div className="container">
-          <div className="text-box">
+        <div className="container">
+        <div className="text-box">
           <h1 className="reveal-text date ">
             7 March 2024
           </h1>
@@ -104,14 +106,14 @@ const Thoughtloom = () => {
           </h1>
           </div>
           <div className='top-text'>
- 
-          An unfinished thought splits through the mind, weaving into a colourful spectrum of different perspectives and ideas
+            <h1 class="top-text">
+            Minds unveil vibrant realities, transforming blank thoughts into colorful perspectives, shaping our understanding of realities and visions.
 
-
+            </h1>
           </div>
         </div>
-        </div>
       </div>
+    </div>
   );
 }
 

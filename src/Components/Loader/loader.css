@@ -26,8 +26,8 @@
 }
 
 .loading-icon.zoom {
-  animation: zoomOut 6s ease-in-out forwards;
-  animation-delay: 3s;
+  animation: zoomOut 4s ease-in-out forwards;
+  animation-delay: 2s;
 }
 
 .svg-icon {
