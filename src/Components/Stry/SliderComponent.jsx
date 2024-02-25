@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from 'react'
 import "./SliderComponent.css"
 import { useEffect,useState,useRef } from 'react'
-import samp_image from "../Assests/Images/ZakirKhan_3x1_WhatsOn.jpg-transformed.webp"
+
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import linkedin from "../Assests/Images/linkedin.png";
@@ -145,7 +145,7 @@ const SliderComponent = () => {
     name: 'Revealing',
     surname: 'Soon',
     description: '',
-    image: samp_image,
+    image: "",
     instagramLink: '',
     linkedinLink: ''
   }
