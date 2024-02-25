@@ -73,7 +73,7 @@ const Navbar = () => {
     if (!isOpen) {
       menuRef.current.style.display = 'flex';
     } else {
-      menuRef.current.style.display = 'none';
+      menuRef.current.style.display = 'hidden';
     }
   };
 

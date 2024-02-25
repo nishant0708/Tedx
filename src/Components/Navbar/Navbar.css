@@ -125,6 +125,7 @@
         padding: 10px 0px;
         background-color: transparent;
         z-index: 5777775;
+        height: 5vh;
         display: block;
         width: 100%;
     }
@@ -176,7 +177,7 @@
         position: fixed;
         background-color: transparent;
         padding: 8px 0px;
-        
+        height: 5vh;
         z-index: 55;
     }
     .nav-menu li{
