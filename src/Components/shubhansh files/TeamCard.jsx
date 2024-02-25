@@ -76,7 +76,7 @@ export default function TeamCard(props){
     let anger = props.anger;
     let ig = props.ig;
     let info = props.info;
-    let fun = props.fun;
+    let finesse = props.fun;
 
 
     return(
@@ -114,7 +114,7 @@ export default function TeamCard(props){
                             <span>Cuteness: </span>
                             <span>Anger: </span>
                             <span>IQ: </span>
-                            <span>Fun: </span>
+                            <span>Finesse: </span>
                         </div>
 
                         <div className='scores'>
@@ -122,7 +122,7 @@ export default function TeamCard(props){
                             <div className='cutenessStat' style={{width:`${cuteness}%`}}></div>
                             <div className='angerStat' style={{width:`${anger}%`}}></div>
                             <div className='IQStat' style={{width:`${IQ}%`}}></div>
-                            <div className='funStat' style={{width:`${fun}%`}}></div>
+                            <div className='funStat' style={{width:`${finesse}%`}}></div>
                         </div>
                         
                     </div>
