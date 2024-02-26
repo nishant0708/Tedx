@@ -156,7 +156,7 @@ export default function Teams(props){
             }
             else{
                 const pin2 =gsap.fromTo(sectionRef.current,{
-                    translateX:'95vw'
+                    translateX:'135vw'
                 },{
                     translateX:`-${len*37}vw`,
                     ease:'none',
