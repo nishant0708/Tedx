@@ -10,15 +10,16 @@ import badal from "../Assests/Images/Group 29.png"
 
 
 const speakers2024 = [
-    {
-        name: 'STAY',
-        surname: 'TUNED..',
-        designation: "Meet the Trailblazers: TEDx Speaker Reveal",
-        description: 'Join us on February 27th as we unveil a lineup of TEDx speakers who will ignite inspiration and challenge perspectives with their innovative ideas and stories.',
-        image: samp_image,
-        instagramLink: '',
-        linkedinLink: ''
-      },
+  {
+    name: 'REVEALING',
+    surname: 'SOON..',
+    designation: "Meet the Trailblazers: TEDx Speaker Reveal",
+    description: 'Join us on February 27th as we unveil a lineup of TEDx speakers who will ignite inspiration and challenge perspectives with their innovative ideas and stories.',
+    image: samp_image,
+    instagramLink: '',
+    linkedinLink: ''
+  },
+  
       {
         name: 'REVEALING',
         surname: 'SOON..',
@@ -36,7 +37,7 @@ const speakers2024 = [
       name: "Ella D'",
       surname: "Verma",
       description: "Ella D'Verma, delivered a powerful speech on ''Acceptance'', highlighting the significance of embracing diversity and  fostering an inclusive society.",
-      image:"https://imgur.com/0CzNwIT.png",
+      image:"https://imgur.com/0xIsfCm.jpeg",
       designation: "Miss International Trans Queen",
       instagramLink: 'https://www.instagram.com/elladverma?igsh=MXQ0eHNicGF2b2FsaA',
     linkedinLink: 'https://www.linkedin.com/in/ella-verma-ab6889236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
@@ -47,7 +48,7 @@ const speakers2024 = [
       surname: 'Mishra',
       designation: "CTO and Co-founder at Pisarv Technology",
       description: 'Abhishek Mishra captivated the audience with his talk on "Transhumanism" and how technology is reshaping the evolutionary path of humanity',
-      image: "https://imgur.com/wY7gfX2.png",
+      image: "https://imgur.com/fL2xzjD.jpeg",
       instagramLink: 'https://www.instagram.com/abhisek.mnit?igsh=MTM2MGg2Y3VweGJveQ',
       linkedinLink: ''
     },
@@ -57,7 +58,7 @@ const speakers2024 = [
       surname: 'Makkhar',
       designation: "Member of UNESCO & Winner of India’s Got Talent Season 5",
       description: "Dr. Ragini Makkhar, India's Got Talent Season 5 winner, captivated the audience with her talk on ''Evolve with Dance,'' highlighting dance's transformative impact on personal growth and self-expression.",
-      image:"https://imgur.com/d7hhaL2.png",
+      image:"https://imgur.com/n00f9ob.jpeg",
       instagramLink: 'https://www.instagram.com/dr.raginimakkad?igsh=MXJlN245ZWh3N2phZw==',
       linkedinLink: ''
     },
@@ -66,7 +67,7 @@ const speakers2024 = [
       name: 'Bhaskar',
       surname: 'Indrakanti',
       description: 'Bhaskar Indrakanti delivered a thought-provoking talk on "Mental Awareness," raising awareness about mental health and emphasising the importance of de-stigmatization.',
-      image:"https://imgur.com/SatTy2f.png",
+      image:"https://imgur.com/K1pcQzu.jpeg",
       designation: "Entrepreneur & Social Engineer",
       instagramLink: 'https://www.instagram.com/bhaskar_indrakanti?igsh=MWZjOG1iMzh0bDAzYw==',
     linkedinLink: 'https://www.linkedin.com/in/bh%C4%81skar-indrakanti-424b6051?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
@@ -85,7 +86,7 @@ const speakers2024 = [
       surname: 'Chavda',
       designation: "Geopolitics, History & Science Expert., Youtuber",
       description: 'Abhijit Chavda delivered a compelling talk on "Geo Politics," shedding light on the dynamic interplay of politics and geography in shaping the global landscape',
-      image: "https://imgur.com/qoZ3Os1.png",
+      image: "https://imgur.com/LQcW3ZO.jpeg",
       instagramLink: 'https://www.instagram.com/theabhijitchavda?igsh=aXRqMTV2cGljb3pi',
     linkedinLink: 'https://www.linkedin.com/in/abhijitchavda?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
@@ -94,7 +95,7 @@ const speakers2024 = [
       surname: 'Agrawal',
       designation: "Author, History and Mythology Expert",
       description: 'Dr. Vineet Agrawal engaged the audience with his enlightening presentation on "Science and Scriptures," exploring the intersections between scientific advancements and ancient wisdom.',
-      image: "https://imgur.com/0H4cr82.png",
+      image: "https://imgur.com/GmbPB9w.jpeg",
       instagramLink: 'https://www.instagram.com/drvineetaggarwal?igsh=MWV5bmxlejN4eXdjcA==',
     linkedinLink: 'https://www.linkedin.com/in/drvineetaggarwal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
@@ -103,7 +104,7 @@ const speakers2024 = [
       surname: 'Vijayvergiya',
       designation: "Student at IIPS Founder at Mission Vasundhara & Satat Productions",
       description: 'In his talk, Aryan discussed the power of positive thinking and its potential to drive the evolution of humanity as a whole.',
-      image: "https://imgur.com/jzcJX9H.png",
+      image: "https://imgur.com/JZvsw1P.jpeg",
       instagramLink: 'https://www.instagram.com/aryanvijayvergiya?igsh=MWJib2RhcG44dWhwcg==',
       linkedinLink: 'https://www.linkedin.com/in/aryan-vijayvergiya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
@@ -114,7 +115,7 @@ const speakers2024 = [
 
 const Speakersm = () => {
 
-
+  const [selectedYear, setSelectedYear] = useState('2024');
   
     useEffect(()=>{
 
@@ -189,8 +190,8 @@ const Speakersm = () => {
         };
        
        
-    } , []);
-    const [selectedYear, setSelectedYear] = useState('2024');
+    } , [selectedYear]);
+
 
     const initializeAnimations = () => {
         gsap.registerPlugin(ScrollTrigger);
@@ -291,7 +292,7 @@ const Speakersm = () => {
         });
     
         gsap.to(progressBarRef.current, { width: `0%`, duration: 0 }); // Reset progress bar width
-      }, []);
+      }, [selectedYear]);
  
 
 
@@ -299,13 +300,14 @@ const Speakersm = () => {
     const selectedSpeakers = selectedYear === '2024' ? speakers2024 : speakers2023;
     const handleChange = (event) => {
         setSelectedYear(event.target.value);
+      
       };
     
 
   return (
     <div id="mslider" class="o-mslider">
   
-  <h1 className={`o-mslider__title ${selectedSpeakers.some(speaker => speaker.name === 'r') ? 'custom-title-style' : ''}`}>
+  <h1 className={`o-mslider__title ${selectedYear === '2024' ? 'title2024' : ''}`}>
     <span id="mtitle">Speakers</span>
   </h1>
   <img  classname="mbadal" style={{position:'fixed' ,width:"60%", bottom:"0%" , right:"0%"}} src={badal} alt=""/>

@@ -211,6 +211,11 @@ text-align: center;
     left: 40%;
     }
 
+ .title2024 span{
+ left: 115%;
+ }   
+
+
  @media(max-width:550px){
   .o-mslider{
     --title-size: calc(1/8 * 100vh);
@@ -219,6 +224,10 @@ text-align: center;
   .o-mslider__title span{
      left: 25vw;
   }
+  
+ .title2024 span{
+    left: 150%;
+    }   
   .o-mslider__img{
     width: 50vw;
     height: 30vh;

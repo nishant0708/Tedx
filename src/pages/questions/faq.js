@@ -57,6 +57,7 @@ const StickyScroll = ({ content }) => {
       opacity: 1,
     rotate: -60,
     duration: 1,
+
     scrollTrigger: "#faq",
     ease: Power1.easeOut, // pause the animation initially
   });
