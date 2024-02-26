@@ -11,9 +11,19 @@ import badal from "../Assests/Images/Group 29.png"
 
 const speakers2024 = [
     {
-        name: 'Stay',
-        surname: 'tuned',
-        description: 'Revealing Soon...',
+        name: 'STAY',
+        surname: 'TUNED..',
+        designation: "Meet the Trailblazers: TEDx Speaker Reveal",
+        description: 'Join us on February 27th as we unveil a lineup of TEDx speakers who will ignite inspiration and challenge perspectives with their innovative ideas and stories.',
+        image: samp_image,
+        instagramLink: '',
+        linkedinLink: ''
+      },
+      {
+        name: 'REVEALING',
+        surname: 'SOON..',
+        designation: "Meet the Trailblazers: TEDx Speaker Reveal",
+        description: 'Join us on February 27th as we unveil a lineup of TEDx speakers who will ignite inspiration and challenge perspectives with their innovative ideas and stories.',
         image: samp_image,
         instagramLink: '',
         linkedinLink: ''
@@ -180,7 +190,7 @@ const Speakersm = () => {
        
        
     } , []);
-    const [selectedYear, setSelectedYear] = useState('2023');
+    const [selectedYear, setSelectedYear] = useState('2024');
 
     const initializeAnimations = () => {
         gsap.registerPlugin(ScrollTrigger);
@@ -347,7 +357,7 @@ const Speakersm = () => {
               // Add switch cases for 2024 here
               switch (speaker.name) {
                 
-                case 'Stay':
+                case 'REVEALING':
                   speakerClass = 'mreveal';
                   break;
                 default:
