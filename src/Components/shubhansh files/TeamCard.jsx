@@ -76,7 +76,9 @@ export default function TeamCard(props){
     let anger = props.anger;
     let ig = props.ig;
     let info = props.info;
-    let fun = props.fun;
+    let finesse = props.fun;
+    let ln = props.ln;
+    console.log(ln);
 
 
     return(
@@ -95,11 +97,11 @@ export default function TeamCard(props){
                 </p>
 
                 <div className='team-card-icons'>
-                    <a href='' className='member-insta-container'>
+                    <a href={ig} className='member-insta-container' target="_blank">
                         <i className="fa-brands fa-instagram member-insta"></i>
                     </a>
 
-                    <a href='' className='member-linkedin-container'>
+                    <a href={ln} className='member-linkedin-container' target="_blank">
                     <i className="fa-brands fa-linkedin member-linkedin"></i>
                     </a>
                 </div>
@@ -114,7 +116,7 @@ export default function TeamCard(props){
                             <span>Cuteness: </span>
                             <span>Anger: </span>
                             <span>IQ: </span>
-                            <span>Fun: </span>
+                            <span>Finesse: </span>
                         </div>
 
                         <div className='scores'>
@@ -122,7 +124,7 @@ export default function TeamCard(props){
                             <div className='cutenessStat' style={{width:`${cuteness}%`}}></div>
                             <div className='angerStat' style={{width:`${anger}%`}}></div>
                             <div className='IQStat' style={{width:`${IQ}%`}}></div>
-                            <div className='funStat' style={{width:`${fun}%`}}></div>
+                            <div className='funStat' style={{width:`${finesse}%`}}></div>
                         </div>
                         
                     </div>
