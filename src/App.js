@@ -1,17 +1,12 @@
 
 import './App.css';
-import Forscrolldummy from './Components/Forscrolldummy';
-import HeroPg from './Components/HeroPg/HeroPg';
 
 import Loader from './Components/Loader/Loader';
-import LoaderFlower from './Components/Loader/LoaderFlower';
-import Thoughtloom from './Components/thoughtloom/Thoughtloom';
 import Footer from './Components/Footer/Footer';
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 
-import Trybox from "./Components/ContactUS/Trybox";
 import HeroParallax from "./pages/Gallery/hero-parallax"
 import Main from "./Components/Main/Main";
 import TeamSection from "./Components/shubhansh files/TeamSection"
@@ -57,7 +52,7 @@ function App() {
     const loadingTimeout = setTimeout(() => {
       setIsLoaded(true);
       setShowLoader(false);
-    }, 3000);
+    }, 6000);
 
     // Check if content is loaded before the timeout
     window.onload = () => {

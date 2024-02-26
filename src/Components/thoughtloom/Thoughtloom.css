@@ -242,7 +242,7 @@
 
 @media screen and (max-device-width: 768px) {
   .thoughtloom-container{
-    transform: scale(1.5) translate(-72px, -15px);
+    transform: scale(1.5);
   }
 
 
