@@ -133,6 +133,18 @@
         "Web-Dev Team": [
             {
                 "id": "Web-Dev-Team",
+                "name": "Rachita ",
+                "info": "TEDxDAVV ",
+                "image": "https://imgur.com/YfeCrkU.png",
+                "ig": "https://www.instagram.com/rchta_dshre/",
+                "cuteness":95,
+                "IQ":70,
+                "humour":20,
+                "anger":50,
+                "fun": 86,
+                "ln":""
+            },{
+                "id": "Web-Dev-Team",
                 "name": "Shubhansh ",
                 "info": "TEDxDAVV ",
                 "image": "https://imgur.com/nsewDyz.png",
@@ -166,18 +178,6 @@
                 "humour":70,
                 "anger":10,
                 "fun": 76,
-                "ln":""
-            },{
-                "id": "Web-Dev-Team",
-                "name": "Rachita ",
-                "info": "TEDxDAVV ",
-                "image": "https://imgur.com/YfeCrkU.png",
-                "ig": "https://www.instagram.com/rchta_dshre/",
-                "cuteness":95,
-                "IQ":70,
-                "humour":20,
-                "anger":50,
-                "fun": 86,
                 "ln":""
             }
         ],
