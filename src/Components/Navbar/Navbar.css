@@ -216,7 +216,7 @@
 }
 .fixed-hamburger {
     position: fixed;
-    top: 10px; /* Adjust top position as per your design */
-    left: 10px; /* Adjust right position as per your design */
+    top: 1%;
+    right: 1%;
     z-index: 55;
   }

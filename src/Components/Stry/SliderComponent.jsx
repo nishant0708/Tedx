@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from 'react'
 import "./SliderComponent.css"
 import { useEffect,useState,useRef } from 'react'
-
+import samp_image from "../Assests/Images/rev.png"
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import linkedin from "../Assests/Images/linkedin.png";
@@ -142,13 +142,24 @@ const SliderComponent = () => {
 */
  const  speakerData2024 = [
   {
-    name: 'Revealing',
-    surname: 'Soon',
-    description: '',
-    image: "",
+    name: 'REVEALING',
+    surname: 'SOON..',
+    designation: "Meet the Trailblazers: TEDx Speaker Reveal",
+    description: 'Join us on February 27th as we unveil a lineup of TEDx speakers who will ignite inspiration and challenge perspectives with their innovative ideas and stories.',
+    image: samp_image,
     instagramLink: '',
     linkedinLink: ''
-  }
+  },
+  
+  {
+    name: 'REVEALING',
+    surname: 'SOON..',
+    designation: "Meet the Trailblazers: TEDx Speaker Reveal",
+    description: 'Join us on February 27th as we unveil a lineup of TEDx speakers who will ignite inspiration and challenge perspectives with their innovative ideas and stories.',
+    image: samp_image,
+    instagramLink: '',
+    linkedinLink: ''
+  },
   
 
 
@@ -260,7 +271,7 @@ const SpeakerComponent = ({ name, surname, description, designation,image, insta
       });
 
       gsap.to(descRef.current, {
-        xPercent: 130,
+        xPercent: 170,
         duration: 1,
         scrollTrigger: {
           trigger: descRef.current.closest('.o-slider__item'),
@@ -282,7 +293,7 @@ const SpeakerComponent = ({ name, surname, description, designation,image, insta
         },
       });
       gsap.to(desgRef.current, {
-        xPercent: 135,
+        xPercent: 155,
         duration: 1,
         scrollTrigger: {
           trigger: nameRef.current.closest('.o-slider__item'),
@@ -357,7 +368,7 @@ const [selectedYear, setSelectedYear] = useState('2023');
                   
             </h1>
             <select  className='year-drop'   onChange={handleChange}>
-               {/* <option className="option" value="2024" >2024</option> */}
+               <option className="option" value="2024" >2024</option>
         <option value="2023" selected>2023</option>
        
       </select>   
@@ -391,6 +402,8 @@ const getSpeakerNameClass = (name) => {
       return 'ella-style';
       case 'Dr. Ragini':
         return 'Ragini-style';
+      case "REVEALING":
+      return "Reveal-style"
     default:
       return '';
   }
