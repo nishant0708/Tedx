@@ -27,41 +27,41 @@
 }
 
 .circle {
-    transform: scale(0.6) translate(-1vw, 320px);
-    position: relative; /* Ensure the circle is positioned relative to its parent */
+    transform: scale(0.6) ;
+    position: absolute; /* Ensure the circle is positioned relative to its parent */
     z-index: 4; /* Set a higher z-index value for the circle */
 }
 
 .person {
-    height: 500px;
-    position: relative; /* Ensure the image is positioned relative to its parent */
+    /* height: 500px; */
+    position: absolute; /* Ensure the image is positioned relative to its parent */
     z-index: 2; /* Set a higher z-index value for the image */
-    transform: translate(-15vw  ,0);
+    /* transform: translate(-15vw  ,0); */
     z-index: 5;
 
 }
 
 .whiteStroke {
-    position: relative;
+    position: absolute;
     bottom: 0;
-    transform: translate(-930px,590px);
+    /* transform: translate(-930px,590px); */
     rotate: 2deg ;
     z-index: 2;
 }
 
 .rainbow{
-    position: relative;
-    transform: translate(650px,280px) scaleX(2.2) scaleY(1.5);
+    position: absolute;
+    transform: scaleX(2.2) scaleY(1.5);
     z-index: 3;
 }
 
 .mask-box{
-  width: 1080px;
-  height: 600px;
+  /* width: 1080px;
+  height: 600px; */
   background-color:#eae6e6;
-  transform: translate(1065px,300px);
+  /* transform: translate(1065px,300px); */
   z-index: 4;
-  position: relative;
+  position: absolute;
 }
 
 .mask-box-2{
