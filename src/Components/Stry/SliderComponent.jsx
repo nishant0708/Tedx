@@ -12,7 +12,7 @@ const SliderComponent = () => {
   const progressBarRef = useRef(null);
   const [showTitle, setShowTitle] = useState(false);
   const sliderRef = useRef(null);
-  const [selectedYear, setSelectedYear] = useState('2023');
+  const [selectedYear, setSelectedYear] = useState('2024');
 
 
 
@@ -326,7 +326,7 @@ useEffect(() => {
     window.scrollTo({ top: sliderRef.current.offsetTop, behavior: 'smooth' });
   };
 
-  console.log("Selected Year:", selectedYear);
+  // console.log("Selected Year:", selectedYear);
 
 
   return (

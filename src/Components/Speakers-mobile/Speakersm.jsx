@@ -318,7 +318,7 @@ const Speakersm = () => {
   <ul class="o-mslider__list">
 
   <select className='myear' onChange={handleChange} value={selectedYear}>
-          <option  value="2024">2024</option>
+          <option  value="2024" selected>2024</option>
           <option value="2023">2023</option>
         </select>
 
