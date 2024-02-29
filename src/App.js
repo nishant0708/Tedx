@@ -13,6 +13,7 @@ import TeamSection from "./Components/shubhansh files/TeamSection"
 import Subh from "./Components/Subhanshpage/Subh";
 
 import React, { useState, useEffect } from 'react';
+import Buy from './Components/Buynow/Buy';
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -70,6 +71,7 @@ function App() {
         <div className='hey'>
           <Router>
             <Navbar />
+            <Buy/>
             <Routes>
               <Route path='/' element={<Main />} />
               <Route path='/gallery' element={<HeroParallax products={productsData} />} />
