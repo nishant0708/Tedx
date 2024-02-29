@@ -1,5 +1,5 @@
 body {
-    font-family: "Poppins", sans-serif;
+
     
 }
 h1, body {
@@ -13,7 +13,7 @@ button:focus {
     --scroll-perc: 0;
     --scroll-vel: 0;
     --scroll-y: 0;
-  
+    font-family: "Poppins", sans-serif;
     --title-size: calc(1/4 * 100vh);
     background-color: #eae6e6;
     position: relative;
@@ -320,11 +320,31 @@ button:focus {
     left: -33%;
 }
 
+.Reveal-style{
+    width: 70vw;
+    height: 90vh;
+    transform:  skewY(calc(var(--scroll-y) * var(--scroll-vel) * 2deg));
+}
+
+.o-slider__title-2024 span{
+ left: -44%;
+}
+.Reveal-style .speaker-name{
+    left: 125%;
+}
+.Reveal-style .speaker_desg{
+    left: -38%;
+}
+.Reveal-style .slider__desc{
+    left: -38%;
+}
+
 
 
 
 
 @media (max-width:1450px) {
+   
    .o-slider__item{
     width: 80vw;
    }
@@ -392,7 +412,9 @@ button:focus {
         font-size: 18px;
     }
 
-
+    .o-slider__title-2024 span{
+        left: 50%;
+     }
 
 
 
@@ -439,6 +461,14 @@ button:focus {
     }
     .akshay-style .slider__desc{
         left: -25%;
+    }
+    .o-slider__title-2024 span{
+        left: -25%;
+     }
+
+    .Reveal-style .speaker_desg{
+        top: 27%;
+        left: -34%;
     }
   /*   .vineet-style .speaker-name{
         font-size: 65px;
@@ -511,6 +541,7 @@ button:focus {
         font-size: 16px;
     }
 }
+
 /*
 {
     ul{
