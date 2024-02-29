@@ -36,7 +36,7 @@ export default function HeroPg() {
             // Calculate opacity based on scroll position
             let newOpacity = scrollPosition / triggerPoint;
             newOpacity = Math.min(newOpacity, 0.8); // Ensure opacity doesn't exceed 1
-            newOpacity = Math.max(newOpacity, 0.09); // Ensure opacity doesn't go below 0
+            newOpacity = Math.max(newOpacity, 0.04); // Ensure opacity doesn't go below 0
             setOpacity(newOpacity);
         };
 

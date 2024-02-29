@@ -51,9 +51,9 @@
     /* float: left; */
 }
 .mainliner{
-    font-size: 6.5rem;
+    font-size: 16vh;
     /* font-size: 118px; */
-    line-height: 6rem;
+    line-height: 15vh;
     /* opacity: 0; */
     /* display: flex; */
     /* flex-direction: column; */
@@ -114,7 +114,7 @@
 @media screen and (max-width: 750px) {
     .heropg{
         flex-direction: column-reverse;
-        height: 100vh;
+        height: auto;
         justify-content: flex-end;
         /* padding: 1rem; */
         padding: 3rem 0rem;
