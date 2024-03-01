@@ -27,41 +27,42 @@
 }
 
 .circle {
-    transform: scale(0.6) ;
-    position: absolute; /* Ensure the circle is positioned relative to its parent */
+    transform: scale(0.6) translate(-32%, 72%);
+    position: relative; /* Ensure the circle is positioned relative to its parent */
     z-index: 4; /* Set a higher z-index value for the circle */
+    overflow: visible;
 }
 
 .person {
-    /* height: 500px; */
-    position: absolute; /* Ensure the image is positioned relative to its parent */
+    height: 500px;
+    position: relative; /* Ensure the image is positioned relative to its parent */
     z-index: 2; /* Set a higher z-index value for the image */
-    /* transform: translate(-15vw  ,0); */
+    transform: translate(-80%  ,0);
     z-index: 5;
 
 }
 
 .whiteStroke {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    /* transform: translate(-930px,590px); */
+    transform: translate(-107%,110%);
     rotate: 2deg ;
     z-index: 2;
 }
 
 .rainbow{
-    position: absolute;
-    transform: scaleX(2.2) scaleY(1.5);
+    position: relative;
+    transform: translate(168%,88%) scaleX(2.2) scaleY(1.5);
     z-index: 3;
 }
 
 .mask-box{
-  /* width: 1080px;
-  height: 600px; */
+  width: 1080px;
+  height: 600px;
   background-color:#eae6e6;
-  /* transform: translate(1065px,300px); */
+  transform: translate(1065px,300px);
   z-index: 4;
-  position: absolute;
+  position: relative;
 }
 
 .mask-box-2{
@@ -222,27 +223,10 @@
 	}
 }
 
-@media (max-width: 500px) and (max-height: 740px) {
-  
-
-  .text-box{
-    top: 22vh;
-    left: 14vw;
-  }
-  .text-box h1 {
-    font-size: 1rem;
-    line-height: 1rem;
-}
- 
-
-  /* .thoughtloom-container{
-   transform: scale(1.5);
-  } */
-}
-
 @media screen and (max-device-width: 768px) {
   .thoughtloom-container{
-    transform: scale(1.5);
+    transform: translate(-50%);
+    width: 80vw;
   }
 
 
@@ -262,8 +246,8 @@
     /* left: 14vw; */
   }
   .text-box h1 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 21px;
+    line-height: 21px;
 }
 
   .svg-container{
@@ -304,4 +288,17 @@
     transform: translate(1050px,300px);
   }
 
+}
+
+@media screen and (max-device-width: 400px){
+  .top-text{
+    font-size: 19px;
+    line-height: 20px;
+    top:1vh;
+  }
+  .text-box{
+    top:20vh;
+    left:0;
+  }
+  
 }

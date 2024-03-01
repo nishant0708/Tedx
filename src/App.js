@@ -4,7 +4,7 @@ import './App.css';
 import Loader from './Components/Loader/Loader';
 import Footer from './Components/Footer/Footer';
 
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Changed import statement
 import Navbar from './Components/Navbar/Navbar';
 
 import HeroParallax from "./pages/Gallery/hero-parallax"
@@ -13,6 +13,9 @@ import TeamSection from "./Components/shubhansh files/TeamSection"
 import Subh from "./Components/Subhanshpage/Subh";
 
 import React, { useState, useEffect } from 'react';
+import Buy from './Components/Buynow/Buy';
+import Layout from './Components/Buynow/Layout';
+
 function App() {
   const [showLoader, setShowLoader] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -63,31 +66,28 @@ function App() {
     // Clean up
     return () => clearTimeout(loadingTimeout);
   }, []);
+
   return (
     <div className="App">
       {showLoader && <Loader />} {/* Show Loader component if showLoader is true */}
       {!isLoaded && !showLoader && <Loader />} {/* Show Loader component until resources are loaded */}
-      {isLoaded && !showLoader && 
-      (
+      {isLoaded && !showLoader && (
         <div className='hey'>
-           <BrowserRouter>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Main/>}/>
-        <Route path='/gallery' element={<HeroParallax products={productsData}/>}/>
-        <Route path='/sponsors' element={<Subh/>}/>
-        <Route path='/teams' element={<TeamSection/>}/>
-        
-      </Routes>
-       <Footer/>
-      </BrowserRouter>
-          
+          <Router>
+            <Navbar />
+            <Layout>
+            <Routes>
+              <Route path='/' element={<Main />} />
+              <Route path='/gallery' element={<HeroParallax products={productsData} />} />
+              <Route path='/sponsors' element={<Subh />} />
+              <Route path='/teams' element={<TeamSection />} />
+            </Routes>
+            </Layout>
+            <Footer />
+          </Router>
         </div>
-      )} {/* Show MainWebsite component if resources are loaded */}
-     
-
+      )}
     </div>
-
   );
 }
 

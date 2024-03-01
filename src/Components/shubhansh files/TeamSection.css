@@ -1,5 +1,6 @@
 .teams-section{
     background: #EAE6E6;
+    scroll-behavior: smooth;
 }
 
 .dropdown-wrapper{
