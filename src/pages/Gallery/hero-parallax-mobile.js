@@ -20,7 +20,7 @@ export const HeroParallax2 = ({ products }) => {
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 300, damping: 150, bounce: 1 };
 
   
 
@@ -138,7 +138,7 @@ export default HeroParallax2;
 
 export const Header = () => {
     const ref = React.useRef(null);
-    const springConfig = { stiffness: 200, damping: 25 };
+    const springConfig = { stiffness: 200, damping: 150 };
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start start", "end start"],
@@ -162,7 +162,7 @@ export const Header = () => {
   return (
     <div
     
-        className="absolute z-[100000] h-28 translate-y-32 mx-auto  bg-transparent px-4  right-0 top-[5vh]">
+        className="absolute z-[100000] h-28 translate-y-32 mx-auto  bg-transparent px-4  translate-x-10 -translate-y-10">
        <motion.div
         style={{
           rotateX,
