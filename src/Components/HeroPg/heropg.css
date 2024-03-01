@@ -115,6 +115,7 @@
 @media screen and (max-width: 750px) {
     .heropg{
         flex-direction: column-reverse;
+        min-height: 100vh;
         height: auto;
         justify-content: flex-end;
         /* padding: 1rem; */

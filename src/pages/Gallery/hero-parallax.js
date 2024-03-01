@@ -30,7 +30,7 @@ export const HeroParallax = ({ products }) => {
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 300, damping: 150, bounce: 1 };
   const scrollChange = useSpring(
     useTransform(scrollYProgress, [500,1000], [0, 500]),
     springConfig,
@@ -148,59 +148,6 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-      {/* <div className='h-80 -z-10 overflow-y-hidden m-0 sponsor-wrapper'
-             ref={sponsorTriggerRef}>
-            
-            <div className=' sponsors-container'
-            style={{
-              position: "relative",
-              display: "flex",
-              flexDirection: "row",
-              gap: "4vw",
-              duration: 8,
-              margin: 0,
-              overflowX: "visible",
-          
-          }}
-            ref={sponsorContainerRef}>
-        
-                 {fourthRow.map((product) => (
-                  <ProductCard
-                    product={product}
-                    translate={translateXF}
-                    key={product.title}
-                  />
-                  ))}   
-            </div>
-        </div>
-        
-        <div className='-z-50 m-0  p-0 sponsor-wrapper'
-             ref={sponsorTriggerRef2}>
-            
-            <div className='sponsors-container'
-            style={{
-              position: "relative",
-              display: "flex",
-              flexDirection: "row",
-              gap: "4vw",
-              duration: 8, 
-              zIndex: -100, 
-              marginTop: "-280px",
-              marginBottom: "0px",
-              overflowX: "visible",
-          
-          }}
-            ref={sponsorContainerRef2}>
-        
-                 {fourthRow.map((product) => (
-                  <ProductCard
-                    product={product}
-                    translate={translateXF}
-                    key={product.title}
-                  />
-                  ))}   
-            </div>
-        </div> */}
         </div>
   </Breakpoint>
       <Breakpoint small down>
