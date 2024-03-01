@@ -1,0 +1,40 @@
+.buy{
+    position: fixed;
+   
+   
+    bottom: 0.5%;
+    right: 0.5%;
+    z-index: 50;
+}
+.buynowbut{
+   padding: 0.5vw;
+    border-radius: 50%;
+    background-color: #FFD116;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px #000000;
+}
+.buynowbut:hover{
+    box-shadow: 0.2vw 0.2vw 0.5vw 0 #0000009b;
+    
+}
+.buyimg{
+    width: 12vh;
+    
+}
+
+@media (max-width:850px){
+
+    .buy{
+        position: fixed;
+      z-index: 50;
+        right: 1%;
+        bottom: 1%;
+    }
+    .buynowbut{
+        background-color: #ffd016ca;
+    }
+.buyimg{
+    width: 10vh;
+}
+}
+

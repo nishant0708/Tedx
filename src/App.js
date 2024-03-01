@@ -13,38 +13,43 @@ import TeamSection from "./Components/shubhansh files/TeamSection"
 import Subh from "./Components/Subhanshpage/Subh";
 
 import React, { useState, useEffect } from 'react';
+import Buy from './Components/Buynow/Buy';
+import Layout from './Components/Buynow/Layout';
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
   const productsData = [
-        { title: '', link: '', thumbnail: "https://imgur.com/xhL7iFw.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/ylbeY3I.png" },
-        { title: '', link: '', thumbnail: 'https://imgur.com/NUFlBwq.png' },
-        { title: '', link: '', thumbnail: "https://imgur.com/MhndRuJ.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/XzRbvPx.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/gq8pguj.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/0Bhckd5.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/Zx353W2.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/c6hDt12.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/8qF1DmB.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/w6yEU83.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/F1lzuZ8.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/M3yIIND.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/UreBDRN.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/NUFlBwq.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/hj1Wwk5.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/E2XhfPT.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/p6tcGPl.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/dCvMOYS.png" },
-        { title: '', link: '', thumbnail: "https://imgur.com/v6uPbJC.png" },
-        { title: 'Aryan Vijayvargiya', link: '', thumbnail: "https://imgur.com/Qebc43j.png" },
-        { title: 'Dr. Ragini Makkhar', link: '', thumbnail: "https://imgur.com/azvGCcl.png" },
-        { title: 'Abhishek Mishra', link: '', thumbnail: "https://imgur.com/VB6xoI2.png" },
-        { title: 'Bhaskar Indrakanti', link: '', thumbnail: "https://imgur.com/iV9tnue.png" },
-        { title: 'Akshay Singh', link: '', thumbnail: "https://imgur.com/L2tS0Cz.png" },
-        // Add more product data as needed
-      ];
+    { title: '', link: '', thumbnail: "https://imgur.com/otCQ1nD.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/QEeDovI.png" },
+    { title: '', link: '', thumbnail: 'https://imgur.com/QrWLjTB.png' },
+    { title: '', link: '', thumbnail: "https://imgur.com/2ynO99M.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/QoHDduf.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/EKyDkLT.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/NQ81zNH.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/ZDCwEiv.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/8qF1DmB.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/0ThBbnS.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/c6hDt12.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/a8OJfU3.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/ba4Qw2V.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/lUuIyf7.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/TusM5x3.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/aksks8I.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/jZQPRRB.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/Zx353W2.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/dCvMOYS.png" },
+    { title: '', link: '', thumbnail: "https://imgur.com/2cZHIYf.png" },
+    { title: 'Aryan Vijayvargiya', link: '', thumbnail: "https://imgur.com/Qebc43j.png" },
+    { title: 'Dr. Ragini Makkhar', link: '', thumbnail: "https://imgur.com/azvGCcl.png" },
+    { title: 'Abhishek Mishra', link: '', thumbnail: "https://imgur.com/VB6xoI2.png" },
+    { title: 'Bhaskar Indrakanti', link: '', thumbnail: "https://imgur.com/iV9tnue.png" },
+    { title: 'Akshay Singh', link: '', thumbnail: "https://imgur.com/L2tS0Cz.png" },
+    // Add more product data as needed
+  ];
+  
+ 
+  
   useEffect(() => {
     // Simulate loading time for 5 seconds
     const loadingTimeout = setTimeout(() => {
@@ -70,12 +75,14 @@ function App() {
         <div className='hey'>
           <Router>
             <Navbar />
+            <Layout>
             <Routes>
               <Route path='/' element={<Main />} />
               <Route path='/gallery' element={<HeroParallax products={productsData} />} />
               <Route path='/sponsors' element={<Subh />} />
               <Route path='/teams' element={<TeamSection />} />
             </Routes>
+            </Layout>
             <Footer />
           </Router>
         </div>
