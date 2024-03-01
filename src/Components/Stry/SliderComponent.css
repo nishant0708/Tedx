@@ -325,6 +325,9 @@ button:focus {
     height: 90vh;
     transform:  skewY(calc(var(--scroll-y) * var(--scroll-vel) * 2deg));
 }
+.Reveal-style .log{
+    display: none;
+}
 
 .o-slider__title-2024 span{
  left: -44%;
