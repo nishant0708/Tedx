@@ -18,16 +18,20 @@
     
 }
 .buyimg{
-    width: 6vw;
+    width: 12vh;
+    
 }
 
-@media (max-width:800px){
+@media (max-width:850px){
 
     .buy{
         position: fixed;
       z-index: 50;
         right: 1%;
         bottom: 1%;
+    }
+    .buynowbut{
+        background-color: #ffd016ca;
     }
 .buyimg{
     width: 10vh;

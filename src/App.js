@@ -14,6 +14,7 @@ import Subh from "./Components/Subhanshpage/Subh";
 
 import React, { useState, useEffect } from 'react';
 import Buy from './Components/Buynow/Buy';
+import Layout from './Components/Buynow/Layout';
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -71,13 +72,14 @@ function App() {
         <div className='hey'>
           <Router>
             <Navbar />
-            <Buy/>
+            <Layout>
             <Routes>
               <Route path='/' element={<Main />} />
               <Route path='/gallery' element={<HeroParallax products={productsData} />} />
               <Route path='/sponsors' element={<Subh />} />
               <Route path='/teams' element={<TeamSection />} />
             </Routes>
+            </Layout>
             <Footer />
           </Router>
         </div>
