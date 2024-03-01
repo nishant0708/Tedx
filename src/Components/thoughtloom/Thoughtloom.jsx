@@ -40,7 +40,8 @@ const Thoughtloom = () => {
       }, // From scale 0
       {
         scale: 0.6,
-        x: -310,
+        x: '-31%',
+        yPercent: 27,
         ease: "elastic.out(1.2,0.75)",// Add ease effect
         // delay:0,
       }
