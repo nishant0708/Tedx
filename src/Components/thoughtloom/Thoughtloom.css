@@ -30,7 +30,6 @@
     transform: scale(0.6) translate(-32%, 72%);
     position: relative; /* Ensure the circle is positioned relative to its parent */
     z-index: 4; /* Set a higher z-index value for the circle */
-    overflow: visible;
 }
 
 .person {
