@@ -27,17 +27,16 @@
 }
 
 .circle {
-    transform: scale(0.6) translate(-32%, 72%);
+    transform: scale(0.6) translate(-1vw, 320px);
     position: relative; /* Ensure the circle is positioned relative to its parent */
     z-index: 4; /* Set a higher z-index value for the circle */
-    overflow: visible;
 }
 
 .person {
     height: 500px;
     position: relative; /* Ensure the image is positioned relative to its parent */
     z-index: 2; /* Set a higher z-index value for the image */
-    transform: translate(-80%  ,0);
+    transform: translate(-15vw  ,0);
     z-index: 5;
 
 }
@@ -45,14 +44,14 @@
 .whiteStroke {
     position: relative;
     bottom: 0;
-    transform: translate(-107%,110%);
+    transform: translate(-930px,590px);
     rotate: 2deg ;
     z-index: 2;
 }
 
 .rainbow{
     position: relative;
-    transform: translate(168%,88%) scaleX(2.2) scaleY(1.5);
+    transform: translate(650px,280px) scaleX(2.2) scaleY(1.5);
     z-index: 3;
 }
 
@@ -268,6 +267,7 @@
   }
 
   .circle{
+    
     transform: translate(-660px,290px);
     height: 350px;
   }
