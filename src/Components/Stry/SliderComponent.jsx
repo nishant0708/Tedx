@@ -92,24 +92,61 @@ const SliderComponent = () => {
 */
  const  speakerData2024 = [
   {
-    name: 'REVEALING',
-    surname: 'SOON..',
-    designation: "Meet the Trailblazers: TEDx Speaker Reveal",
-    description: 'Join us on February 27th as we unveil a lineup of TEDx speakers who will ignite inspiration and challenge perspectives with their innovative ideas and stories.',
-    image: samp_image,
-    instagramLink: '',
-    linkedinLink: ''
+    name: 'Abhishek',
+    surname: 'Kar',
+    designation: "Finance Enthusiast, YouTube, Startup Consultant",
+    description: 'An IIPS DAVV alumni who has made a name for himself in the finance influencers community with 1.6 million followers on insta and 1.2 million on youtube along with an amazon bestseller book -Stocks and Life.',
+    image: "https://imgur.com/8LzX2Dd.jpeg",
+    instagramLink: 'https://www.instagram.com/abhishekkarofficial?igsh=Zm9wZG9jejVjd3o1',
+    linkedinLink: 'https://www.linkedin.com/in/abhishek-kar-/?originalSubdomain=in'
   },
-  
   {
-    name: 'REVEALING',
-    surname: 'SOON..',
-    designation: "Meet the Trailblazers: TEDx Speaker Reveal",
-    description: 'Join us on February 27th as we unveil a lineup of TEDx speakers who will ignite inspiration and challenge perspectives with their innovative ideas and stories.',
-    image: samp_image,
+    name: 'Ashu',
+    surname: 'Ghai',
+    designation: "Educator, Content Creator, Youth Icon",
+    description: "A household name in the digital education community for his specialization in teaching through experiments rather than the conventional theory system. Has a major follower count of 6 million on youtube with the channel becoming the 3rd fastest growing channel in India.",
+    image: "https://imgur.com/7xKrgps.jpeg",
+    instagramLink: 'https://www.instagram.com/ashu.ghai/',
+    linkedinLink: 'https://www.linkedin.com/in/ashu-ghai-179892254/?originalSubdomain=in'
+  },
+  {
+    name: 'Rahul',
+    surname: 'Laddha',
+    designation: "Networking, Brand Building",
+    description: 'A man with diverse roles:Podcaster, anchor, speaker, published author along with 15+ years of work experience as a chief of staff,business analyst and other prestigious corporate positions.',
+    image: "https://imgur.com/lNtcpfv.jpeg",
     instagramLink: '',
+    linkedinLink: 'https://www.linkedin.com/in/rahulladha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+  },
+
+  {
+    name: 'Ananad',
+    surname: 'Nahaar',
+    designation: "Startup Founder, Inspirational, Recently seen on Shark Tank India",
+    description: 'Just recently came and pitched his really successful business venture on the shark tank. With a food chain startup -ZORKO. He has effortlessly collaborated for 150 plus franchises in a small time of one year.',
+    image: "https://imgur.com/4W7uBfO.jpeg",
+    instagramLink: 'https://www.instagram.com/anand.zorko/',
+    linkedinLink: 'https://www.linkedin.com/in/anandnahar4/?originalSubdomain=in'
+  }, 
+  {
+    name: 'Sri Pundrik',
+    surname: 'Goswami',
+    designation: "Psychology, Spritual",
+    description: 'A renowned Vaishnava leader,speaker and the scholar of vedic knowledge With a total of 500k+ followers on various social media platforms.',
+    image: "https://imgur.com/PMFliE6.jpeg",
+    instagramLink: 'https://www.instagram.com/sripundrik?igsh=MTRnM2ppand4ZTA3ZA',
     linkedinLink: ''
   },
+  {
+    name: 'Saanand',
+    surname: 'Verma',
+    designation: "Actor, Content Creator, TV Icon",
+    description: 'A renowned Indian film and television actor who has worked for numerous projects like mardaani,raid,chicchore and shows like C.I.D,F.I.R and Sacred games to name a few',
+    image: "https://imgur.com/9otF1yt.jpeg",
+    instagramLink: 'https://www.instagram.com/saanandverma/?hl=en',
+    linkedinLink: ''
+  },
+
   
 
 
@@ -127,7 +164,7 @@ const speakerData2023 = [
   },
   
   {
-    name: 'Abhishek',
+    name: 'Abhishek ',
     surname: 'Mishra',
     designation: "CTO and Co-founder at Pisarv Technology",
     description: 'Abhishek Mishra captivated the audience with his talk on "Transhumanism" and how technology is reshaping the evolutionary path of humanity',
@@ -270,8 +307,10 @@ const SpeakerComponent = ({ name, surname, description, designation,image, insta
     <p className='speaker_desg' ref={desgRef}>{designation}</p>
       <p className={`speaker-name  `}ref={nameRef}>{name}<br /> <span className='sir'>{surname} </span> <br />
                 <span className='log'>
-                <a href={instagramLink}><img style={{ width: "35px" }} src={instagram} alt="" /></a>&nbsp;
-                <a href={linkedinLink}><img style={{ width: "35px" }} src={linkedin} alt="" /></a></span>
+                {instagramLink && <a href={instagramLink}><img style={{ width: "35px" }} src={instagram} alt="" /></a>}&nbsp;
+                {linkedinLink && <a href={linkedinLink}><img style={{ width: "35px" }} src={linkedin} alt="" /></a>}
+                
+                </span>
               </p>
           
        
@@ -377,6 +416,19 @@ const getSpeakerNameClass = (name) => {
         return 'Ragini-style';
       case "REVEALING":
       return "Reveal-style"
+      case "Abhishek":
+        return "Abhishek"
+      case "Ashu":
+        return "Ashupc"
+      case "Sri Pundrik":
+        return "sripc"
+      case "Ananad":
+        return "Ananadpc"
+      case "Saanand":
+        return "Saanandpc"
+        case "Rahul":
+          return "Rahulpc"
+                
     default:
       return '';
   }

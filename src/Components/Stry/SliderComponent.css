@@ -1,7 +1,4 @@
-body {
 
-    
-}
 h1, body {
     margin: 0;
 }
@@ -132,6 +129,7 @@ button:focus {
     left: -39%;
     z-index: 9;
     color: rgb(251, 251, 251);
+   
     font-size: 20px;
 }
 .speaker-name{
@@ -330,7 +328,7 @@ button:focus {
 }
 
 .o-slider__title-2024 span{
- left: -44%;
+ left: -14%;
 }
 .Reveal-style .speaker-name{
     left: 125%;
@@ -343,8 +341,54 @@ button:focus {
 }
 
 
-
-
+.Abhishek .o-slider__img{
+  top: 150%;
+  height: 130%;
+}
+.Ashupc .o-slider__img{
+    top: 130%;
+  height: 120%;
+}
+.sripc .speaker-name{
+font-size: 65px;
+}
+.sripc .o-slider__img{
+    left: 21%;
+}
+.sripc .speaker_desg{
+    left: -33%;
+}
+.sripc .slider__desc{
+    left: -33%;
+}
+.Ananadpc .o-slider__img{
+    top: 135%;
+    height: 120%;
+}
+.Ananadpc .speaker_desg{
+   top: 22%;
+}
+.Saanandpc .speaker-name{
+    font-size: 65px;
+}
+.Saanandpc .o-slider__img{
+    top: 120%;
+    left: 25%;
+}
+.Saanandpc .slider__desc{
+    left: -17%;
+    font-size: 19px;
+    width: 17vw;
+}
+.Saanandpc .speaker_desg{
+    left: -13%;
+    font-size: 19px;
+    width: 17vw;
+}
+.Rahulpc .o-slider__img{
+    height: 130%;
+    top: 145%;
+}
 
 @media (max-width:1450px) {
    
@@ -414,15 +458,98 @@ button:focus {
         top: 42%;
         font-size: 18px;
     }
-
+ /* 2024*/
     .o-slider__title-2024 span{
-        left: 50%;
+        left: 8%;
      }
-
-
-
-
-
+   
+    .Abhishek .o-slider__img{
+        height: 140%;
+        top: 160%;
+        left: 14%;
+    }
+    .Abhishek .slider__desc{
+        left: -23%;
+    }
+    .Abhishek .speaker_desg{
+        left: -23%;
+    }
+    .Ashupc .o-slider__img{
+        height: 140%;
+        top: 150%;
+      
+    }
+    .Ashupc .slider__desc{
+        left: -21%;
+    }
+    .Ashupc .speaker_desg{
+        left: -21%;
+    }
+    .Ananadpc .speaker-name{
+          font-size: 54px;
+    }
+    .Ananadpc .o-slider__img {
+        top: 160%;
+        height: 140%;
+        left: 29%;
+    }
+    .Ananadpc .slider__desc {
+        left: 0.5%;
+        font-size: 19px;
+        width: 17vw;
+        top: 41%;
+    }
+    .Ananadpc .speaker_desg {
+        left: 4%;
+        font-size: 19px;
+        width: 17vw;
+    }
+    .sripc .speaker-name {
+        font-size: 44px;
+        line-height: 55px;
+        top: 27%;
+    }
+    .sripc .o-slider__img {
+        
+        top: 138%;
+        left: 32%;
+    }
+    .sripc .slider__desc {
+        left: 11%;
+        font-size: 19px;
+        width: 15vw;
+    }
+    .sripc .speaker_desg {
+        left: 14.2%;
+        width: 15vw;
+        font-size: 19px;
+        top: 29%;
+    }
+    .Saanandpc .o-slider__img {
+        top: 143%;
+        left: 39%;
+    }
+    .Saanandpc .speaker-name {
+        font-size: 44px;
+        line-height: 50px;
+        left:126%
+    }
+    .Saanandpc .speaker_desg {
+        left: 25%;
+        font-size: 17px;
+        width: 14vw;
+    }
+    .Saanandpc .slider__desc {
+        left: 22%;
+        font-size: 17px;
+        width: 14vw;
+    }
+  .Rahulpc .speaker_desg{
+    left: -16%;
+  }
+  .Rahulpc .slider__desc{
+    left: -16%;
+  }
 
 }
  @media(max-width:1280px){
@@ -513,6 +640,83 @@ button:focus {
         top: 45%;
         font-size: 18px;
     }
+
+ /*2024 */
+ .Abhishek .slider__desc{
+    left: -27%;
+}
+.Abhishek .speaker_desg{
+    left: -23%;
+}
+.Ashupc .slider__desc{
+    left: -25%;
+    font-size: 18px;
+}
+.Ananadpc .o-slider__img {
+    top: 160%;
+    height: 140%;
+    left: 24%;
+}
+.Ananadpc .slider__desc {
+    left: -15.5%;
+    font-size: 19px;
+    width: 20vw;
+    top: 41%;
+}
+.Ananadpc .speaker_desg {
+    left: -12%;
+    font-size: 19px;
+    width: 20vw;
+}
+.sripc .o-slider__img {
+        
+    top: 134%;
+    left: 30%;
+}
+.sripc .slider__desc {
+    left: -12%;
+    font-size: 19px;
+    width: 20vw;
+}
+.sripc .speaker_desg {
+    left: -8.2%;
+    width: 20vw;
+    font-size: 19px;
+    top: 29%;
+}
+.Saanandpc .o-slider__img {
+    top: 143%;
+    left: 29%;
+}
+.Saanandpc .speaker-name {
+    font-size: 44px;
+    line-height: 50px;
+    left:126%
+}
+.Saanandpc .speaker_desg {
+    left: -7%;
+    font-size: 17px;
+    width: 20vw;
+}
+.Saanandpc .slider__desc {
+    left: -11%;
+    font-size: 17px;
+    width: 20vw;
+}
+
+
+ .Rahulpc .slider__desc{
+    left: -35%;
+  }
+.Rahulpc .speaker_desg{
+    left: -31%
+}
+
+
+
+
+
+
 }
 @media(max-width:1080px){
     .speaker-name{
@@ -543,6 +747,85 @@ button:focus {
     .speaker_desg{
         font-size: 16px;
     }
+
+    .Abhishek .slider__desc{
+        left: -27%;
+    }
+    .Abhishek .speaker_desg{
+        left: -23%;
+    }
+    .Ashupc .slider__desc{
+        left: -25%;
+        font-size: 16px;
+    }
+    .Ananadpc .o-slider__img {
+        top: 160%;
+        height: 140%;
+        left: 24%;
+    }
+    .Ananadpc .slider__desc {
+        left: -15.5%;
+        font-size: 16px;
+        width: 20vw;
+        top: 41%;
+    }
+    .Ananadpc .speaker_desg {
+        left: -12%;
+        font-size: 16px;
+        width: 20vw;
+    }
+    .sripc .o-slider__img {
+            
+        top: 134%;
+        left: 30%;
+    }
+    .sripc .speaker-name{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .sripc .slider__desc {
+        left: -12%;
+        font-size: 16px;
+        width: 20vw;
+    }
+    .sripc .speaker_desg {
+        left: -8.2%;
+        width: 20vw;
+        font-size: 16px;
+        top: 29%;
+    }
+    .Saanandpc .o-slider__img {
+        top: 143%;
+        left: 29%;
+    }
+    .Saanandpc .speaker-name {
+        font-size: 44px;
+        line-height: 50px;
+        left:126%
+    }
+    .Saanandpc .speaker_desg {
+        left: 2%;
+        font-size: 14px;
+        width: 18vw;
+    }
+    .Saanandpc .slider__desc {
+        left: -1%;
+        font-size: 14px;
+        width: 18vw;
+    }
+    .o-slider__title-2024 span{
+        left: -10%;
+     }
+    
+    
+ .Rahulpc .slider__desc{
+    left: -30%;
+  }
+.Rahulpc .speaker_desg{
+    left: -26%
+}
+
+    
 }
 
 /*

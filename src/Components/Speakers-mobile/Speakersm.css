@@ -188,6 +188,9 @@ text-align: center;
    font-size: 28px;
    font-weight: bold;
 }
+.mabhi .lin{
+    left: 50%;
+}
 .mbhaskar-style .lin{
     left: 45%;
 }
@@ -208,13 +211,42 @@ text-align: center;
  }
 
  .mragini .lin{
-    left: 40%;
+    left: 50%;
     }
 
  .title2024 span{
- left: 115%;
+ left: 30%;
  }   
-
+.Abhishek2 .o-mslider__img{
+padding-top: 3vh;
+}
+.Abhishek2 .lin{
+    left: 42%;
+}
+.Ashu .o-mslider__img{
+    padding-top: 3vh;
+}
+.Ashu .lin{
+    left: 15%;
+}
+.Ananad .o-mslider__img{
+    padding-top: 3vh;
+}
+.Ananad .lin{
+    left: 28%;
+}
+.Saanand .lin{
+    left: 45%;
+}
+.sri .lin{
+    left: 63%;
+}
+.Rahul .o-mslider__img{
+padding-top: 3vh;
+}
+.Rahul .lin{
+    left: 42%;
+}
 
  @media(max-width:550px){
   .o-mslider{
@@ -226,7 +258,7 @@ text-align: center;
   }
   
  .title2024 span{
-    left: 150%;
+    left: 45%;
     }   
   .o-mslider__img{
     width: 50vw;
@@ -262,9 +294,32 @@ text-align: center;
 .mreveal .mSpeaker-name{
     font-size: 21px;
 }
+.Ashu .mSpeaker-name{
+    right: -67vw;
+}
+.Ashu .lin{
+    left: 6%;
+}
+.sri .mSpeaker-name{
+    font-size: 26px;
+    line-height: 30px;
+}
+.sri .lin{
+    left: 58%;
+}
+.Rahul .mSpeaker-name{
+    right: -62vw;
+}
+.Rahul .lin{
+    left: 46%;
+}
+
+.Saanand .lin{
+    left: 48%;
+}
+
+
 
 
  }
-.mreveal .lin{
-    display: none;
-}
+
